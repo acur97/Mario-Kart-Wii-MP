@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author/>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments/>
+    </contributor>
+    <created>2021-07-02T05:16:53Z</created>
+    <keywords/>
+    <modified>2021-07-02T05:16:53Z</modified>
+    <revision/>
+    <subject/>
+    <title/>
+    <unit meter="0.010000" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="ID15-image" name="ID15">
+      <init_from>file://D:\Unity Projects\Local projects\Mario Kart Wii Delux MP\Assets\3D\_Mapas\Mario Circuit\Models\p_unionE17.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="union_E01" name="union_E01">
+      <instance_effect url="#union_E01-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="union_E01-fx" name="union_E01">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.200000  0.200000 0.200000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ID15-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.200000  0.200000 0.200000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">20.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="polySurface5-lib" name="polySurface5Mesh">
+      <mesh>
+        <source id="polySurface5-POSITION">
+          <float_array id="polySurface5-POSITION-array" count="9">
+38.760899 22072.800781 -8100.000000
+1856.050049 21356.000000 -8099.859863
+88.118500 20642.099609 -8100.000000
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface5-POSITION-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface5-Normal0">
+          <float_array id="polySurface5-Normal0-array" count="9">
+-0.000078 -0.000003 1.000000
+-0.000078 -0.000003 1.000000
+-0.000078 -0.000003 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface5-Normal0-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface5-UV0">
+          <float_array id="polySurface5-UV0-array" count="6">
+0.773193 0.533691
+0.286133 0.561523
+0.773193 0.584961
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface5-UV0-array" count="3" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface5-VERTEX">
+          <input semantic="POSITION" source="#polySurface5-POSITION"/>
+          <input semantic="NORMAL" source="#polySurface5-Normal0"/>
+        </vertices>
+        <triangles count="1" material="union_E01">
+          <input semantic="VERTEX" offset="0" source="#polySurface5-VERTEX"/>
+          <input semantic="TEXCOORD" offset="1" set="0" source="#polySurface5-UV0"/>
+          <p> 2 0 1 1 0 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface6-lib" name="polySurface6Mesh">
+      <mesh>
+        <source id="polySurface6-POSITION">
+          <float_array id="polySurface6-POSITION-array" count="9">
+-8952.370117 11997.599609 900.000000
+-6879.419922 11180.000000 897.841003
+-8896.349609 10373.700195 900.000000
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface6-POSITION-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface6-Normal0">
+          <float_array id="polySurface6-Normal0-array" count="9">
+0.001056 0.000036 0.999999
+0.001056 0.000036 0.999999
+0.001056 0.000036 0.999999
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface6-Normal0-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface6-UV0">
+          <float_array id="polySurface6-UV0-array" count="6">
+0.773193 0.533691
+0.286133 0.561523
+0.773193 0.584961
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface6-UV0-array" count="3" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface6-VERTEX">
+          <input semantic="POSITION" source="#polySurface6-POSITION"/>
+          <input semantic="NORMAL" source="#polySurface6-Normal0"/>
+        </vertices>
+        <triangles count="1" material="union_E01">
+          <input semantic="VERTEX" offset="0" source="#polySurface6-VERTEX"/>
+          <input semantic="TEXCOORD" offset="1" set="0" source="#polySurface6-UV0"/>
+          <p> 2 0 1 1 0 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface7-lib" name="polySurface7Mesh">
+      <mesh>
+        <source id="polySurface7-POSITION">
+          <float_array id="polySurface7-POSITION-array" count="9">
+-8952.370117 11997.599609 -17100.000000
+-6879.419922 11180.000000 -17102.800781
+-8896.410156 10375.500000 -17100.000000
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface7-POSITION-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface7-Normal0">
+          <float_array id="polySurface7-Normal0-array" count="9">
+0.001370 0.000047 0.999999
+0.001370 0.000047 0.999999
+0.001370 0.000047 0.999999
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface7-Normal0-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface7-UV0">
+          <float_array id="polySurface7-UV0-array" count="6">
+0.773193 0.533691
+0.286133 0.561523
+0.773193 0.584961
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface7-UV0-array" count="3" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface7-VERTEX">
+          <input semantic="POSITION" source="#polySurface7-POSITION"/>
+          <input semantic="NORMAL" source="#polySurface7-Normal0"/>
+        </vertices>
+        <triangles count="1" material="union_E01">
+          <input semantic="VERTEX" offset="0" source="#polySurface7-VERTEX"/>
+          <input semantic="TEXCOORD" offset="1" set="0" source="#polySurface7-UV0"/>
+          <p> 2 0 1 1 0 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface8-lib" name="polySurface8Mesh">
+      <mesh>
+        <source id="polySurface8-POSITION">
+          <float_array id="polySurface8-POSITION-array" count="9">
+9048.070313 11997.599609 -17100.000000
+11121.000000 11180.000000 -17102.800781
+9104.049805 10375.000000 -17100.000000
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface8-POSITION-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface8-Normal0">
+          <float_array id="polySurface8-Normal0-array" count="9">
+0.001368 0.000047 0.999999
+0.001368 0.000047 0.999999
+0.001368 0.000047 0.999999
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface8-Normal0-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface8-UV0">
+          <float_array id="polySurface8-UV0-array" count="6">
+0.773193 0.533691
+0.286133 0.561523
+0.773193 0.584961
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface8-UV0-array" count="3" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface8-VERTEX">
+          <input semantic="POSITION" source="#polySurface8-POSITION"/>
+          <input semantic="NORMAL" source="#polySurface8-Normal0"/>
+        </vertices>
+        <triangles count="1" material="union_E01">
+          <input semantic="VERTEX" offset="0" source="#polySurface8-VERTEX"/>
+          <input semantic="TEXCOORD" offset="1" set="0" source="#polySurface8-UV0"/>
+          <p> 2 0 1 1 0 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface9-lib" name="polySurface9Mesh">
+      <mesh>
+        <source id="polySurface9-POSITION">
+          <float_array id="polySurface9-POSITION-array" count="9">
+9048.480469 11997.599609 900.000000
+11121.400391 11180.000000 891.424011
+9104.299805 10379.400391 900.000000
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface9-POSITION-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface9-Normal0">
+          <float_array id="polySurface9-Normal0-array" count="9">
+0.004194 0.000145 0.999991
+0.004194 0.000145 0.999991
+0.004194 0.000145 0.999991
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface9-Normal0-array" count="3" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface9-UV0">
+          <float_array id="polySurface9-UV0-array" count="6">
+0.773193 0.533691
+0.286133 0.561523
+0.773193 0.584961
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface9-UV0-array" count="3" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface9-VERTEX">
+          <input semantic="POSITION" source="#polySurface9-POSITION"/>
+          <input semantic="NORMAL" source="#polySurface9-Normal0"/>
+        </vertices>
+        <triangles count="1" material="union_E01">
+          <input semantic="VERTEX" offset="0" source="#polySurface9-VERTEX"/>
+          <input semantic="TEXCOORD" offset="1" set="0" source="#polySurface9-UV0"/>
+          <p> 2 0 1 1 0 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="course_d_fix_banderas" name="course_d_fix_banderas">
+      <node name="polygon5" id="polygon5" sid="polygon5">
+        <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+        <node name="polySurface5" id="polySurface5" sid="polySurface5">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <instance_geometry url="#polySurface5-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="union_E01" target="#union_E01"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node name="polySurface6" id="polySurface6" sid="polySurface6">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <instance_geometry url="#polySurface6-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="union_E01" target="#union_E01"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node name="polySurface7" id="polySurface7" sid="polySurface7">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <instance_geometry url="#polySurface7-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="union_E01" target="#union_E01"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node name="polySurface8" id="polySurface8" sid="polySurface8">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <instance_geometry url="#polySurface8-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="union_E01" target="#union_E01"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+        <node name="polySurface9" id="polySurface9" sid="polySurface9">
+          <matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+          <instance_geometry url="#polySurface9-lib">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="union_E01" target="#union_E01"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+          <extra>
+            <technique profile="FCOLLADA">
+              <visibility>1.000000</visibility>
+            </technique>
+          </extra>
+        </node>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.000000</start_time>
+          <end_time>1.000000</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#course_d_fix_banderas"/>
+  </scene>
+</COLLADA>

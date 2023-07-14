@@ -1,0 +1,4972 @@
+fileFormatVersion: 2
+guid: 9ac98faf3672c6b46b4ed402f81c5fd4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6850626153238418892
+    second: turbo_PointNum_56x77_0
+  - first:
+      213: -7895377107579840017
+    second: turbo_PointNum_56x77_1
+  - first:
+      213: -5235923103228196839
+    second: turbo_PointNum_56x77_2
+  - first:
+      213: -5013932037127119980
+    second: turbo_PointNum_56x77_3
+  - first:
+      213: 885183455440406080
+    second: turbo_PointNum_56x77_4
+  - first:
+      213: 1729977614954973029
+    second: turbo_PointNum_56x77_5
+  - first:
+      213: -7216507303420515972
+    second: turbo_PointNum_56x77_6
+  - first:
+      213: 5382248755429909630
+    second: turbo_PointNum_56x77_7
+  - first:
+      213: -5980648369745425934
+    second: turbo_PointNum_56x77_8
+  - first:
+      213: -4191680946070181546
+    second: turbo_PointNum_56x77_9
+  - first:
+      213: -3927814770870330162
+    second: turbo_PointNum_56x77_10
+  - first:
+      213: -7152628835705356355
+    second: turbo_PointNum_56x77_11
+  - first:
+      213: -1905456420269366174
+    second: turbo_PointNum_56x77_12
+  - first:
+      213: 4536891907460876814
+    second: turbo_PointNum_56x77_13
+  - first:
+      213: 6653531613695390332
+    second: turbo_PointNum_56x77_14
+  - first:
+      213: 21422622467685549
+    second: turbo_PointNum_56x77_15
+  - first:
+      213: 4478306987605653889
+    second: turbo_PointNum_56x77_16
+  - first:
+      213: 4692390755298703888
+    second: turbo_PointNum_56x77_17
+  - first:
+      213: -8748651201255176644
+    second: turbo_PointNum_56x77_18
+  - first:
+      213: -3226740594571725487
+    second: turbo_PointNum_56x77_19
+  - first:
+      213: 1252031933817301692
+    second: turbo_PointNum_56x77_20
+  - first:
+      213: -4408117147389649493
+    second: turbo_PointNum_56x77_21
+  - first:
+      213: 8671311037244599992
+    second: turbo_PointNum_56x77_22
+  - first:
+      213: 6377427644903851229
+    second: turbo_PointNum_56x77_23
+  - first:
+      213: 4936997861188476922
+    second: turbo_PointNum_56x77_24
+  - first:
+      213: 935622551814958628
+    second: turbo_PointNum_56x77_25
+  - first:
+      213: 3799143616755110491
+    second: turbo_PointNum_56x77_26
+  - first:
+      213: -8823437208100917213
+    second: turbo_PointNum_56x77_27
+  - first:
+      213: 1243240428467027977
+    second: turbo_PointNum_56x77_28
+  - first:
+      213: 817346988573336508
+    second: turbo_PointNum_56x77_29
+  - first:
+      213: 1706310408212693994
+    second: turbo_PointNum_56x77_30
+  - first:
+      213: 5100830631536135559
+    second: turbo_PointNum_56x77_31
+  - first:
+      213: 495220163962101370
+    second: turbo_PointNum_56x77_32
+  - first:
+      213: 857709044690307156
+    second: turbo_PointNum_56x77_33
+  - first:
+      213: -7294242335276236572
+    second: turbo_PointNum_56x77_34
+  - first:
+      213: 5687718104234839531
+    second: turbo_PointNum_56x77_35
+  - first:
+      213: 3129086524554883073
+    second: turbo_PointNum_56x77_36
+  - first:
+      213: 3710494438879390900
+    second: turbo_PointNum_56x77_37
+  - first:
+      213: 7014340486965727340
+    second: turbo_PointNum_56x77_38
+  - first:
+      213: 8956647007134562646
+    second: turbo_PointNum_56x77_39
+  - first:
+      213: -2525293068645731657
+    second: turbo_PointNum_56x77_40
+  - first:
+      213: 6412660142692513572
+    second: turbo_PointNum_56x77_41
+  - first:
+      213: 7553269744665709380
+    second: turbo_PointNum_56x77_42
+  - first:
+      213: -6072151281899990219
+    second: turbo_PointNum_56x77_43
+  - first:
+      213: -1439869216807439837
+    second: turbo_PointNum_56x77_44
+  - first:
+      213: -1377401128812348128
+    second: turbo_PointNum_56x77_45
+  - first:
+      213: 646850529301571484
+    second: turbo_PointNum_56x77_46
+  - first:
+      213: -4770880922677840137
+    second: turbo_PointNum_56x77_47
+  - first:
+      213: -5568924319507804613
+    second: turbo_PointNum_56x77_48
+  - first:
+      213: 4804774547832643056
+    second: turbo_PointNum_56x77_49
+  - first:
+      213: 8516042206742518309
+    second: turbo_PointNum_56x77_50
+  - first:
+      213: -1252250296419293513
+    second: turbo_PointNum_56x77_51
+  - first:
+      213: 9214660983981580610
+    second: turbo_PointNum_56x77_52
+  - first:
+      213: -2384054793062860180
+    second: turbo_PointNum_56x77_53
+  - first:
+      213: 6268522979918211439
+    second: turbo_PointNum_56x77_54
+  - first:
+      213: -6883453845440205892
+    second: turbo_PointNum_56x77_55
+  - first:
+      213: 8727265759356701797
+    second: turbo_PointNum_56x77_56
+  - first:
+      213: -918127072514646424
+    second: turbo_PointNum_56x77_57
+  - first:
+      213: -3439776804551911005
+    second: turbo_PointNum_56x77_58
+  - first:
+      213: 7248243972663732177
+    second: turbo_PointNum_56x77_59
+  - first:
+      213: -4437898657280599300
+    second: turbo_PointNum_56x77_60
+  - first:
+      213: -4434407461799797428
+    second: turbo_PointNum_56x77_61
+  - first:
+      213: -8290141365165063506
+    second: turbo_PointNum_56x77_62
+  - first:
+      213: 8383924845763597921
+    second: turbo_PointNum_56x77_63
+  - first:
+      213: -3322056975147502263
+    second: turbo_PointNum_56x77_64
+  - first:
+      213: -8154296325206963180
+    second: turbo_PointNum_56x77_65
+  - first:
+      213: 7845721899063588327
+    second: turbo_PointNum_56x77_66
+  - first:
+      213: -5289334781149941211
+    second: turbo_PointNum_56x77_67
+  - first:
+      213: -689009851494033496
+    second: turbo_PointNum_56x77_68
+  - first:
+      213: 5387578986261680200
+    second: turbo_PointNum_56x77_69
+  - first:
+      213: -1260559652894755371
+    second: turbo_PointNum_56x77_70
+  - first:
+      213: -2662154981510617135
+    second: turbo_PointNum_56x77_71
+  - first:
+      213: -3147534491615604847
+    second: turbo_PointNum_56x77_72
+  - first:
+      213: -7616902499762696693
+    second: turbo_PointNum_56x77_73
+  - first:
+      213: 9137571432101579921
+    second: turbo_PointNum_56x77_74
+  - first:
+      213: -1221832990572662884
+    second: turbo_PointNum_56x77_75
+  - first:
+      213: -1728222944410931947
+    second: turbo_PointNum_56x77_76
+  - first:
+      213: 8882807152598610605
+    second: turbo_PointNum_56x77_77
+  - first:
+      213: 1549958522117345102
+    second: turbo_PointNum_56x77_78
+  - first:
+      213: -3213957427352241356
+    second: turbo_PointNum_56x77_79
+  - first:
+      213: -518906792476251868
+    second: turbo_PointNum_56x77_80
+  - first:
+      213: 6592880874558532113
+    second: turbo_PointNum_56x77_81
+  - first:
+      213: 3436926001840625817
+    second: turbo_PointNum_56x77_82
+  - first:
+      213: 6342779496480295293
+    second: turbo_PointNum_56x77_83
+  - first:
+      213: -4013648354191145154
+    second: turbo_PointNum_56x77_84
+  - first:
+      213: -8423310144665750466
+    second: turbo_PointNum_56x77_85
+  - first:
+      213: -7556348360536694780
+    second: turbo_PointNum_56x77_86
+  - first:
+      213: -1794096687703178557
+    second: turbo_PointNum_56x77_87
+  - first:
+      213: -3298694708327806029
+    second: turbo_PointNum_56x77_88
+  - first:
+      213: 809228134434253937
+    second: turbo_PointNum_56x77_89
+  - first:
+      213: -7433495703628774156
+    second: turbo_PointNum_56x77_90
+  - first:
+      213: 2551179346951400780
+    second: turbo_PointNum_56x77_91
+  - first:
+      213: -2785555171768349975
+    second: turbo_PointNum_56x77_92
+  - first:
+      213: -8641939738237418401
+    second: turbo_PointNum_56x77_93
+  - first:
+      213: 5156315099955822370
+    second: turbo_PointNum_56x77_94
+  - first:
+      213: -7190407575443292038
+    second: turbo_PointNum_56x77_95
+  - first:
+      213: 5330918697458469920
+    second: turbo_PointNum_56x77_96
+  - first:
+      213: -5777116025017344829
+    second: turbo_PointNum_56x77_97
+  - first:
+      213: -6735976436093728012
+    second: turbo_PointNum_56x77_98
+  - first:
+      213: -7593981055464570888
+    second: turbo_PointNum_56x77_99
+  - first:
+      213: -6360123086117955615
+    second: turbo_PointNum_56x77_100
+  - first:
+      213: -7317420583245178115
+    second: turbo_PointNum_56x77_101
+  - first:
+      213: -4463780019827933250
+    second: turbo_PointNum_56x77_102
+  - first:
+      213: 5448049770115948374
+    second: turbo_PointNum_56x77_103
+  - first:
+      213: 3584818553946100298
+    second: turbo_PointNum_56x77_104
+  - first:
+      213: -7135323424338367068
+    second: turbo_PointNum_56x77_105
+  - first:
+      213: -5839046770945213772
+    second: turbo_PointNum_56x77_106
+  - first:
+      213: 5530592540418767370
+    second: turbo_PointNum_56x77_107
+  - first:
+      213: -8809485169748914554
+    second: turbo_PointNum_56x77_108
+  - first:
+      213: -2971236229373290913
+    second: turbo_PointNum_56x77_109
+  - first:
+      213: -2649737348266165685
+    second: turbo_PointNum_56x77_110
+  - first:
+      213: -459546180448627567
+    second: turbo_PointNum_56x77_111
+  - first:
+      213: 8249061836649947083
+    second: turbo_PointNum_56x77_112
+  - first:
+      213: 7223550283399991058
+    second: turbo_PointNum_56x77_113
+  - first:
+      213: -4112376107005077435
+    second: turbo_PointNum_56x77_114
+  - first:
+      213: 6160725413137850557
+    second: turbo_PointNum_56x77_115
+  - first:
+      213: 2187806778255848859
+    second: turbo_PointNum_56x77_116
+  - first:
+      213: 914109482262508556
+    second: turbo_PointNum_56x77_117
+  - first:
+      213: 5972411766903425825
+    second: turbo_PointNum_56x77_118
+  - first:
+      213: 5913630587231205717
+    second: turbo_PointNum_56x77_119
+  - first:
+      213: 662853493566988013
+    second: turbo_PointNum_56x77_120
+  - first:
+      213: -6422672898506033591
+    second: turbo_PointNum_56x77_121
+  - first:
+      213: 7126753345929263873
+    second: turbo_PointNum_56x77_122
+  - first:
+      213: -8187904642696761986
+    second: turbo_PointNum_56x77_123
+  - first:
+      213: 1397526876045441623
+    second: turbo_PointNum_56x77_124
+  - first:
+      213: -8382237534749646352
+    second: turbo_PointNum_56x77_125
+  - first:
+      213: 1411366238914194297
+    second: turbo_PointNum_56x77_126
+  - first:
+      213: -6130680946630084590
+    second: turbo_PointNum_56x77_127
+  - first:
+      213: 2388469609420306052
+    second: turbo_PointNum_56x77_128
+  - first:
+      213: -8946969183655112187
+    second: turbo_PointNum_56x77_129
+  - first:
+      213: -3499788427859179711
+    second: turbo_PointNum_56x77_130
+  - first:
+      213: 8111369017124988332
+    second: turbo_PointNum_56x77_131
+  - first:
+      213: 7388885763035371766
+    second: turbo_PointNum_56x77_132
+  - first:
+      213: 1741780261763849939
+    second: turbo_PointNum_56x77_133
+  - first:
+      213: 5906813704782828587
+    second: turbo_PointNum_56x77_134
+  - first:
+      213: 8547204165340991779
+    second: turbo_PointNum_56x77_135
+  - first:
+      213: 6257696548149885235
+    second: turbo_PointNum_56x77_136
+  - first:
+      213: 2387878782861229494
+    second: turbo_PointNum_56x77_137
+  - first:
+      213: -1585152423189302969
+    second: turbo_PointNum_56x77_138
+  - first:
+      213: -3925368135312650087
+    second: turbo_PointNum_56x77_139
+  - first:
+      213: 5350540123898250623
+    second: turbo_PointNum_56x77_140
+  - first:
+      213: 3673025462791526545
+    second: turbo_PointNum_56x77_141
+  - first:
+      213: 4640224739547651112
+    second: turbo_PointNum_56x77_142
+  - first:
+      213: 2606323550922858507
+    second: turbo_PointNum_56x77_143
+  - first:
+      213: -5577644973661582454
+    second: turbo_PointNum_56x77_144
+  - first:
+      213: -8277175431344856787
+    second: turbo_PointNum_56x77_145
+  - first:
+      213: -4326303018954330937
+    second: turbo_PointNum_56x77_146
+  - first:
+      213: -5555739785289041790
+    second: turbo_PointNum_56x77_147
+  - first:
+      213: 2326697761442973610
+    second: turbo_PointNum_56x77_148
+  - first:
+      213: 1243449916720757761
+    second: turbo_PointNum_56x77_149
+  - first:
+      213: 959410545250160728
+    second: turbo_PointNum_56x77_150
+  - first:
+      213: 4074074648843204783
+    second: turbo_PointNum_56x77_151
+  - first:
+      213: -9031576270685110598
+    second: turbo_PointNum_56x77_152
+  - first:
+      213: 8403740838123260468
+    second: turbo_PointNum_56x77_153
+  - first:
+      213: -4496432860778630099
+    second: turbo_PointNum_56x77_154
+  - first:
+      213: -5300991150335030830
+    second: turbo_PointNum_56x77_155
+  - first:
+      213: 5963826308502235711
+    second: turbo_PointNum_56x77_156
+  - first:
+      213: 3755679323983262634
+    second: turbo_PointNum_56x77_157
+  - first:
+      213: 2260311880207638089
+    second: turbo_PointNum_56x77_158
+  - first:
+      213: 4049762425000378560
+    second: turbo_PointNum_56x77_159
+  - first:
+      213: -8484125048531681419
+    second: turbo_PointNum_56x77_160
+  - first:
+      213: 1345704785534007844
+    second: turbo_PointNum_56x77_161
+  - first:
+      213: 1780356562239116640
+    second: turbo_PointNum_56x77_162
+  - first:
+      213: -7732388678905537928
+    second: turbo_PointNum_56x77_163
+  - first:
+      213: -7195508886197736904
+    second: turbo_PointNum_56x77_164
+  - first:
+      213: -7788101234715858686
+    second: turbo_PointNum_56x77_165
+  - first:
+      213: -3712586394855428535
+    second: turbo_PointNum_56x77_166
+  - first:
+      213: 2505280119820748765
+    second: turbo_PointNum_56x77_167
+  - first:
+      213: 2801004154804585032
+    second: turbo_PointNum_56x77_168
+  - first:
+      213: 7365281562600089463
+    second: turbo_PointNum_56x77_169
+  - first:
+      213: -8909359143869734472
+    second: turbo_PointNum_56x77_170
+  - first:
+      213: 5391511099694345142
+    second: turbo_PointNum_56x77_171
+  - first:
+      213: 2354379181036637520
+    second: turbo_PointNum_56x77_172
+  - first:
+      213: -7179201189819172761
+    second: turbo_PointNum_56x77_173
+  - first:
+      213: -4697252783032750946
+    second: turbo_PointNum_56x77_174
+  - first:
+      213: 1413189762867639059
+    second: turbo_PointNum_56x77_175
+  - first:
+      213: 4129929786388324443
+    second: turbo_PointNum_56x77_176
+  - first:
+      213: 1090886167005728168
+    second: turbo_PointNum_56x77_177
+  - first:
+      213: -3299204538403504346
+    second: turbo_PointNum_56x77_178
+  - first:
+      213: 5289340129299527844
+    second: turbo_PointNum_56x77_179
+  - first:
+      213: 1066917062982276591
+    second: turbo_PointNum_56x77_180
+  - first:
+      213: -8268986911085737373
+    second: turbo_PointNum_56x77_181
+  - first:
+      213: 4754328702141699441
+    second: turbo_PointNum_56x77_182
+  - first:
+      213: 5402788717086447258
+    second: turbo_PointNum_56x77_183
+  - first:
+      213: -7753187404058857153
+    second: turbo_PointNum_56x77_184
+  - first:
+      213: -777096889051271349
+    second: turbo_PointNum_56x77_185
+  - first:
+      213: 4341426508804467721
+    second: turbo_PointNum_56x77_186
+  - first:
+      213: 6506278888948996258
+    second: turbo_PointNum_56x77_187
+  - first:
+      213: -6811788299287621673
+    second: turbo_PointNum_56x77_188
+  - first:
+      213: -2710993288632262973
+    second: turbo_PointNum_56x77_189
+  - first:
+      213: -1812980345479990423
+    second: turbo_PointNum_56x77_190
+  - first:
+      213: 8473167790474518247
+    second: turbo_PointNum_56x77_191
+  - first:
+      213: 7997480211645206178
+    second: turbo_PointNum_56x77_192
+  - first:
+      213: 2737950537486856833
+    second: turbo_PointNum_56x77_193
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 1
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.1
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 16
+    mipBias: -0.5
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 2
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: 2
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a293f4fcfade0a0800000000000000
+      internalID: -6850626153238418892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9d3f62a5cfd6290800000000000000
+      internalID: -7895377107579840017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91882d0cda34657b0800000000000000
+      internalID: -5235923103228196839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b561f806fea6ab0800000000000000
+      internalID: -5013932037127119980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046049ea9adc84c00800000000000000
+      internalID: 885183455440406080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_5
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567c4c8997d120810800000000000000
+      internalID: 1729977614954973029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_6
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79ab9c97d0d9db90800000000000000
+      internalID: -7216507303420515972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_7
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7420380ab691ba40800000000000000
+      internalID: 5382248755429909630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_8
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f90eca9ef7700da0800000000000000
+      internalID: -5980648369745425934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_9
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659a6b5536824d5c0800000000000000
+      internalID: -4191680946070181546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_10
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccddbeb6499d79c0800000000000000
+      internalID: -3927814770870330162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_11
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbff09d58f1ccbc90800000000000000
+      internalID: -7152628835705356355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_12
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2646bd63b757e85e0800000000000000
+      internalID: -1905456420269366174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_13
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0acc80072746fe30800000000000000
+      internalID: 4536891907460876814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_14
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 924
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72352030c7165c50800000000000000
+      internalID: 6653531613695390332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dacf75af2cb1c4000800000000000000
+      internalID: 21422622467685549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_16
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18972676a74262e30800000000000000
+      internalID: 4478306987605653889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_17
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01af7e4d788be1140800000000000000
+      internalID: 4692390755298703888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_18
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c360465b51c869680800000000000000
+      internalID: -8748651201255176644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_19
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155383676805833d0800000000000000
+      internalID: -3226740594571725487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba20a6096c106110800000000000000
+      internalID: 1252031933817301692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_21
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad18854fc833d2c0800000000000000
+      internalID: -4408117147389649493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_22
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be63ef127fa65870800000000000000
+      internalID: 8671311037244599992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_23
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4004b67ac218850800000000000000
+      internalID: 6377427644903851229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_24
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff900db56db38440800000000000000
+      internalID: 4936997861188476922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_25
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e66c4f0cffbfc00800000000000000
+      internalID: 935622551814958628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_26
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52916f9df449b430800000000000000
+      internalID: 3799143616755110491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_27
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3203e299b9adc8580800000000000000
+      internalID: -8823437208100917213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_28
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9008e2d2590e04110800000000000000
+      internalID: 1243240428467027977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_29
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 847
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3262071ccc75b00800000000000000
+      internalID: 817346988573336508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3c11e96480ea710800000000000000
+      internalID: 1706310408212693994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_31
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d842c1f6ac9c640800000000000000
+      internalID: 5100830631536135559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_32
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e52968d106fd600800000000000000
+      internalID: 495220163962101370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_33
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458c761f4d137eb00800000000000000
+      internalID: 857709044690307156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_34
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e08e3c1e35a5ca90800000000000000
+      internalID: -7294242335276236572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_35
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bedc9712b75deee40800000000000000
+      internalID: 5687718104234839531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_36
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1003e8f8d9fbc6b20800000000000000
+      internalID: 3129086524554883073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_37
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bce77a78035e7330800000000000000
+      internalID: 3710494438879390900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_38
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c609b336281f75160800000000000000
+      internalID: 7014340486965727340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_39
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65932d6aff66c4c70800000000000000
+      internalID: 8956647007134562646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_40
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b27d99655b54fcd0800000000000000
+      internalID: -2525293068645731657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_41
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4273e7e8c685ef850800000000000000
+      internalID: 6412660142692513572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_42
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b418750da92d860800000000000000
+      internalID: 7553269744665709380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_43
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5331beba4926bbba0800000000000000
+      internalID: -6072151281899990219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_44
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 770
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3223c29739e840ce0800000000000000
+      internalID: -1439869216807439837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02dfaeb98fc72ece0800000000000000
+      internalID: -1377401128812348128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_46
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c972bc511231af800800000000000000
+      internalID: 646850529301571484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_47
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6791af31d6acdb0800000000000000
+      internalID: -4770880922677840137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_48
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e04ba36d437b2b0800000000000000
+      internalID: -5568924319507804613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_49
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd17659efcfda240800000000000000
+      internalID: 4804774547832643056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_50
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a1f11644f0f2670800000000000000
+      internalID: 8516042206742518309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_51
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6ec087dfc1f9ee0800000000000000
+      internalID: -1252250296419293513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_52
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241afd3f75d01ef70800000000000000
+      internalID: 9214660983981580610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_53
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6abb660cc22aeed0800000000000000
+      internalID: -2384054793062860180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_54
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69e56c20744ef650800000000000000
+      internalID: 6268522979918211439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_55
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb6dba923f0970a0800000000000000
+      internalID: -6883453845440205892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_56
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cc2e618f97d1970800000000000000
+      internalID: 8727265759356701797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_57
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e5810ca482243f0800000000000000
+      internalID: -918127072514646424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_58
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a91e0298357340d0800000000000000
+      internalID: -3439776804551911005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_59
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 693
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7ecf38d7fe69460800000000000000
+      internalID: 7248243972663732177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa5b972faa6962c0800000000000000
+      internalID: -4437898657280599300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_61
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4dd41278e1d572c0800000000000000
+      internalID: -4434407461799797428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_62
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea28097f95083fc80800000000000000
+      internalID: -8290141365165063506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_63
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1669f4f2a3fa95470800000000000000
+      internalID: 8383924845763597921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_64
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94579b838cea5e1d0800000000000000
+      internalID: -3322056975147502263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_65
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c04ce02be16de80800000000000000
+      internalID: -8154296325206963180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_66
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e53030bf7a91ec60800000000000000
+      internalID: 7845721899063588327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_67
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52270776a028896b0800000000000000
+      internalID: -5289334781149941211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_68
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a714fac0352076f0800000000000000
+      internalID: -689009851494033496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_69
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8409c7b1b8684ca40800000000000000
+      internalID: 5387578986261680200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_70
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5b407aca7918ee0800000000000000
+      internalID: -1260559652894755371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_71
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7e50626202e0bd0800000000000000
+      internalID: -2662154981510617135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_72
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f46f46e06b154d0800000000000000
+      internalID: -3147534491615604847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_73
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e0cd458835b4690800000000000000
+      internalID: -7616902499762696693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_74
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 616
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c0c28fdcc2fce70800000000000000
+      internalID: 9137571432101579921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f201e5e5d2b0fe0800000000000000
+      internalID: -1221832990572662884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_76
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51de4b9736e1408e0800000000000000
+      internalID: -1728222944410931947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_77
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da270faca02164b70800000000000000
+      internalID: 8882807152598610605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_78
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fc467501f828510800000000000000
+      internalID: 1549958522117345102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_79
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bf0738fbab563d0800000000000000
+      internalID: -3213957427352241356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_80
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4296ae285097cc8f0800000000000000
+      internalID: -518906792476251868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_81
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a278e893e9e7b50800000000000000
+      internalID: 6592880874558532113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_82
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99893033df962bf20800000000000000
+      internalID: 3436926001840625817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_83
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79c658b854160850800000000000000
+      internalID: 6342779496480295293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_84
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e370b1b4618ac48c0800000000000000
+      internalID: -4013648354191145154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_85
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34f0425d046a1b80800000000000000
+      internalID: -8423310144665750466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_86
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400ea1b8335722790800000000000000
+      internalID: -7556348360536694780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_87
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c24fbc61961a17e0800000000000000
+      internalID: -1794096687703178557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_88
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb09a7d3aea832d0800000000000000
+      internalID: -3298694708327806029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_89
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 539
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ca43763b4fa3b00800000000000000
+      internalID: 809228134434253937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f480d9ba0be6d890800000000000000
+      internalID: -7433495703628774156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_91
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4de95d691c976320800000000000000
+      internalID: 2551179346951400780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_92
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eace7c6458b759d0800000000000000
+      internalID: -2785555171768349975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_93
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54c6045899a11880800000000000000
+      internalID: -8641939738237418401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_94
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f79da9349ee8740800000000000000
+      internalID: 5156315099955822370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_95
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70cc63186a863c90800000000000000
+      internalID: -7190407575443292038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_96
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c00889f4a3bf940800000000000000
+      internalID: 5330918697458469920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_97
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccdf9e659f83dfa0800000000000000
+      internalID: -5777116025017344829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_98
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa4b3fbe110582a0800000000000000
+      internalID: -6735976436093728012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_99
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fffcf5f672cc9690800000000000000
+      internalID: -7593981055464570888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_100
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e79d2420cd4cb7a0800000000000000
+      internalID: -6360123086117955615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_101
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa1a87bfbc437a90800000000000000
+      internalID: -7317420583245178115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_102
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf7baad8b77d02c0800000000000000
+      internalID: -4463780019827933250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_103
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fd862a66c5b9b40800000000000000
+      internalID: 5448049770115948374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_104
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 462
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42df2c4b75dfb130800000000000000
+      internalID: 3584818553946100298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ada9ce662d3afc90800000000000000
+      internalID: -7135323424338367068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_106
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba3beef5e987fea0800000000000000
+      internalID: -5839046770945213772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_107
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0af519fc9c90cc40800000000000000
+      internalID: 5530592540418767370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_108
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e4b0ba9eb6eb580800000000000000
+      internalID: -8809485169748914554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_109
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f561f64446c04c6d0800000000000000
+      internalID: -2971236229373290913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_110
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a7280bbed3a3bd0800000000000000
+      internalID: -2649737348266165685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_111
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194d8740f2d5f99f0800000000000000
+      internalID: -459546180448627567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_112
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf50c7f80e8a7270800000000000000
+      internalID: 8249061836649947083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_113
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f8a33f5b43f3460800000000000000
+      internalID: 7223550283399991058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_114
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548982f08b7ede6c0800000000000000
+      internalID: -4112376107005077435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_115
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0adc05f1b4f7550800000000000000
+      internalID: 6160725413137850557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_116
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95b12f5ca6ac5e10800000000000000
+      internalID: 2187806778255848859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_117
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04b2102bb19fac00800000000000000
+      internalID: 914109482262508556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_118
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b44aadbd442e250800000000000000
+      internalID: 5972411766903425825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_119
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 385
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559fcc4ffaf611250800000000000000
+      internalID: 5913630587231205717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deedf2e8dbde23900800000000000000
+      internalID: 662853493566988013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_121
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946f40017051ed6a0800000000000000
+      internalID: -6422672898506033591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_122
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bb0f1b86057e260800000000000000
+      internalID: 7126753345929263873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_123
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7da94ddb18be5e80800000000000000
+      internalID: -8187904642696761986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_124
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75affb21a43056310800000000000000
+      internalID: 1397526876045441623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_125
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f12d468f5f4cab80800000000000000
+      internalID: -8382237534749646352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_126
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ba576dd1e269310800000000000000
+      internalID: 1411366238914194297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_127
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218bbd829227beaa0800000000000000
+      internalID: -6130680946630084590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_128
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4863052847c852120800000000000000
+      internalID: 2388469609420306052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_129
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502ded73eeaf5d380800000000000000
+      internalID: -8946969183655112187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_130
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1474e60b7f04e6fc0800000000000000
+      internalID: -3499788427859179711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_131
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca528db252f519070800000000000000
+      internalID: 8111369017124988332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_132
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f81aa714789a8660800000000000000
+      internalID: 7388885763035371766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_133
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de98337beb0c2810800000000000000
+      internalID: 1741780261763849939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_134
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 308
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b245df3d4c739f150800000000000000
+      internalID: 5906813704782828587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32193e147e4cd9670800000000000000
+      internalID: 8547204165340991779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_136
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33979a81bddc7d650800000000000000
+      internalID: 6257696548149885235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_137
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdb22bf913732120800000000000000
+      internalID: 2387878782861229494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_138
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741b3f40548600ae0800000000000000
+      internalID: -1585152423189302969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_139
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9905d0a7a7a4689c0800000000000000
+      internalID: -3925368135312650087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_140
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f750e61f4efe04a40800000000000000
+      internalID: 5350540123898250623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_141
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19857a8a23539f230800000000000000
+      internalID: 3673025462791526545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_142
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c97bec0d3656040800000000000000
+      internalID: 4640224739547651112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_143
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00ed7ee5758b2420800000000000000
+      internalID: 2606323550922858507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_144
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b88a5b2793892b0800000000000000
+      internalID: -5577644973661582454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_145
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21691facc0912d80800000000000000
+      internalID: -8277175431344856787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_146
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cce6847352e5f3c0800000000000000
+      internalID: -4326303018954330937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_147
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2887751d91c06e2b0800000000000000
+      internalID: -5555739785289041790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_148
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7418269471a4020800000000000000
+      internalID: 2326697761442973610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_149
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 231
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c31267c1f914110800000000000000
+      internalID: 1243449916720757761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_150
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8505667cec2805d00800000000000000
+      internalID: 959410545250160728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_151
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa839b8ce450a8830800000000000000
+      internalID: 4074074648843204783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_152
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe77ffab3569a280800000000000000
+      internalID: -9031576270685110598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_153
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ac7c074c510a470800000000000000
+      internalID: 8403740838123260468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_154
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2475e0e2267991c0800000000000000
+      internalID: -4496432860778630099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_155
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d98ac672a81f66b0800000000000000
+      internalID: -5300991150335030830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_156
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3aa76c0e64c3c250800000000000000
+      internalID: 5963826308502235711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_157
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa33d4c527ade1430800000000000000
+      internalID: 3755679323983262634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_158
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e1f5dedad3e5f10800000000000000
+      internalID: 2260311880207638089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_159
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c04fde0875a33830800000000000000
+      internalID: 4049762425000378560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_160
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f764c1835524a80800000000000000
+      internalID: -8484125048531681419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_161
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a3c426f57eca210800000000000000
+      internalID: 1345704785534007844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_162
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0655cc15cd815b810800000000000000
+      internalID: 1780356562239116640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_163
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a5598e67901b490800000000000000
+      internalID: -7732388678905537928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_164
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 154
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a640c9aca642c90800000000000000
+      internalID: -7195508886197736904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_165
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209eafda03b1be390800000000000000
+      internalID: -7788101234715858686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_166
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ea1b0185e3a7cc0800000000000000
+      internalID: -3712586394855428535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_167
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd783c4defa84c220800000000000000
+      internalID: 2505280119820748765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_168
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842458d307a2fd620800000000000000
+      internalID: 2801004154804585032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_169
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7772389ee8cb63660800000000000000
+      internalID: 7365281562600089463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_170
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1244dff099b5480800000000000000
+      internalID: -8909359143869734472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_171
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb6bdb97ce72da40800000000000000
+      internalID: 5391511099694345142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_172
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d8340246f6ca020800000000000000
+      internalID: 2354379181036637520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_173
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76834cd0e8a5e5c90800000000000000
+      internalID: -7179201189819172761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_174
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c2e1f1b7100deb0800000000000000
+      internalID: -4697252783032750946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_175
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313b1f71a98ac9310800000000000000
+      internalID: 1413189762867639059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_176
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b502bf86245705930800000000000000
+      internalID: 4129929786388324443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_177
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad83ca603b932f00800000000000000
+      internalID: 1090886167005728168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_178
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f3a17c3fed632d0800000000000000
+      internalID: -3299204538403504346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_179
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 77
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8fd1fc2d2876940800000000000000
+      internalID: 5289340129299527844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe59cdf7a637ece00800000000000000
+      internalID: 1066917062982276591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_181
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a41602738ae3d80800000000000000
+      internalID: -8268986911085737373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_182
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175999cd3c4caf140800000000000000
+      internalID: 4754328702141699441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_183
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a961d6686bf8afa40800000000000000
+      internalID: 5402788717086447258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_184
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31f9085225276490800000000000000
+      internalID: -7753187404058857153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_185
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fa9042f723735f0800000000000000
+      internalID: -777096889051271349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_186
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c21cb6868df3c30800000000000000
+      internalID: 4341426508804467721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_187
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a89d618d22fa4a50800000000000000
+      internalID: 6506278888948996258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_188
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df8cc7d1aaa771a0800000000000000
+      internalID: -6811788299287621673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_189
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce1b9aa7fd906ad0800000000000000
+      internalID: -2710993288632262973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_190
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96376ea3bfff6d6e0800000000000000
+      internalID: -1812980345479990423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_191
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eed381763db69570800000000000000
+      internalID: 8473167790474518247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_192
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae045941e1ccfe60800000000000000
+      internalID: 7997480211645206178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_PointNum_56x77_193
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 0
+        width: 62
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1827e7fe1872ff520800000000000000
+      internalID: 2737950537486856833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 68e061667f050ff40aa34f75d4b00060
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      turbo_PointNum_56x77_35: 5687718104234839531
+      turbo_PointNum_56x77_123: -8187904642696761986
+      turbo_PointNum_56x77_74: 9137571432101579921
+      turbo_PointNum_56x77_13: 4536891907460876814
+      turbo_PointNum_56x77_113: 7223550283399991058
+      turbo_PointNum_56x77_142: 4640224739547651112
+      turbo_PointNum_56x77_8: -5980648369745425934
+      turbo_PointNum_56x77_38: 7014340486965727340
+      turbo_PointNum_56x77_57: -918127072514646424
+      turbo_PointNum_56x77_66: 7845721899063588327
+      turbo_PointNum_56x77_10: -3927814770870330162
+      turbo_PointNum_56x77_114: -4112376107005077435
+      turbo_PointNum_56x77_119: 5913630587231205717
+      turbo_PointNum_56x77_138: -1585152423189302969
+      turbo_PointNum_56x77_56: 8727265759356701797
+      turbo_PointNum_56x77_111: -459546180448627567
+      turbo_PointNum_56x77_137: 2387878782861229494
+      turbo_PointNum_56x77_2: -5235923103228196839
+      turbo_PointNum_56x77_44: -1439869216807439837
+      turbo_PointNum_56x77_63: 8383924845763597921
+      turbo_PointNum_56x77_103: 5448049770115948374
+      turbo_PointNum_56x77_128: 2388469609420306052
+      turbo_PointNum_56x77_69: 5387578986261680200
+      turbo_PointNum_56x77_64: -3322056975147502263
+      turbo_PointNum_56x77_130: -3499788427859179711
+      turbo_PointNum_56x77_46: 646850529301571484
+      turbo_PointNum_56x77_159: 4049762425000378560
+      turbo_PointNum_56x77_167: 2505280119820748765
+      turbo_PointNum_56x77_189: -2710993288632262973
+      turbo_PointNum_56x77_52: 9214660983981580610
+      turbo_PointNum_56x77_184: -7753187404058857153
+      turbo_PointNum_56x77_5: 1729977614954973029
+      turbo_PointNum_56x77_9: -4191680946070181546
+      turbo_PointNum_56x77_60: -4437898657280599300
+      turbo_PointNum_56x77_188: -6811788299287621673
+      turbo_PointNum_56x77_47: -4770880922677840137
+      turbo_PointNum_56x77_18: -8748651201255176644
+      turbo_PointNum_56x77_26: 3799143616755110491
+      turbo_PointNum_56x77_180: 1066917062982276591
+      turbo_PointNum_56x77_76: -1728222944410931947
+      turbo_PointNum_56x77_75: -1221832990572662884
+      turbo_PointNum_56x77_141: 3673025462791526545
+      turbo_PointNum_56x77_4: 885183455440406080
+      turbo_PointNum_56x77_178: -3299204538403504346
+      turbo_PointNum_56x77_49: 4804774547832643056
+      turbo_PointNum_56x77_61: -4434407461799797428
+      turbo_PointNum_56x77_185: -777096889051271349
+      turbo_PointNum_56x77_182: 4754328702141699441
+      turbo_PointNum_56x77_160: -8484125048531681419
+      turbo_PointNum_56x77_174: -4697252783032750946
+      turbo_PointNum_56x77_140: 5350540123898250623
+      turbo_PointNum_56x77_162: 1780356562239116640
+      turbo_PointNum_56x77_50: 8516042206742518309
+      turbo_PointNum_56x77_168: 2801004154804585032
+      turbo_PointNum_56x77_146: -4326303018954330937
+      turbo_PointNum_56x77_109: -2971236229373290913
+      turbo_PointNum_56x77_39: 8956647007134562646
+      turbo_PointNum_56x77_135: 8547204165340991779
+      turbo_PointNum_56x77_33: 857709044690307156
+      turbo_PointNum_56x77_83: 6342779496480295293
+      turbo_PointNum_56x77_106: -5839046770945213772
+      turbo_PointNum_56x77_99: -7593981055464570888
+      turbo_PointNum_56x77_3: -5013932037127119980
+      turbo_PointNum_56x77_124: 1397526876045441623
+      turbo_PointNum_56x77_6: -7216507303420515972
+      turbo_PointNum_56x77_133: 1741780261763849939
+      turbo_PointNum_56x77_125: -8382237534749646352
+      turbo_PointNum_56x77_67: -5289334781149941211
+      turbo_PointNum_56x77_172: 2354379181036637520
+      turbo_PointNum_56x77_143: 2606323550922858507
+      turbo_PointNum_56x77_173: -7179201189819172761
+      turbo_PointNum_56x77_53: -2384054793062860180
+      turbo_PointNum_56x77_163: -7732388678905537928
+      turbo_PointNum_56x77_51: -1252250296419293513
+      turbo_PointNum_56x77_186: 4341426508804467721
+      turbo_PointNum_56x77_29: 817346988573336508
+      turbo_PointNum_56x77_118: 5972411766903425825
+      turbo_PointNum_56x77_129: -8946969183655112187
+      turbo_PointNum_56x77_54: 6268522979918211439
+      turbo_PointNum_56x77_1: -7895377107579840017
+      turbo_PointNum_56x77_16: 4478306987605653889
+      turbo_PointNum_56x77_81: 6592880874558532113
+      turbo_PointNum_56x77_104: 3584818553946100298
+      turbo_PointNum_56x77_181: -8268986911085737373
+      turbo_PointNum_56x77_79: -3213957427352241356
+      turbo_PointNum_56x77_77: 8882807152598610605
+      turbo_PointNum_56x77_23: 6377427644903851229
+      turbo_PointNum_56x77_98: -6735976436093728012
+      turbo_PointNum_56x77_150: 959410545250160728
+      turbo_PointNum_56x77_58: -3439776804551911005
+      turbo_PointNum_56x77_183: 5402788717086447258
+      turbo_PointNum_56x77_48: -5568924319507804613
+      turbo_PointNum_56x77_187: 6506278888948996258
+      turbo_PointNum_56x77_127: -6130680946630084590
+      turbo_PointNum_56x77_15: 21422622467685549
+      turbo_PointNum_56x77_11: -7152628835705356355
+      turbo_PointNum_56x77_70: -1260559652894755371
+      turbo_PointNum_56x77_88: -3298694708327806029
+      turbo_PointNum_56x77_121: -6422672898506033591
+      turbo_PointNum_56x77_157: 3755679323983262634
+      turbo_PointNum_56x77_14: 6653531613695390332
+      turbo_PointNum_56x77_82: 3436926001840625817
+      turbo_PointNum_56x77_96: 5330918697458469920
+      turbo_PointNum_56x77_145: -8277175431344856787
+      turbo_PointNum_56x77_87: -1794096687703178557
+      turbo_PointNum_56x77_90: -7433495703628774156
+      turbo_PointNum_56x77_166: -3712586394855428535
+      turbo_PointNum_56x77_30: 1706310408212693994
+      turbo_PointNum_56x77_91: 2551179346951400780
+      turbo_PointNum_56x77_126: 1411366238914194297
+      turbo_PointNum_56x77_68: -689009851494033496
+      turbo_PointNum_56x77_155: -5300991150335030830
+      turbo_PointNum_56x77_93: -8641939738237418401
+      turbo_PointNum_56x77_161: 1345704785534007844
+      turbo_PointNum_56x77_117: 914109482262508556
+      turbo_PointNum_56x77_149: 1243449916720757761
+      turbo_PointNum_56x77_112: 8249061836649947083
+      turbo_PointNum_56x77_179: 5289340129299527844
+      turbo_PointNum_56x77_97: -5777116025017344829
+      turbo_PointNum_56x77_131: 8111369017124988332
+      turbo_PointNum_56x77_191: 8473167790474518247
+      turbo_PointNum_56x77_136: 6257696548149885235
+      turbo_PointNum_56x77_42: 7553269744665709380
+      turbo_PointNum_56x77_73: -7616902499762696693
+      turbo_PointNum_56x77_65: -8154296325206963180
+      turbo_PointNum_56x77_105: -7135323424338367068
+      turbo_PointNum_56x77_108: -8809485169748914554
+      turbo_PointNum_56x77_40: -2525293068645731657
+      turbo_PointNum_56x77_80: -518906792476251868
+      turbo_PointNum_56x77_151: 4074074648843204783
+      turbo_PointNum_56x77_92: -2785555171768349975
+      turbo_PointNum_56x77_190: -1812980345479990423
+      turbo_PointNum_56x77_122: 7126753345929263873
+      turbo_PointNum_56x77_139: -3925368135312650087
+      turbo_PointNum_56x77_45: -1377401128812348128
+      turbo_PointNum_56x77_55: -6883453845440205892
+      turbo_PointNum_56x77_86: -7556348360536694780
+      turbo_PointNum_56x77_102: -4463780019827933250
+      turbo_PointNum_56x77_116: 2187806778255848859
+      turbo_PointNum_56x77_164: -7195508886197736904
+      turbo_PointNum_56x77_158: 2260311880207638089
+      turbo_PointNum_56x77_171: 5391511099694345142
+      turbo_PointNum_56x77_37: 3710494438879390900
+      turbo_PointNum_56x77_62: -8290141365165063506
+      turbo_PointNum_56x77_153: 8403740838123260468
+      turbo_PointNum_56x77_36: 3129086524554883073
+      turbo_PointNum_56x77_31: 5100830631536135559
+      turbo_PointNum_56x77_144: -5577644973661582454
+      turbo_PointNum_56x77_132: 7388885763035371766
+      turbo_PointNum_56x77_20: 1252031933817301692
+      turbo_PointNum_56x77_84: -4013648354191145154
+      turbo_PointNum_56x77_192: 7997480211645206178
+      turbo_PointNum_56x77_72: -3147534491615604847
+      turbo_PointNum_56x77_78: 1549958522117345102
+      turbo_PointNum_56x77_193: 2737950537486856833
+      turbo_PointNum_56x77_32: 495220163962101370
+      turbo_PointNum_56x77_89: 809228134434253937
+      turbo_PointNum_56x77_134: 5906813704782828587
+      turbo_PointNum_56x77_0: -6850626153238418892
+      turbo_PointNum_56x77_17: 4692390755298703888
+      turbo_PointNum_56x77_85: -8423310144665750466
+      turbo_PointNum_56x77_120: 662853493566988013
+      turbo_PointNum_56x77_107: 5530592540418767370
+      turbo_PointNum_56x77_34: -7294242335276236572
+      turbo_PointNum_56x77_41: 6412660142692513572
+      turbo_PointNum_56x77_175: 1413189762867639059
+      turbo_PointNum_56x77_21: -4408117147389649493
+      turbo_PointNum_56x77_154: -4496432860778630099
+      turbo_PointNum_56x77_19: -3226740594571725487
+      turbo_PointNum_56x77_95: -7190407575443292038
+      turbo_PointNum_56x77_169: 7365281562600089463
+      turbo_PointNum_56x77_170: -8909359143869734472
+      turbo_PointNum_56x77_165: -7788101234715858686
+      turbo_PointNum_56x77_100: -6360123086117955615
+      turbo_PointNum_56x77_24: 4936997861188476922
+      turbo_PointNum_56x77_71: -2662154981510617135
+      turbo_PointNum_56x77_101: -7317420583245178115
+      turbo_PointNum_56x77_110: -2649737348266165685
+      turbo_PointNum_56x77_152: -9031576270685110598
+      turbo_PointNum_56x77_176: 4129929786388324443
+      turbo_PointNum_56x77_59: 7248243972663732177
+      turbo_PointNum_56x77_43: -6072151281899990219
+      turbo_PointNum_56x77_177: 1090886167005728168
+      turbo_PointNum_56x77_156: 5963826308502235711
+      turbo_PointNum_56x77_147: -5555739785289041790
+      turbo_PointNum_56x77_7: 5382248755429909630
+      turbo_PointNum_56x77_28: 1243240428467027977
+      turbo_PointNum_56x77_148: 2326697761442973610
+      turbo_PointNum_56x77_115: 6160725413137850557
+      turbo_PointNum_56x77_94: 5156315099955822370
+      turbo_PointNum_56x77_25: 935622551814958628
+      turbo_PointNum_56x77_22: 8671311037244599992
+      turbo_PointNum_56x77_27: -8823437208100917213
+      turbo_PointNum_56x77_12: -1905456420269366174
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

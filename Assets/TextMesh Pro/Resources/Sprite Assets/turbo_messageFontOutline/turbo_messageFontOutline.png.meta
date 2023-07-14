@@ -1,0 +1,3422 @@
+fileFormatVersion: 2
+guid: b80666923e2331b4cab6304d7b5a5fce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8628345335185869226
+    second: turbo_messageFontOutline_50_UF_62x77_0
+  - first:
+      213: -1037523650651260563
+    second: turbo_messageFontOutline_50_UF_62x77_1
+  - first:
+      213: 6948616671547980009
+    second: turbo_messageFontOutline_50_UF_62x77_2
+  - first:
+      213: -8245037115371777325
+    second: turbo_messageFontOutline_50_UF_62x77_3
+  - first:
+      213: -9017611610010293066
+    second: turbo_messageFontOutline_50_UF_62x77_4
+  - first:
+      213: 8336833561285512968
+    second: turbo_messageFontOutline_50_UF_62x77_5
+  - first:
+      213: 413597403470621094
+    second: turbo_messageFontOutline_50_UF_62x77_6
+  - first:
+      213: 347958548919620816
+    second: turbo_messageFontOutline_50_UF_62x77_7
+  - first:
+      213: -1950470983811715051
+    second: turbo_messageFontOutline_50_UF_62x77_8
+  - first:
+      213: -1492099704670019327
+    second: turbo_messageFontOutline_50_UF_62x77_9
+  - first:
+      213: -774272603593499257
+    second: turbo_messageFontOutline_50_UF_62x77_10
+  - first:
+      213: 2712659108619696025
+    second: turbo_messageFontOutline_50_UF_62x77_11
+  - first:
+      213: -4661409289207471064
+    second: turbo_messageFontOutline_50_UF_62x77_12
+  - first:
+      213: -2980525954700267204
+    second: turbo_messageFontOutline_50_UF_62x77_13
+  - first:
+      213: 3201187601287688440
+    second: turbo_messageFontOutline_50_UF_62x77_14
+  - first:
+      213: 1126383072795174433
+    second: turbo_messageFontOutline_50_UF_62x77_15
+  - first:
+      213: 2631637237830555554
+    second: turbo_messageFontOutline_50_UF_62x77_16
+  - first:
+      213: -5730892450160657433
+    second: turbo_messageFontOutline_50_UF_62x77_17
+  - first:
+      213: 7943084226155450014
+    second: turbo_messageFontOutline_50_UF_62x77_18
+  - first:
+      213: -8686243495760089953
+    second: turbo_messageFontOutline_50_UF_62x77_19
+  - first:
+      213: 5546759513937620362
+    second: turbo_messageFontOutline_50_UF_62x77_20
+  - first:
+      213: -7677607292131173613
+    second: turbo_messageFontOutline_50_UF_62x77_21
+  - first:
+      213: -9194590303579686139
+    second: turbo_messageFontOutline_50_UF_62x77_22
+  - first:
+      213: -1924924074498680522
+    second: turbo_messageFontOutline_50_UF_62x77_23
+  - first:
+      213: 5519232560613385822
+    second: turbo_messageFontOutline_50_UF_62x77_24
+  - first:
+      213: -3014324505510074967
+    second: turbo_messageFontOutline_50_UF_62x77_25
+  - first:
+      213: -1568336261287930792
+    second: turbo_messageFontOutline_50_UF_62x77_26
+  - first:
+      213: -6729559072330349633
+    second: turbo_messageFontOutline_50_UF_62x77_27
+  - first:
+      213: 198006631494615305
+    second: turbo_messageFontOutline_50_UF_62x77_28
+  - first:
+      213: -1175286597778012569
+    second: turbo_messageFontOutline_50_UF_62x77_29
+  - first:
+      213: -5336201304863555938
+    second: turbo_messageFontOutline_50_UF_62x77_30
+  - first:
+      213: 684746666399460685
+    second: turbo_messageFontOutline_50_UF_62x77_31
+  - first:
+      213: -6104859168952213431
+    second: turbo_messageFontOutline_50_UF_62x77_32
+  - first:
+      213: -2767059152268884079
+    second: turbo_messageFontOutline_50_UF_62x77_33
+  - first:
+      213: -4625926472618532046
+    second: turbo_messageFontOutline_50_UF_62x77_34
+  - first:
+      213: -8668933995276512175
+    second: turbo_messageFontOutline_50_UF_62x77_35
+  - first:
+      213: 3485889208664062177
+    second: turbo_messageFontOutline_50_UF_62x77_36
+  - first:
+      213: 4584397730449098969
+    second: turbo_messageFontOutline_50_UF_62x77_37
+  - first:
+      213: -4602132535285983759
+    second: turbo_messageFontOutline_50_UF_62x77_38
+  - first:
+      213: 3590390628563870864
+    second: turbo_messageFontOutline_50_UF_62x77_39
+  - first:
+      213: -4038610715465974739
+    second: turbo_messageFontOutline_50_UF_62x77_40
+  - first:
+      213: 408161319100362492
+    second: turbo_messageFontOutline_50_UF_62x77_41
+  - first:
+      213: -1022227924802348100
+    second: turbo_messageFontOutline_50_UF_62x77_42
+  - first:
+      213: -2056394487802221847
+    second: turbo_messageFontOutline_50_UF_62x77_43
+  - first:
+      213: 3257511925663124188
+    second: turbo_messageFontOutline_50_UF_62x77_44
+  - first:
+      213: -5079698566001036511
+    second: turbo_messageFontOutline_50_UF_62x77_45
+  - first:
+      213: -1886065654083630242
+    second: turbo_messageFontOutline_50_UF_62x77_46
+  - first:
+      213: -3505051794677787807
+    second: turbo_messageFontOutline_50_UF_62x77_47
+  - first:
+      213: 6972218489812258428
+    second: turbo_messageFontOutline_50_UF_62x77_48
+  - first:
+      213: 8005763071464625639
+    second: turbo_messageFontOutline_50_UF_62x77_49
+  - first:
+      213: 6580985795791557495
+    second: turbo_messageFontOutline_50_UF_62x77_50
+  - first:
+      213: 488143850384495023
+    second: turbo_messageFontOutline_50_UF_62x77_51
+  - first:
+      213: -7364445770799830163
+    second: turbo_messageFontOutline_50_UF_62x77_52
+  - first:
+      213: -4915017614143110822
+    second: turbo_messageFontOutline_50_UF_62x77_53
+  - first:
+      213: 4252226422779190648
+    second: turbo_messageFontOutline_50_UF_62x77_54
+  - first:
+      213: 7616512112737145301
+    second: turbo_messageFontOutline_50_UF_62x77_55
+  - first:
+      213: 1226886754443814810
+    second: turbo_messageFontOutline_50_UF_62x77_56
+  - first:
+      213: -5921294061345412164
+    second: turbo_messageFontOutline_50_UF_62x77_57
+  - first:
+      213: -7042096377876859589
+    second: turbo_messageFontOutline_50_UF_62x77_58
+  - first:
+      213: -6050440428645248568
+    second: turbo_messageFontOutline_50_UF_62x77_59
+  - first:
+      213: -7374792748519006983
+    second: turbo_messageFontOutline_50_UF_62x77_60
+  - first:
+      213: -2961174450081854749
+    second: turbo_messageFontOutline_50_UF_62x77_61
+  - first:
+      213: -5540330204253516068
+    second: turbo_messageFontOutline_50_UF_62x77_62
+  - first:
+      213: -5562438263804050793
+    second: turbo_messageFontOutline_50_UF_62x77_63
+  - first:
+      213: 7400415138520864709
+    second: turbo_messageFontOutline_50_UF_62x77_64
+  - first:
+      213: -2616185519171974807
+    second: turbo_messageFontOutline_50_UF_62x77_65
+  - first:
+      213: -528711010248934580
+    second: turbo_messageFontOutline_50_UF_62x77_66
+  - first:
+      213: -6624762241925898316
+    second: turbo_messageFontOutline_50_UF_62x77_67
+  - first:
+      213: 5591663912530164786
+    second: turbo_messageFontOutline_50_UF_62x77_68
+  - first:
+      213: -5673033408650171769
+    second: turbo_messageFontOutline_50_UF_62x77_69
+  - first:
+      213: 3728253796200221217
+    second: turbo_messageFontOutline_50_UF_62x77_70
+  - first:
+      213: 4163239779558773324
+    second: turbo_messageFontOutline_50_UF_62x77_71
+  - first:
+      213: -362324824855083624
+    second: turbo_messageFontOutline_50_UF_62x77_72
+  - first:
+      213: 8811316920024537172
+    second: turbo_messageFontOutline_50_UF_62x77_73
+  - first:
+      213: -875098335010144757
+    second: turbo_messageFontOutline_50_UF_62x77_74
+  - first:
+      213: 6738691010906076440
+    second: turbo_messageFontOutline_50_UF_62x77_75
+  - first:
+      213: 5830138222240703247
+    second: turbo_messageFontOutline_50_UF_62x77_76
+  - first:
+      213: 5256985203823712510
+    second: turbo_messageFontOutline_50_UF_62x77_77
+  - first:
+      213: -8888445595590346205
+    second: turbo_messageFontOutline_50_UF_62x77_78
+  - first:
+      213: 7008781748310729477
+    second: turbo_messageFontOutline_50_UF_62x77_79
+  - first:
+      213: -7248554983167415614
+    second: turbo_messageFontOutline_50_UF_62x77_80
+  - first:
+      213: 1136950205786401464
+    second: turbo_messageFontOutline_50_UF_62x77_81
+  - first:
+      213: 1269699224014961638
+    second: turbo_messageFontOutline_50_UF_62x77_82
+  - first:
+      213: 5555042695102608269
+    second: turbo_messageFontOutline_50_UF_62x77_83
+  - first:
+      213: 3854294794074832218
+    second: turbo_messageFontOutline_50_UF_62x77_84
+  - first:
+      213: 238233460374576598
+    second: turbo_messageFontOutline_50_UF_62x77_85
+  - first:
+      213: 8835096125496917324
+    second: turbo_messageFontOutline_50_UF_62x77_86
+  - first:
+      213: 631408201778072474
+    second: turbo_messageFontOutline_50_UF_62x77_87
+  - first:
+      213: -5404770051723403422
+    second: turbo_messageFontOutline_50_UF_62x77_88
+  - first:
+      213: 2350352668997104070
+    second: turbo_messageFontOutline_50_UF_62x77_89
+  - first:
+      213: 1932959625555936510
+    second: turbo_messageFontOutline_50_UF_62x77_90
+  - first:
+      213: -2481484201395536091
+    second: turbo_messageFontOutline_50_UF_62x77_91
+  - first:
+      213: 5436273890396136080
+    second: turbo_messageFontOutline_50_UF_62x77_92
+  - first:
+      213: -5451415778301621266
+    second: turbo_messageFontOutline_50_UF_62x77_93
+  - first:
+      213: -8197420385929596373
+    second: turbo_messageFontOutline_50_UF_62x77_94
+  - first:
+      213: 5374433932863702742
+    second: turbo_messageFontOutline_50_UF_62x77_95
+  - first:
+      213: -1258136968399446447
+    second: turbo_messageFontOutline_50_UF_62x77_96
+  - first:
+      213: 4791277143674925536
+    second: turbo_messageFontOutline_50_UF_62x77_97
+  - first:
+      213: -8881474193533372361
+    second: turbo_messageFontOutline_50_UF_62x77_98
+  - first:
+      213: -1356863801660266573
+    second: turbo_messageFontOutline_50_UF_62x77_99
+  - first:
+      213: 1772475008521526707
+    second: turbo_messageFontOutline_50_UF_62x77_100
+  - first:
+      213: 4666650542691032341
+    second: turbo_messageFontOutline_50_UF_62x77_101
+  - first:
+      213: -8874091738280073195
+    second: turbo_messageFontOutline_50_UF_62x77_102
+  - first:
+      213: 4828554570589137334
+    second: turbo_messageFontOutline_50_UF_62x77_103
+  - first:
+      213: -3109750992746817322
+    second: turbo_messageFontOutline_50_UF_62x77_104
+  - first:
+      213: 8718874474604535970
+    second: turbo_messageFontOutline_50_UF_62x77_105
+  - first:
+      213: 6332238465390502178
+    second: turbo_messageFontOutline_50_UF_62x77_106
+  - first:
+      213: 4412729015678916682
+    second: turbo_messageFontOutline_50_UF_62x77_107
+  - first:
+      213: 2841781807958573633
+    second: turbo_messageFontOutline_50_UF_62x77_108
+  - first:
+      213: -9109082520389113809
+    second: turbo_messageFontOutline_50_UF_62x77_109
+  - first:
+      213: -3541175116881505266
+    second: turbo_messageFontOutline_50_UF_62x77_110
+  - first:
+      213: 4709750439208240754
+    second: turbo_messageFontOutline_50_UF_62x77_111
+  - first:
+      213: -2065374690288209938
+    second: turbo_messageFontOutline_50_UF_62x77_112
+  - first:
+      213: -8322528138689129003
+    second: turbo_messageFontOutline_50_UF_62x77_113
+  - first:
+      213: 5814956412387073948
+    second: turbo_messageFontOutline_50_UF_62x77_114
+  - first:
+      213: 981018285566373503
+    second: turbo_messageFontOutline_50_UF_62x77_115
+  - first:
+      213: 8197326991820482829
+    second: turbo_messageFontOutline_50_UF_62x77_116
+  - first:
+      213: 4959571933114615133
+    second: turbo_messageFontOutline_50_UF_62x77_117
+  - first:
+      213: 503998746310053596
+    second: turbo_messageFontOutline_50_UF_62x77_118
+  - first:
+      213: -6531008855032703299
+    second: turbo_messageFontOutline_50_UF_62x77_119
+  - first:
+      213: -4415912153497877127
+    second: turbo_messageFontOutline_50_UF_62x77_120
+  - first:
+      213: -856777107019355869
+    second: turbo_messageFontOutline_50_UF_62x77_121
+  - first:
+      213: -609592249544478808
+    second: turbo_messageFontOutline_50_UF_62x77_122
+  - first:
+      213: -3984520762071574493
+    second: turbo_messageFontOutline_50_UF_62x77_123
+  - first:
+      213: -3450661676615995832
+    second: turbo_messageFontOutline_50_UF_62x77_124
+  - first:
+      213: -2908086494372015054
+    second: turbo_messageFontOutline_50_UF_62x77_125
+  - first:
+      213: -1780674521637356238
+    second: turbo_messageFontOutline_50_UF_62x77_126
+  - first:
+      213: -1642692665466671486
+    second: turbo_messageFontOutline_50_UF_62x77_127
+  - first:
+      213: -720971454614507467
+    second: turbo_messageFontOutline_50_UF_62x77_128
+  - first:
+      213: 5047764647609179407
+    second: turbo_messageFontOutline_50_UF_62x77_129
+  - first:
+      213: -1204576220861455969
+    second: turbo_messageFontOutline_50_UF_62x77_130
+  - first:
+      213: -3536316608753822703
+    second: turbo_messageFontOutline_50_UF_62x77_131
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 1
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.1
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 16
+    mipBias: -0.5
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 2
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: 2
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656f8d0f1a5f14880800000000000000
+      internalID: -8628345335185869226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d697ddc9cb9f991f0800000000000000
+      internalID: -1037523650651260563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_2
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e879f32c027e6060800000000000000
+      internalID: 6948616671547980009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_3
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d29a5a7d6eb39d80800000000000000
+      internalID: -8245037115371777325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_4
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bce5ee94020bd280800000000000000
+      internalID: -9017611610010293066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_5
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f4afb14f162b370800000000000000
+      internalID: 8336833561285512968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_6
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9e3e9a5a46db500800000000000000
+      internalID: 413597403470621094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_7
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d41ae8e47234d400800000000000000
+      internalID: 347958548919620816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_8
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510323969f88ee4e0800000000000000
+      internalID: -1950470983811715051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_9
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101adad593ffa4be0800000000000000
+      internalID: -1492099704670019327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_10
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1078
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d1e775b2b3145f0800000000000000
+      internalID: -774272603593499257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9973106461d45a520800000000000000
+      internalID: 2712659108619696025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_12
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824251cd2f85f4fb0800000000000000
+      internalID: -4661409289207471064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_13
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31324a8f6b03a6d0800000000000000
+      internalID: -2980525954700267204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_14
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0332aa927ec6c20800000000000000
+      internalID: 3201187601287688440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_15
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12628f6df67b1af00800000000000000
+      internalID: 1126383072795174433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_16
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a79492ff14758420800000000000000
+      internalID: 2631637237830555554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_17
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebb43e1ea7c770b0800000000000000
+      internalID: -5730892450160657433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_18
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e0109f4018b3e60800000000000000
+      internalID: 7943084226155450014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_19
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c2ca2ff83447780800000000000000
+      internalID: -8686243495760089953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_20
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d25c2d36c0afc40800000000000000
+      internalID: 5546759513937620362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_21
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 980
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b929378d8a37590800000000000000
+      internalID: -7677607292131173613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bb1eb75d0466080800000000000000
+      internalID: -9194590303579686139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_23
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63998efb0cb4945e0800000000000000
+      internalID: -1924924074498680522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_24
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56612095c0489c40800000000000000
+      internalID: 5519232560613385822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_25
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5215335d7fa26d0800000000000000
+      internalID: -3014324505510074967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_26
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8549191da762c3ae0800000000000000
+      internalID: -1568336261287930792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_27
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb30ebeadadcb92a0800000000000000
+      internalID: -6729559072330349633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_28
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90188657bf57fb200800000000000000
+      internalID: 198006631494615305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_29
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7660a26f01b80bfe0800000000000000
+      internalID: -1175286597778012569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_30
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9eb1a58f2102f5b0800000000000000
+      internalID: -5336201304863555938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_31
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d6fd31775b08900800000000000000
+      internalID: 684746666399460685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_32
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 882
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94021d64eee274ba0800000000000000
+      internalID: -6104859168952213431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197058c8c5e6999d0800000000000000
+      internalID: -2767059152268884079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_34
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2332f72e1686dcfb0800000000000000
+      internalID: -4625926472618532046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_35
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1545c361672c1b780800000000000000
+      internalID: -8668933995276512175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_36
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8f9c824cd506030800000000000000
+      internalID: 3485889208664062177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_37
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d88688527d0f9f30800000000000000
+      internalID: 4584397730449098969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_38
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5d201a7d0f120c0800000000000000
+      internalID: -4602132535285983759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_39
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094e0740141a3d130800000000000000
+      internalID: 3590390628563870864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_40
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c7096a3f8f3f7c0800000000000000
+      internalID: -4038610715465974739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_41
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe2804ae841aa500800000000000000
+      internalID: 408161319100362492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_42
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbdbae4e1150d1f0800000000000000
+      internalID: -1022227924802348100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_43
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 784
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea2a7ccb183673e0800000000000000
+      internalID: -2056394487802221847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdacfbc56d1053d20800000000000000
+      internalID: 3257511925663124188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_45
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123727f41194189b0800000000000000
+      internalID: -5079698566001036511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_46
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bc749c74953d5e0800000000000000
+      internalID: -1886065654083630242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_47
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16392ea96fd8b5fc0800000000000000
+      internalID: -3505051794677787807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_48
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e8bada6cb42c060800000000000000
+      internalID: 6972218489812258428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_49
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5d69ed81f2a1f60800000000000000
+      internalID: 8005763071464625639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_50
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7731c06b6bb545b50800000000000000
+      internalID: 6580985795791557495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_51
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa19571ee3c36c600800000000000000
+      internalID: 488143850384495023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_52
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b29d7079b3cc990800000000000000
+      internalID: -7364445770799830163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_53
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51463455895acbb0800000000000000
+      internalID: -4915017614143110822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_54
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 686
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d984af661f20b30800000000000000
+      internalID: 4252226422779190648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1582b996943b960800000000000000
+      internalID: 7616512112737145301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_56
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97614ab007c60110800000000000000
+      internalID: 1226886754443814810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_57
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb60ee6c6653dda0800000000000000
+      internalID: -5921294061345412164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_58
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35b59aa7a2754e90800000000000000
+      internalID: -7042096377876859589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_59
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c110fb9c74880ca0800000000000000
+      internalID: -6050440428645248568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_60
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fcd56c811977a990800000000000000
+      internalID: -7374792748519006983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_61
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea88e0d68bc7e6d0800000000000000
+      internalID: -2961174450081854749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_62
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde0a1d780bcc13b0800000000000000
+      internalID: -5540330204253516068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_63
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7924be0cedf3ec2b0800000000000000
+      internalID: -5562438263804050793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_64
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c795f10c5e83b660800000000000000
+      internalID: 7400415138520864709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_65
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 588
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969cb37a12171bbd0800000000000000
+      internalID: -2616185519171974807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b364d2324a9a8f0800000000000000
+      internalID: -528711010248934580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_67
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf169827dd1014a0800000000000000
+      internalID: -6624762241925898316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_68
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c3bb9d3b4999d40800000000000000
+      internalID: 5591663912530164786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_69
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78aab7efb265541b0800000000000000
+      internalID: -5673033408650171769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_70
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a0403131b6db330800000000000000
+      internalID: 3728253796200221217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_71
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42506f858cc6c930800000000000000
+      internalID: 4163239779558773324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_72
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8950531dd73c8faf0800000000000000
+      internalID: -362324824855083624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_73
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458937ded06184a70800000000000000
+      internalID: 8811316920024537172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_74
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e3f2663b60bd3f0800000000000000
+      internalID: -875098335010144757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_75
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815bc2475c3a48d50800000000000000
+      internalID: 6738691010906076440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_76
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 490
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03a510e2dfc8e050800000000000000
+      internalID: 5830138222240703247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8956fa03094f840800000000000000
+      internalID: 5256985203823712510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_78
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ab375e2d5e5a480800000000000000
+      internalID: -8888445595590346205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_79
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5036d40bdd1344160800000000000000
+      internalID: 7008781748310729477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_80
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca2b65b5a5f76b90800000000000000
+      internalID: -7248554983167415614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_81
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8baa437303247cf00800000000000000
+      internalID: 1136950205786401464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_82
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb300397b0ee9110800000000000000
+      internalID: 1269699224014961638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_83
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8338b936e9771d40800000000000000
+      internalID: 5555042695102608269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_84
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5db77cb1b43d7530800000000000000
+      internalID: 3854294794074832218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_85
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd1d3be1106e4300800000000000000
+      internalID: 238233460374576598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_86
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d7ca4ad119c9a70800000000000000
+      internalID: 8835096125496917324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_87
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 392
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b00470a6633c800800000000000000
+      internalID: 631408201778072474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f5b5e06466ef4b0800000000000000
+      internalID: -5404770051723403422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_89
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1b67cbc412e9020800000000000000
+      internalID: 2350352668997104070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_90
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef40f66c98043da10800000000000000
+      internalID: 1932959625555936510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_91
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f331c244fff8dd0800000000000000
+      internalID: -2481484201395536091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_92
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092eacafc46817b40800000000000000
+      internalID: 5436273890396136080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_93
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb4f538b3ea854b0800000000000000
+      internalID: -5451415778301621266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_94
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22fe1e3799ec3e80800000000000000
+      internalID: -8197420385929596373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_95
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6852ddf23d59a40800000000000000
+      internalID: 5374433932863702742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_96
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e93c7d7133a8ee0800000000000000
+      internalID: -1258136968399446447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_97
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e131394d290e7240800000000000000
+      internalID: 4791277143674925536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_98
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 294
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738f4ace64aaeb480800000000000000
+      internalID: -8881474193533372361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b72475bf837b2de0800000000000000
+      internalID: -1356863801660266573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_100
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdde2811a8199810800000000000000
+      internalID: 1772475008521526707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_101
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d9bff81f543c040800000000000000
+      internalID: 4666650542691032341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_102
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518669bb494e8d480800000000000000
+      internalID: -8874091738280073195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_103
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9ed869cc8720340800000000000000
+      internalID: 4828554570589137334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_104
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d85861c2f1f7d4d0800000000000000
+      internalID: -3109750992746817322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_105
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0260cd32aaff870800000000000000
+      internalID: 8718874474604535970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_106
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2216aaaa551a0e750800000000000000
+      internalID: 6332238465390502178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_107
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48d99df8a92d3d30800000000000000
+      internalID: 4412729015678916682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_108
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142c9887f79007720800000000000000
+      internalID: 2841781807958573633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_109
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 196
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28ac7ea5b9069180800000000000000
+      internalID: -9109082520389113809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0453de3ef73bdec0800000000000000
+      internalID: -3541175116881505266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_111
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2764fb532156c5140800000000000000
+      internalID: 4709750439208240754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_112
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefe94979a05653e0800000000000000
+      internalID: -2065374690288209938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_113
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5dd34a0c0708c80800000000000000
+      internalID: -8322528138689129003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_114
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f16b05c00e2b050800000000000000
+      internalID: 5814956412387073948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_115
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ea85ddee64d9d00800000000000000
+      internalID: 981018285566373503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_116
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d096e2fb771c2c170800000000000000
+      internalID: 8197326991820482829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_117
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d554b4f6560f3d440800000000000000
+      internalID: 4959571933114615133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_118
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde8d0180309ef600800000000000000
+      internalID: 503998746310053596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_119
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db658d29c023d55a0800000000000000
+      internalID: -6531008855032703299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_120
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 98
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975cd6bfa4787b2c0800000000000000
+      internalID: -4415912153497877127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329ac64b2cd1c14f0800000000000000
+      internalID: -856777107019355869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_122
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afe11c241b4a87f0800000000000000
+      internalID: -609592249544478808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_123
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3281e805a7324b8c0800000000000000
+      internalID: -3984520762071574493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_124
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84eef3dcc79cc10d0800000000000000
+      internalID: -3450661676615995832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_125
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23458d6bdb664a7d0800000000000000
+      internalID: -2908086494372015054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_126
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d773df4f5c947e0800000000000000
+      internalID: -1780674521637356238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_127
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e28bf59bbf339e0800000000000000
+      internalID: -1642692665466671486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_128
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530718a28489ef5f0800000000000000
+      internalID: -720971454614507467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_129
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d158ae3334d0640800000000000000
+      internalID: 5047764647609179407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_130
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91abaa2f4c784fe0800000000000000
+      internalID: -1204576220861455969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turbo_messageFontOutline_50_UF_62x77_131
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 0
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1141ae1d7ca7ceec0800000000000000
+      internalID: -3536316608753822703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2092073bb10f4ab4c8439f308b147ad4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      turbo_messageFontOutline_50_UF_62x77_1: -1037523650651260563
+      turbo_messageFontOutline_50_UF_62x77_83: 5555042695102608269
+      turbo_messageFontOutline_50_UF_62x77_57: -5921294061345412164
+      turbo_messageFontOutline_50_UF_62x77_58: -7042096377876859589
+      turbo_messageFontOutline_50_UF_62x77_25: -3014324505510074967
+      turbo_messageFontOutline_50_UF_62x77_103: 4828554570589137334
+      turbo_messageFontOutline_50_UF_62x77_84: 3854294794074832218
+      turbo_messageFontOutline_50_UF_62x77_92: 5436273890396136080
+      turbo_messageFontOutline_50_UF_62x77_72: -362324824855083624
+      turbo_messageFontOutline_50_UF_62x77_77: 5256985203823712510
+      turbo_messageFontOutline_50_UF_62x77_65: -2616185519171974807
+      turbo_messageFontOutline_50_UF_62x77_81: 1136950205786401464
+      turbo_messageFontOutline_50_UF_62x77_24: 5519232560613385822
+      turbo_messageFontOutline_50_UF_62x77_9: -1492099704670019327
+      turbo_messageFontOutline_50_UF_62x77_26: -1568336261287930792
+      turbo_messageFontOutline_50_UF_62x77_80: -7248554983167415614
+      turbo_messageFontOutline_50_UF_62x77_16: 2631637237830555554
+      turbo_messageFontOutline_50_UF_62x77_15: 1126383072795174433
+      turbo_messageFontOutline_50_UF_62x77_40: -4038610715465974739
+      turbo_messageFontOutline_50_UF_62x77_98: -8881474193533372361
+      turbo_messageFontOutline_50_UF_62x77_32: -6104859168952213431
+      turbo_messageFontOutline_50_UF_62x77_79: 7008781748310729477
+      turbo_messageFontOutline_50_UF_62x77_113: -8322528138689129003
+      turbo_messageFontOutline_50_UF_62x77_106: 6332238465390502178
+      turbo_messageFontOutline_50_UF_62x77_17: -5730892450160657433
+      turbo_messageFontOutline_50_UF_62x77_85: 238233460374576598
+      turbo_messageFontOutline_50_UF_62x77_115: 981018285566373503
+      turbo_messageFontOutline_50_UF_62x77_87: 631408201778072474
+      turbo_messageFontOutline_50_UF_62x77_20: 5546759513937620362
+      turbo_messageFontOutline_50_UF_62x77_14: 3201187601287688440
+      turbo_messageFontOutline_50_UF_62x77_76: 5830138222240703247
+      turbo_messageFontOutline_50_UF_62x77_61: -2961174450081854749
+      turbo_messageFontOutline_50_UF_62x77_41: 408161319100362492
+      turbo_messageFontOutline_50_UF_62x77_88: -5404770051723403422
+      turbo_messageFontOutline_50_UF_62x77_116: 8197326991820482829
+      turbo_messageFontOutline_50_UF_62x77_122: -609592249544478808
+      turbo_messageFontOutline_50_UF_62x77_123: -3984520762071574493
+      turbo_messageFontOutline_50_UF_62x77_67: -6624762241925898316
+      turbo_messageFontOutline_50_UF_62x77_44: 3257511925663124188
+      turbo_messageFontOutline_50_UF_62x77_89: 2350352668997104070
+      turbo_messageFontOutline_50_UF_62x77_27: -6729559072330349633
+      turbo_messageFontOutline_50_UF_62x77_99: -1356863801660266573
+      turbo_messageFontOutline_50_UF_62x77_18: 7943084226155450014
+      turbo_messageFontOutline_50_UF_62x77_50: 6580985795791557495
+      turbo_messageFontOutline_50_UF_62x77_64: 7400415138520864709
+      turbo_messageFontOutline_50_UF_62x77_105: 8718874474604535970
+      turbo_messageFontOutline_50_UF_62x77_46: -1886065654083630242
+      turbo_messageFontOutline_50_UF_62x77_114: 5814956412387073948
+      turbo_messageFontOutline_50_UF_62x77_60: -7374792748519006983
+      turbo_messageFontOutline_50_UF_62x77_75: 6738691010906076440
+      turbo_messageFontOutline_50_UF_62x77_112: -2065374690288209938
+      turbo_messageFontOutline_50_UF_62x77_101: 4666650542691032341
+      turbo_messageFontOutline_50_UF_62x77_102: -8874091738280073195
+      turbo_messageFontOutline_50_UF_62x77_0: -8628345335185869226
+      turbo_messageFontOutline_50_UF_62x77_36: 3485889208664062177
+      turbo_messageFontOutline_50_UF_62x77_78: -8888445595590346205
+      turbo_messageFontOutline_50_UF_62x77_31: 684746666399460685
+      turbo_messageFontOutline_50_UF_62x77_3: -8245037115371777325
+      turbo_messageFontOutline_50_UF_62x77_54: 4252226422779190648
+      turbo_messageFontOutline_50_UF_62x77_91: -2481484201395536091
+      turbo_messageFontOutline_50_UF_62x77_117: 4959571933114615133
+      turbo_messageFontOutline_50_UF_62x77_104: -3109750992746817322
+      turbo_messageFontOutline_50_UF_62x77_129: 5047764647609179407
+      turbo_messageFontOutline_50_UF_62x77_127: -1642692665466671486
+      turbo_messageFontOutline_50_UF_62x77_45: -5079698566001036511
+      turbo_messageFontOutline_50_UF_62x77_66: -528711010248934580
+      turbo_messageFontOutline_50_UF_62x77_2: 6948616671547980009
+      turbo_messageFontOutline_50_UF_62x77_124: -3450661676615995832
+      turbo_messageFontOutline_50_UF_62x77_97: 4791277143674925536
+      turbo_messageFontOutline_50_UF_62x77_42: -1022227924802348100
+      turbo_messageFontOutline_50_UF_62x77_108: 2841781807958573633
+      turbo_messageFontOutline_50_UF_62x77_73: 8811316920024537172
+      turbo_messageFontOutline_50_UF_62x77_59: -6050440428645248568
+      turbo_messageFontOutline_50_UF_62x77_120: -4415912153497877127
+      turbo_messageFontOutline_50_UF_62x77_94: -8197420385929596373
+      turbo_messageFontOutline_50_UF_62x77_63: -5562438263804050793
+      turbo_messageFontOutline_50_UF_62x77_28: 198006631494615305
+      turbo_messageFontOutline_50_UF_62x77_6: 413597403470621094
+      turbo_messageFontOutline_50_UF_62x77_34: -4625926472618532046
+      turbo_messageFontOutline_50_UF_62x77_125: -2908086494372015054
+      turbo_messageFontOutline_50_UF_62x77_22: -9194590303579686139
+      turbo_messageFontOutline_50_UF_62x77_126: -1780674521637356238
+      turbo_messageFontOutline_50_UF_62x77_38: -4602132535285983759
+      turbo_messageFontOutline_50_UF_62x77_55: 7616512112737145301
+      turbo_messageFontOutline_50_UF_62x77_4: -9017611610010293066
+      turbo_messageFontOutline_50_UF_62x77_53: -4915017614143110822
+      turbo_messageFontOutline_50_UF_62x77_70: 3728253796200221217
+      turbo_messageFontOutline_50_UF_62x77_111: 4709750439208240754
+      turbo_messageFontOutline_50_UF_62x77_11: 2712659108619696025
+      turbo_messageFontOutline_50_UF_62x77_7: 347958548919620816
+      turbo_messageFontOutline_50_UF_62x77_93: -5451415778301621266
+      turbo_messageFontOutline_50_UF_62x77_12: -4661409289207471064
+      turbo_messageFontOutline_50_UF_62x77_68: 5591663912530164786
+      turbo_messageFontOutline_50_UF_62x77_43: -2056394487802221847
+      turbo_messageFontOutline_50_UF_62x77_74: -875098335010144757
+      turbo_messageFontOutline_50_UF_62x77_100: 1772475008521526707
+      turbo_messageFontOutline_50_UF_62x77_95: 5374433932863702742
+      turbo_messageFontOutline_50_UF_62x77_128: -720971454614507467
+      turbo_messageFontOutline_50_UF_62x77_121: -856777107019355869
+      turbo_messageFontOutline_50_UF_62x77_96: -1258136968399446447
+      turbo_messageFontOutline_50_UF_62x77_13: -2980525954700267204
+      turbo_messageFontOutline_50_UF_62x77_52: -7364445770799830163
+      turbo_messageFontOutline_50_UF_62x77_19: -8686243495760089953
+      turbo_messageFontOutline_50_UF_62x77_30: -5336201304863555938
+      turbo_messageFontOutline_50_UF_62x77_56: 1226886754443814810
+      turbo_messageFontOutline_50_UF_62x77_48: 6972218489812258428
+      turbo_messageFontOutline_50_UF_62x77_109: -9109082520389113809
+      turbo_messageFontOutline_50_UF_62x77_49: 8005763071464625639
+      turbo_messageFontOutline_50_UF_62x77_35: -8668933995276512175
+      turbo_messageFontOutline_50_UF_62x77_8: -1950470983811715051
+      turbo_messageFontOutline_50_UF_62x77_29: -1175286597778012569
+      turbo_messageFontOutline_50_UF_62x77_37: 4584397730449098969
+      turbo_messageFontOutline_50_UF_62x77_82: 1269699224014961638
+      turbo_messageFontOutline_50_UF_62x77_110: -3541175116881505266
+      turbo_messageFontOutline_50_UF_62x77_86: 8835096125496917324
+      turbo_messageFontOutline_50_UF_62x77_118: 503998746310053596
+      turbo_messageFontOutline_50_UF_62x77_90: 1932959625555936510
+      turbo_messageFontOutline_50_UF_62x77_69: -5673033408650171769
+      turbo_messageFontOutline_50_UF_62x77_23: -1924924074498680522
+      turbo_messageFontOutline_50_UF_62x77_131: -3536316608753822703
+      turbo_messageFontOutline_50_UF_62x77_62: -5540330204253516068
+      turbo_messageFontOutline_50_UF_62x77_39: 3590390628563870864
+      turbo_messageFontOutline_50_UF_62x77_119: -6531008855032703299
+      turbo_messageFontOutline_50_UF_62x77_33: -2767059152268884079
+      turbo_messageFontOutline_50_UF_62x77_5: 8336833561285512968
+      turbo_messageFontOutline_50_UF_62x77_10: -774272603593499257
+      turbo_messageFontOutline_50_UF_62x77_47: -3505051794677787807
+      turbo_messageFontOutline_50_UF_62x77_107: 4412729015678916682
+      turbo_messageFontOutline_50_UF_62x77_130: -1204576220861455969
+      turbo_messageFontOutline_50_UF_62x77_71: 4163239779558773324
+      turbo_messageFontOutline_50_UF_62x77_21: -7677607292131173613
+      turbo_messageFontOutline_50_UF_62x77_51: 488143850384495023
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,7 @@
+Material			|	1st					|	2nd					|	3rd
+--------------------+-----------------------+-----------------------+-----------------------
+spc_metal_00_mat	|	color_metal_0_1		|	color_metal_0_2		|	color_metal_0_3
+spc_metal_01_mat	|	color_metal_1_1		|	color_metal_1_2		|	color_metal_1_3
+spc_stone_mat		|	color_stone_1		|	color_stone_2		|	color_stone_3
+spc_stone_01_mat	|	color_stone_1		|	color_stone_1		|	color_stone_1
+spc_wood_mat		|	color_wood			|	color_wood			|	color_wood

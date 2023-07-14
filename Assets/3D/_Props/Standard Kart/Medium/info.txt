@@ -1,0 +1,5 @@
+The texture "metal_5" is a env map for "mat_body"
+
+The texture "low_light_2" is a env map for "mat_tire"
+
+The texture "metal_4_2" is a env map for "mat_tire_rim"

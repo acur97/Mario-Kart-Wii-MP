@@ -1,0 +1,1068 @@
+{"frames": [
+
+{
+	"filename": "turbo_MARIOFont_86x98-1.png",
+	"frame": {"x":0,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-2.png",
+	"frame": {"x":86,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-3.png",
+	"frame": {"x":172,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-4.png",
+	"frame": {"x":258,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-5.png",
+	"frame": {"x":344,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-6.png",
+	"frame": {"x":430,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-7.png",
+	"frame": {"x":516,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-8.png",
+	"frame": {"x":602,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-9.png",
+	"frame": {"x":688,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-10.png",
+	"frame": {"x":774,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-11.png",
+	"frame": {"x":860,"y":0,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-12.png",
+	"frame": {"x":0,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-13.png",
+	"frame": {"x":86,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-14.png",
+	"frame": {"x":172,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-15.png",
+	"frame": {"x":258,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-16.png",
+	"frame": {"x":344,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-17.png",
+	"frame": {"x":430,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-18.png",
+	"frame": {"x":516,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-19.png",
+	"frame": {"x":602,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-20.png",
+	"frame": {"x":688,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-21.png",
+	"frame": {"x":774,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-22.png",
+	"frame": {"x":860,"y":98,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-23.png",
+	"frame": {"x":0,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-24.png",
+	"frame": {"x":86,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-25.png",
+	"frame": {"x":172,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-26.png",
+	"frame": {"x":258,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-27.png",
+	"frame": {"x":344,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-28.png",
+	"frame": {"x":430,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-29.png",
+	"frame": {"x":516,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-30.png",
+	"frame": {"x":602,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-31.png",
+	"frame": {"x":688,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-32.png",
+	"frame": {"x":774,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-33.png",
+	"frame": {"x":860,"y":196,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-34.png",
+	"frame": {"x":0,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-35.png",
+	"frame": {"x":86,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-36.png",
+	"frame": {"x":172,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-37.png",
+	"frame": {"x":258,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-38.png",
+	"frame": {"x":344,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-39.png",
+	"frame": {"x":430,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-40.png",
+	"frame": {"x":516,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-41.png",
+	"frame": {"x":602,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-42.png",
+	"frame": {"x":688,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-43.png",
+	"frame": {"x":774,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-44.png",
+	"frame": {"x":860,"y":294,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-45.png",
+	"frame": {"x":0,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-46.png",
+	"frame": {"x":86,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-47.png",
+	"frame": {"x":172,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-48.png",
+	"frame": {"x":258,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-49.png",
+	"frame": {"x":344,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-50.png",
+	"frame": {"x":430,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-51.png",
+	"frame": {"x":516,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-52.png",
+	"frame": {"x":602,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-53.png",
+	"frame": {"x":688,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-54.png",
+	"frame": {"x":774,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-55.png",
+	"frame": {"x":860,"y":392,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-56.png",
+	"frame": {"x":0,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-57.png",
+	"frame": {"x":86,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-58.png",
+	"frame": {"x":172,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-59.png",
+	"frame": {"x":258,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-60.png",
+	"frame": {"x":344,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-61.png",
+	"frame": {"x":430,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-63.png",
+	"frame": {"x":516,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-65.png",
+	"frame": {"x":602,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-66.png",
+	"frame": {"x":688,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-67.png",
+	"frame": {"x":774,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-68.png",
+	"frame": {"x":860,"y":490,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-69.png",
+	"frame": {"x":0,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-70.png",
+	"frame": {"x":86,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-71.png",
+	"frame": {"x":172,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-72.png",
+	"frame": {"x":258,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-73.png",
+	"frame": {"x":344,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-74.png",
+	"frame": {"x":430,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-75.png",
+	"frame": {"x":516,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-76.png",
+	"frame": {"x":602,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-77.png",
+	"frame": {"x":688,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-78.png",
+	"frame": {"x":774,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-79.png",
+	"frame": {"x":860,"y":588,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-80.png",
+	"frame": {"x":0,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-81.png",
+	"frame": {"x":86,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-82.png",
+	"frame": {"x":172,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-83.png",
+	"frame": {"x":258,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-84.png",
+	"frame": {"x":344,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-85.png",
+	"frame": {"x":430,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-86.png",
+	"frame": {"x":516,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-87.png",
+	"frame": {"x":602,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-88.png",
+	"frame": {"x":688,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-89.png",
+	"frame": {"x":774,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-90.png",
+	"frame": {"x":860,"y":686,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-91.png",
+	"frame": {"x":0,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-92.png",
+	"frame": {"x":86,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-93.png",
+	"frame": {"x":172,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-96.png",
+	"frame": {"x":258,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-103.png",
+	"frame": {"x":344,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-111.png",
+	"frame": {"x":430,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-123.png",
+	"frame": {"x":516,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-124.png",
+	"frame": {"x":602,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-125.png",
+	"frame": {"x":688,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-126.png",
+	"frame": {"x":774,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-128.png",
+	"frame": {"x":860,"y":784,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-136.png",
+	"frame": {"x":0,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-140.png",
+	"frame": {"x":86,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-144.png",
+	"frame": {"x":172,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-146.png",
+	"frame": {"x":258,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-153.png",
+	"frame": {"x":344,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-156.png",
+	"frame": {"x":430,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-160.png",
+	"frame": {"x":516,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-168.png",
+	"frame": {"x":602,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-172.png",
+	"frame": {"x":688,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-176.png",
+	"frame": {"x":774,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-178.png",
+	"frame": {"x":860,"y":882,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-185.png",
+	"frame": {"x":0,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-188.png",
+	"frame": {"x":86,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-340.png",
+	"frame": {"x":172,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-341.png",
+	"frame": {"x":258,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-342.png",
+	"frame": {"x":344,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-343.png",
+	"frame": {"x":430,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-354.png",
+	"frame": {"x":516,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-382.png",
+	"frame": {"x":602,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-383.png",
+	"frame": {"x":688,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-384.png",
+	"frame": {"x":774,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-385.png",
+	"frame": {"x":860,"y":980,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-386.png",
+	"frame": {"x":0,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-387.png",
+	"frame": {"x":86,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-388.png",
+	"frame": {"x":172,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-389.png",
+	"frame": {"x":258,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-390.png",
+	"frame": {"x":344,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-392.png",
+	"frame": {"x":430,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-394.png",
+	"frame": {"x":516,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-408.png",
+	"frame": {"x":602,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-409.png",
+	"frame": {"x":688,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-712.png",
+	"frame": {"x":774,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+},
+{
+	"filename": "turbo_MARIOFont_86x98-714.png",
+	"frame": {"x":860,"y":1078,"w":86,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":86,"h":98},
+	"sourceSize": {"w":86,"h":98}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "turbo_messageFontOutline_50_UF_62x77.png",
+	"format": "RGB888",
+	"size": {"w":946,"h":1176},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:dd9149654d2d60766f2d152e0b9a2c5e:f2718bdcd7eb90818ce4095bf0d8c120:4302a37e79605505f83e005634c2d8b6$"
+}
+}
