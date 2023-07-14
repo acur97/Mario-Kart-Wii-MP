@@ -473,7 +473,7 @@ PlayerSettings:
       m_SubKind: App Store
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
-    m_StaticBatching: 1
+    m_StaticBatching: 0
     m_DynamicBatching: 1
   - m_BuildTarget: tvOS
     m_StaticBatching: 1
@@ -552,7 +552,13 @@ PlayerSettings:
     Android: 1
     iPhone: 1
     tvOS: 1
-  m_BuildTargetGroupLightmapEncodingQuality: []
+  m_BuildTargetGroupLightmapEncodingQuality:
+  - m_BuildTarget: Standalone
+    m_EncodingQuality: 2
+  - m_BuildTarget: Android
+    m_EncodingQuality: 2
+  - m_BuildTarget: Windows Store Apps
+    m_EncodingQuality: 2
   m_BuildTargetGroupHDRCubemapEncodingQuality: []
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetGroupLoadStoreDebugModeSettings: []
@@ -829,7 +835,7 @@ PlayerSettings:
     PS5: UNITY_POST_PROCESSING_STACK_V2;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER
     QNX: UNITY_POST_PROCESSING_STACK_V2
     Stadia: UNITY_POST_PROCESSING_STACK_V2;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER
-    Standalone: UNITY_POST_PROCESSING_STACK_V2
+    Standalone: 
     WebGL: UNITY_POST_PROCESSING_STACK_V2;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER
     Windows Store Apps: UNITY_POST_PROCESSING_STACK_V2;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER
     XboxOne: UNITY_POST_PROCESSING_STACK_V2;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER
@@ -943,7 +949,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 3927ca1d-202e-4480-9d35-0d9e1421affb
   framebufferDepthMemorylessMode: 0

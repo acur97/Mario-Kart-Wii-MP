@@ -14,7 +14,6 @@ Material:
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _DISABLE_SSR_TRANSPARENT
-  - _MASKMAP
   - _NORMALMAP_TANGENT_SPACE
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -98,7 +97,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 2800000, guid: ce4b60edb59e1904da5f5de4d5cb48e1, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -236,7 +235,7 @@ Material:
     - _LightingEnabled: 1
     - _LinkDetailsWithBase: 0
     - _MaterialID: 1
-    - _Metallic: 1
+    - _Metallic: 0
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _Mode: 1

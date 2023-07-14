@@ -15,7 +15,7 @@ MonoBehaviour:
   m_RenderPipelineSettings:
     supportShadowMask: 1
     supportSSR: 1
-    supportSSRTransparent: 0
+    supportSSRTransparent: 1
     supportSSAO: 1
     supportSSGI: 1
     supportSubsurfaceScattering: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
       m_SchemaId:
         m_Id: With3Levels
     supportVolumetrics: 1
-    supportVolumetricClouds: 0
+    supportVolumetricClouds: 1
     supportLightLayers: 0
     renderingLayerMaskBuffer: 0
     supportWater: 0
@@ -85,7 +85,7 @@ MonoBehaviour:
     supportVFXRayTracing: 0
     supportedRayTracingMode: 3
     lightLoopSettings:
-      cookieAtlasSize: 2048
+      cookieAtlasSize: 64
       cookieFormat: 74
       cookieAtlasLastValidMip: 0
       cookieTexArraySize: 1
@@ -104,7 +104,7 @@ MonoBehaviour:
         serializedVersion: 2
         m_Bits: 0
       supportFabricConvolution: 0
-      maxDirectionalLightsOnScreen: 16
+      maxDirectionalLightsOnScreen: 1
       maxPunctualLightsOnScreen: 512
       maxAreaLightsOnScreen: 64
       maxCubeReflectionOnScreen: 32
@@ -170,8 +170,8 @@ MonoBehaviour:
       minPercentage: 50
       dynResType: 1
       upsampleFilter: 5
-      forceResolution: 0
-      forcedPercentage: 100
+      forceResolution: 1
+      forcedPercentage: 50
       lowResTransparencyMinimumThreshold: 0
       rayTracingHalfResThreshold: 50
     lowresTransparentSettings:
