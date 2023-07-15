@@ -2,13 +2,11 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
+using DigitalOpus.MB.Core;
+using System;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using System;
-using System.Reflection;
-using System.Collections.Generic;
-using System.Linq;
-using DigitalOpus.MB.Core;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -273,8 +271,8 @@ namespace DigitalOpus.MB.MBEditor
             return 0;
         }
 
-        List<GameObject> FilterList(List<GameObject> mrss, 
-                    HashSet<GameObject> objectsAlreadyIncludedInBakers, 
+        List<GameObject> FilterList(List<GameObject> mrss,
+                    HashSet<GameObject> objectsAlreadyIncludedInBakers,
                     GameObject dontAddMe,
                     bool addingObjects)
         {
@@ -363,7 +361,7 @@ namespace DigitalOpus.MB.MBEditor
 
                         // only do this check when adding objects. If removing objects shouldn't do it
                         if (addingObjects &&
-                            excludeMeshesAlreadyAddedToBakers && 
+                            excludeMeshesAlreadyAddedToBakers &&
                             objectsAlreadyIncludedInBakers.Contains(mrs.gameObject))
                         {
                             numAlreadyIncludedExcluded++;
@@ -517,7 +515,7 @@ namespace DigitalOpus.MB.MBEditor
                 dontAddMe = r.gameObject;
             }
 
-            List<GameObject> objsSelectedMatchingFilter = GetFilteredList(addingObjects:false);
+            List<GameObject> objsSelectedMatchingFilter = GetFilteredList(addingObjects: false);
             Debug.Log("Matching filter " + objsSelectedMatchingFilter.Count);
             List<GameObject> objsToRemove = new List<GameObject>();
             for (int i = 0; i < objsSelectedMatchingFilter.Count; i++)
@@ -549,7 +547,7 @@ namespace DigitalOpus.MB.MBEditor
                 return;
             }
 
-            List<GameObject> newMomObjs = GetFilteredList(addingObjects:true);
+            List<GameObject> newMomObjs = GetFilteredList(addingObjects: true);
             MBVersionEditor.RegisterUndo(mom, "Add Objects");
             List<GameObject> momObjs = mom.GetObjectsToCombine();
             int numAdded = 0;

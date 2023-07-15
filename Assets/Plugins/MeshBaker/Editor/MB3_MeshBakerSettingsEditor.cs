@@ -2,15 +2,9 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
-using UnityEngine;
-using System.Collections;
-using System.IO;
-using System;
-using System.Collections.Specialized;
-using System.Collections.Generic;
 using DigitalOpus.MB.Core;
-
 using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -164,7 +158,7 @@ namespace DigitalOpus.MB.MBEditor
 
             UnityEngine.Object obj = null;
             obj = assignToMeshCustomizer.objectReferenceValue;
-            
+
 
             EditorGUILayout.PropertyField(renderType, gc_renderTypeGUIContent);
 
@@ -174,12 +168,12 @@ namespace DigitalOpus.MB.MBEditor
             EditorGUILayout.PropertyField(clearBuffersAfterBake, gc_clearBuffersAfterBakeGUIContent);
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.PropertyField(pivotLocationType, gc_PivotLocationType);
-            if (pivotLocationType.enumValueIndex == (int) MB_MeshPivotLocation.customLocation)
+            if (pivotLocationType.enumValueIndex == (int)MB_MeshPivotLocation.customLocation)
             {
                 EditorGUILayout.PropertyField(pivotLocation, gc_PivotLocation);
             }
             EditorGUILayout.PropertyField(optimizeAfterBake, gc_OptimizeAfterBake);
-            
+
             EditorGUILayout.Space();
             EditorGUILayout.LabelField("Skinned Mesh Renderer Settings", EditorStyles.boldLabel);
             EditorGUI.BeginDisabledGroup((MB_RenderType)renderType.intValue != MB_RenderType.skinnedMeshRenderer);

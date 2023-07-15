@@ -20,31 +20,31 @@ public class FloatingIceberg : MonoBehaviour
     {
         Reset();
     }
-    
+
     void Update()
     {
         float boundX = 50;
         float maxBoundX = 68;
         float opacity = 1 - Mathf.Clamp01((Mathf.Abs(this.transform.position.x) - boundX) / (maxBoundX - boundX));
-        
+
         //If iceberg is at the begining or the end of the river. 
-        if(this.transform.position.x > 0)
+        if (this.transform.position.x > 0)
             this.GetComponent<Renderer>().sharedMaterial.SetFloat("_Opacity", opacity);
         else
             this.transform.localScale = Vector3.one * initialScale * opacity;
-        
+
         if (this.transform.position.x < -maxBoundX || clickToResetPosition)
         {
             Reset();
         }
-        
-        if  (selfRotationSpeed > 0)
+
+        if (selfRotationSpeed > 0)
         {
             Vector3 r = this.transform.localEulerAngles;
             r.y += selfRotationSpeed;
             this.transform.localEulerAngles = r;
         }
-        
+
         if (targetSurface != null)
         {
             // Build the search parameters
@@ -68,7 +68,7 @@ public class FloatingIceberg : MonoBehaviour
             }
         }
     }
-    
+
     void Reset()
     {
         this.transform.position = initialPosition;

@@ -1,8 +1,4 @@
-﻿using UnityEditor;
-using UnityEngine;
-using System;
-using System.Collections.Generic;
-using DigitalOpus.MB.Core;
+﻿using System;
 
 namespace DigitalOpus.MB.Core
 {

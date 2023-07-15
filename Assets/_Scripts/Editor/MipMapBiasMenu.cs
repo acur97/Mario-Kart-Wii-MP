@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 class MipMapBiasMenu
@@ -15,7 +16,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Calidad Ultra (-1.5)", false, 1011)]
     static void SetBias0()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = -1.5F;
@@ -33,7 +34,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Maxima Alta Calidad (-1.25)", false, 1011)]
     static void SetBias1()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = -1;
@@ -51,7 +52,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Maxima Calidad (-1.0)", false, 1011)]
     static void SetBias2()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = -1;
@@ -69,7 +70,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Altisima Calidad (-0.75)", false, 1011)]
     static void SetBias3()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = -0.5F;
@@ -87,7 +88,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Alta Calidad (-0.5)", false, 1011)]
     static void SetBias4()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = -0.5F;
@@ -105,7 +106,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Calidad Media (-0.25)", false, 1011)]
     static void SetBias5()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = -0.25F;
@@ -123,7 +124,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Calidad Normal (0.0)", false, 1011)]
     static void SetBias6()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = 0;
@@ -141,7 +142,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Calidad semi Baja (0.25)", false, 1011)]
     static void SetBias7()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = 0.25f;
@@ -159,7 +160,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Calidad Baja (0.5)", false, 1011)]
     static void SetBias8()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = 0.5f;
@@ -177,7 +178,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Mala Calidad (1.0)", false, 1011)]
     static void SetBias9()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = 1;
@@ -195,7 +196,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Mostrar valor actuar Debug.Log", false, 1011)]
     static void SetBias10()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             Debug.Log((AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias);
@@ -213,7 +214,7 @@ class MipMapBiasMenu
     [MenuItem("Assets/Seleccionar Mipmap Bias/Calidad por defecto Unity (-100 invalid)", false, 1011)]
     static void SetBias11()
     {
-        foreach (Texture texture in selection)
+        foreach (Texture texture in selection.Cast<Texture>())
         {
             string path = AssetDatabase.GetAssetPath(texture);
             (AssetImporter.GetAtPath(path) as TextureImporter).mipMapBias = -100;

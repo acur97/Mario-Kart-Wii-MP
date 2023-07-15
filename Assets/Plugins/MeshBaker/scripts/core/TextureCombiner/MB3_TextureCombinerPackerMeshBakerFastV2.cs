@@ -1,7 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 namespace DigitalOpus.MB.Core
 {
@@ -38,7 +38,7 @@ namespace DigitalOpus.MB.Core
 
                 if (isObjsOnLayer)
                 {
-                    Debug.LogError("There are Renderers in the scene that are on layer '" + layerName + "'. 'Atlas Render Layer' layer should have no renderers that use it."); 
+                    Debug.LogError("There are Renderers in the scene that are on layer '" + layerName + "'. 'Atlas Render Layer' layer should have no renderers that use it.");
                     return false;
                 }
             }
@@ -158,14 +158,17 @@ namespace DigitalOpus.MB.Core
             }
             finally
             {
-                if (renderAtlasesGO != null) { 
-                    MB_Utility.Destroy(renderAtlasesGO); 
+                if (renderAtlasesGO != null)
+                {
+                    MB_Utility.Destroy(renderAtlasesGO);
                 }
-                if (cameraGameObject != null) { 
-                    MB_Utility.Destroy(cameraGameObject); 
+                if (cameraGameObject != null)
+                {
+                    MB_Utility.Destroy(cameraGameObject);
                 }
-                if (mesh != null) { 
-                    MB_Utility.Destroy(mesh); 
+                if (mesh != null)
+                {
+                    MB_Utility.Destroy(mesh);
                 }
 
             }
@@ -267,7 +270,7 @@ namespace DigitalOpus.MB.Core
             myCamera.targetTexture = _destinationTexture;
             if (LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log(string.Format("Begin Camera.Render destTex w={0} h={1} camPos={2} camSize={3} camAspect={4}", width, height, go.transform.localPosition, myCamera.orthographicSize, myCamera.aspect.ToString("f5")));
             myCamera.Render();
-            
+
             System.Diagnostics.Stopwatch db_ConvertRenderTextureToTexture2D = new System.Diagnostics.Stopwatch();
             db_ConvertRenderTextureToTexture2D.Start();
             Texture2D tempTexture = new Texture2D(_destinationTexture.width, _destinationTexture.height, TextureFormat.ARGB32, true, false);
@@ -350,7 +353,7 @@ namespace DigitalOpus.MB.Core
                     else if (pipelineType == MBVersion.PipelineType.HDRP)
                     {
                         ConfigureMaterial_DefaultPipeline(mt, t, isSavingAsANormalMapAssetThatWillBeImported, LOG_LEVEL);
-                    } 
+                    }
                     else
                     {
                         ConfigureMaterial_DefaultPipeline(mt, t, isSavingAsANormalMapAssetThatWillBeImported, LOG_LEVEL);
@@ -489,7 +492,7 @@ namespace DigitalOpus.MB.Core
                 if (addTopBottom && addLeftRight)
                 {
                     uvRectPix = new Rect(
-                        srcUVRecttt.x + singlePixelHalfWidth, 
+                        srcUVRecttt.x + singlePixelHalfWidth,
                         srcUVRecttt.y + srcUVRecttt.height - singlePixelHalfHeight - smallHeight,
                         smallWidth, smallHeight);
                     AddQuad(new Rect(atlasRect.x - paddingX, atlasRect.y + atlasRect.height, paddingX, paddingY), uvRectPix, verts, uvs, tris);
@@ -499,8 +502,8 @@ namespace DigitalOpus.MB.Core
                 // Top Right
                 if (addTopBottom && addLeftRight)
                 {
-                    uvRectPix = new Rect(srcUVRecttt.x + srcUVRecttt.width - singlePixelHalfWidth - smallWidth, 
-                            srcUVRecttt.y + srcUVRecttt.height - singlePixelHalfHeight - smallHeight, 
+                    uvRectPix = new Rect(srcUVRecttt.x + srcUVRecttt.width - singlePixelHalfWidth - smallWidth,
+                            srcUVRecttt.y + srcUVRecttt.height - singlePixelHalfHeight - smallHeight,
                             smallWidth, smallHeight);
                     AddQuad(new Rect(atlasRect.x + atlasRect.width, atlasRect.y + atlasRect.height, paddingX, paddingY), uvRectPix, verts, uvs, tris);
                 }
@@ -508,8 +511,8 @@ namespace DigitalOpus.MB.Core
                 // Bot Right
                 if (addTopBottom && addLeftRight)
                 {
-                    uvRectPix = new Rect(srcUVRecttt.x + srcUVRecttt.width - singlePixelHalfWidth - smallWidth, 
-                            srcUVRecttt.y + singlePixelHalfHeight - smallHeight, 
+                    uvRectPix = new Rect(srcUVRecttt.x + srcUVRecttt.width - singlePixelHalfWidth - smallWidth,
+                            srcUVRecttt.y + singlePixelHalfHeight - smallHeight,
                             smallWidth, smallHeight);
                     AddQuad(new Rect(atlasRect.x + atlasRect.width, atlasRect.y - paddingY, paddingX, paddingY), uvRectPix, verts, uvs, tris);
                 }

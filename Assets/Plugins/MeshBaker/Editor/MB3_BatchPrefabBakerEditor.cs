@@ -1,11 +1,9 @@
-using UnityEngine;
-using UnityEditor;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using DigitalOpus.MB.Core;
+using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -115,7 +113,7 @@ namespace DigitalOpus.MB.MBEditor
 
             if (GUILayout.Button("Create Empty Result Prefabs"))
             {
-                 MB_BatchPrefabBakerEditorFunctions.CreateEmptyOutputPrefabs(outputFolder.stringValue, (MB3_BatchPrefabBaker) target);
+                MB_BatchPrefabBakerEditorFunctions.CreateEmptyOutputPrefabs(outputFolder.stringValue, (MB3_BatchPrefabBaker)target);
             }
 
             Color oldColor = GUI.backgroundColor;
@@ -204,7 +202,7 @@ namespace DigitalOpus.MB.MBEditor
 
                 }
 
-                
+
                 for (int i = newPrefabs.Count - 1; i >= numNew; i--)
                 {
                     newPrefabs.RemoveAt(i);

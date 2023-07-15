@@ -1,14 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
+//using System.Collections;
 using UnityEngine;
-//using Cinemachine;
-//using UnityEngine.Rendering.PostProcessing;
 
 public class ArcadeDriftController : MonoBehaviour
 {
     public static ArcadeDriftController _controller;
-
-    //public CinemachineBrain CMbrain;
 
     public Rigidbody rb;
     public Transform llantaDel_root;
@@ -24,7 +19,7 @@ public class ArcadeDriftController : MonoBehaviour
 
     public Transform rootCam;
     public Transform model;
-    public Vector3 offset = new Vector3(0, 0, 0);
+    public Vector3 offset = new(0, 0, 0);
     public Transform modelNormal;
 
     [Space]
@@ -60,14 +55,13 @@ public class ArcadeDriftController : MonoBehaviour
     public ParticleSystem escape2;
     public ParticleSystem escape3;
     public ParticleSystem escape4;
+
+    [Space]
     /// <summary>
     /// Colores con el turbo
     /// </summary>
 
     [Space]
-    //public PostProcessVolume postVolume;
-    //private PostProcessProfile postProfile;
-
     private int driftDirection = 0;
     private float control = 0;
     private float powerControl = 0;
@@ -76,7 +70,7 @@ public class ArcadeDriftController : MonoBehaviour
     public float Velocidad = 0;
     public float VelocidadMagnitude = 0;
 
-    private Vector3 LocalVelocidad = new Vector3(0, 0, 0);
+    private Vector3 LocalVelocidad = new(0, 0, 0);
 
     private float axisH = 0;
     private float axisHold = 0;
@@ -86,10 +80,10 @@ public class ArcadeDriftController : MonoBehaviour
     private readonly string _Vertical = "Vertical";
     private readonly string _Horizontal = "Horizontal";
     private readonly string _Jump = "Jump";
-    private readonly string _PlayerSteer = "PlayerSteer";
+    //private readonly string _PlayerSteer = "PlayerSteer";
 
     private readonly Vector3 Vector3Zero = Vector3.zero;
-    private readonly Vector3 vecDown = new Vector3(0, -1, 0);
+    private readonly Vector3 vecDown = new(0, -1, 0);
     private readonly ForceMode f_Acceleration = ForceMode.Acceleration;
 
     private float fixedTime = 0;
@@ -109,12 +103,7 @@ public class ArcadeDriftController : MonoBehaviour
         emitParams1 = drift1.emission;
         emitParams2 = drift2.emission;
         emitParams1.rateOverTime = 0;
-        emitParams1.rateOverTime = 0;
-
-        //if (postVolume != null)
-        //{
-        //    postProfile = postVolume.profile;
-        //}
+        emitParams2.rateOverTime = 0;
     }
 
     private void Start()
@@ -282,8 +271,6 @@ public class ArcadeDriftController : MonoBehaviour
         {
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         }
-
-        //CMbrain.ManualUpdate();
     }
 
     private void FixedUpdate()
@@ -323,6 +310,8 @@ public class ArcadeDriftController : MonoBehaviour
         VelocidadMagnitude = rb.velocity.magnitude;
         LocalVelocidad = transform.InverseTransformDirection(rb.velocity);
         Velocidad = LocalVelocidad.z;
+
+        //CM manual update
     }
 
     public void Boost()
@@ -343,13 +332,13 @@ public class ArcadeDriftController : MonoBehaviour
         //StartCoroutine(danoTemporal());
     }
 
-    IEnumerator danoTemporal()
-    {
-        Play = false;
-        //animacion rotacion
-        yield return new WaitForSecondsRealtime(1);
-        Play = true;
-    }
+    //IEnumerator danoTemporal()
+    //{
+    //    Play = false;
+    //    //animacion rotacion
+    //    yield return new WaitForSecondsRealtime(1);
+    //    Play = true;
+    //}
 
     public void Steer(int direction, float amount)
     {

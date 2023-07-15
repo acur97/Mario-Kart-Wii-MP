@@ -2,16 +2,11 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
-using UnityEngine;
-using System.Collections;
-using System.IO;
-using System;
-using System.Collections.Specialized;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-
-using UnityEditor;
 using DigitalOpus.MB.Core;
+using System;
+using System.Text.RegularExpressions;
+using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {

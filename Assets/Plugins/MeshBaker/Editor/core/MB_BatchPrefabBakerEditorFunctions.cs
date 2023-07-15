@@ -1,11 +1,8 @@
-using UnityEngine;
-using UnityEditor;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using DigitalOpus.MB.Core;
-using System.Text.RegularExpressions;
+using System;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -117,7 +114,7 @@ namespace DigitalOpus.MB.MBEditor
                 int numPrefabsLimit = EvalVersionPrefabLimit;
                 if (pb.prefabRows.Length > numPrefabsLimit)
                 {
-                    Debug.LogError("The free version of mesh baker is limited to batch baking " + numPrefabsLimit + 
+                    Debug.LogError("The free version of mesh baker is limited to batch baking " + numPrefabsLimit +
                         " prefabs. The full version has no limit on the number of prefabs that can be baked. Delete the extra prefab rows before baking.");
                     return;
                 }
@@ -204,8 +201,8 @@ namespace DigitalOpus.MB.MBEditor
                     return;
                 }
 
-                GameObject so = (GameObject) GameObject.Instantiate(pb.prefabRows[i].sourcePrefab);
-                GameObject ro = (GameObject) GameObject.Instantiate(pb.prefabRows[i].resultPrefab);
+                GameObject so = (GameObject)GameObject.Instantiate(pb.prefabRows[i].sourcePrefab);
+                GameObject ro = (GameObject)GameObject.Instantiate(pb.prefabRows[i].resultPrefab);
                 Renderer[] rs = (Renderer[])so.GetComponentsInChildren<Renderer>(true);
 
                 for (int j = 0; j < rs.Length; j++)
@@ -229,7 +226,7 @@ namespace DigitalOpus.MB.MBEditor
                         }
                     }
                 }
-                
+
                 GameObject.DestroyImmediate(so); //todo should cache these and have a proper cleanup at end
                 GameObject.DestroyImmediate(ro);
             }
@@ -918,7 +915,8 @@ namespace DigitalOpus.MB.MBEditor
             {
                 string fullPath = Application.dataPath + projectRelativePath.Substring(6);
                 return fullPath;
-            } else
+            }
+            else
             {
                 return projectRelativePath;
             }
@@ -941,11 +939,13 @@ namespace DigitalOpus.MB.MBEditor
                 {
                     Debug.LogError("Bad folder path. The folder must be in the project Assets folder.");
                     return "";
-                } else
+                }
+                else
                 {
                     return relativePath;
                 }
-            } else
+            }
+            else
             {
                 return path;
             }
@@ -987,7 +987,7 @@ namespace DigitalOpus.MB.MBEditor
         {
             if (!ValidateFolderIsInProject("Output Folder", outputFolder))
             {
-                return; 
+                return;
             }
 
             if (outputFolder.StartsWith("Assets")) outputFolder = ConvertProjectRelativePathToFullPath(outputFolder);

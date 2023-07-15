@@ -4,11 +4,6 @@
 //----------------------------------------------
 using UnityEditor;
 using UnityEngine;
-using System;
-using System.Reflection;
-using System.Collections.Generic;
-using System.Linq;
-using DigitalOpus.MB.Core;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -23,7 +18,7 @@ namespace DigitalOpus.MB.MBEditor
         [MenuItem("Window/Mesh Baker/Mesh Baker")]
         static void Init()
         {
-            MB3_MeshBakerEditorWindow me = (MB3_MeshBakerEditorWindow) EditorWindow.GetWindow(typeof(MB3_MeshBakerEditorWindow));
+            MB3_MeshBakerEditorWindow me = (MB3_MeshBakerEditorWindow)EditorWindow.GetWindow(typeof(MB3_MeshBakerEditorWindow));
         }
 
         public void SetTarget(MB3_MeshBakerRoot targ)

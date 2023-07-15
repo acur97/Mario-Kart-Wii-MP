@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -193,7 +192,7 @@ namespace DigitalOpus.MB.Core
                     BoneAndBindpose bb = new BoneAndBindpose(dgoBones[dgoBoneIdx], dgoBindPoses[dgoBoneIdx]);
                     if (boneAndBindPose2idx.TryGetValue(bb, out bidx))
                     {
-                        if (dgoBones[dgoBoneIdx] == combiner.bones[bidx] && 
+                        if (dgoBones[dgoBoneIdx] == combiner.bones[bidx] &&
                             !boneIdxsToDelete.Contains(bidx) &&
                             dgoBindPoses[dgoBoneIdx] == combiner.bindPoses[bidx])
                         {

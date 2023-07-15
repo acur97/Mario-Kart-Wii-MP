@@ -1,6 +1,4 @@
-﻿using UnityEditor;
-using UnityEngine;
-using DigitalOpus.MB.Core;
+﻿using UnityEngine;
 
 #if UNITY_2018_1_OR_NEWER
 using UnityEditor.Build;

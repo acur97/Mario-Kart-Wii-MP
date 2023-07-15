@@ -48,7 +48,7 @@ namespace UnityEditor.Rendering.HighDefinition
                 var rpAsset = QualitySettings.GetRenderPipelineAssetAt(QualitySettings.GetQualityLevel());
                 if (rpAsset == null) return false;
 
-                var hdrpAsset = (HDRenderPipelineAsset) rpAsset;
+                var hdrpAsset = (HDRenderPipelineAsset)rpAsset;
                 if (hdrpAsset == null) return false;
 
                 var serializedHDRPAsset = new SerializedObject(hdrpAsset);

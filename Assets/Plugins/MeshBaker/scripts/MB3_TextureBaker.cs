@@ -2,14 +2,12 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
-using UnityEngine;
-using System.Collections;
-using System.Collections.Specialized;
+using DigitalOpus.MB.Core;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using System.IO;
-using DigitalOpus.MB.Core;
+using UnityEngine;
 
 
 
@@ -404,7 +402,7 @@ public class MB3_TextureBaker : MB3_MeshBakerRoot
         {
             yield return MB_TextureArrays._CreateAtlasesCoroutineSingleResultMaterial(resMatIdx, bakedMatsAndSlices[resMatIdx], resultMaterialsTexArray[resMatIdx],
                 objsToMesh,
-                combiner, 
+                combiner,
                 textureArrayOutputFormats,
                 resultMaterialsTexArray,
                 customShaderProperties,

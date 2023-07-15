@@ -1,16 +1,11 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //---------------------------------------------- 
-using UnityEngine;
-using System.Collections;
-using System.IO;
-using System;
-using System.Collections.Specialized;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using DigitalOpus.MB.Core;
-
+using System.Collections.Generic;
+using System.IO;
 using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -340,7 +335,7 @@ namespace DigitalOpus.MB.MBEditor
                         Material tempMat = new Material(sh.shader);
                         MB_AtlasesAndRects atlasesAndRects = new MB_AtlasesAndRects();
                         combiner.CombineTexturesIntoAtlases(null, atlasesAndRects, tempMat, mom.GetObjectsToCombine(), allMatsThatUserShader, null, packingResults,
-                            onlyPackRects:true, splitAtlasWhenPackingIfTooBig:true);
+                            onlyPackRects: true, splitAtlasWhenPackingIfTooBig: true);
                         for (int i = 0; i < packingResults.Count; i++)
                         {
 

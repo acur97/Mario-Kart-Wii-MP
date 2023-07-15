@@ -1,7 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System;
 
 namespace DigitalOpus.MB.Core
 {
@@ -9,7 +6,7 @@ namespace DigitalOpus.MB.Core
     /// A TextureBlender will attempt to blend non-texture properties with textures so that the result material looks the same as source material.
     /// </summary>
     public interface TextureBlender
-    {    
+    {
         /// <summary>
         /// The shader name that must be matched on the result material in order for this TextureBlender to be used. This should return something like "Legacy/Bumped Difuse"
         /// </summary>

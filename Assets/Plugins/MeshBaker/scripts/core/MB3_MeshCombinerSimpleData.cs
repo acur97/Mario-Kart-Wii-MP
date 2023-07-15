@@ -1,10 +1,6 @@
-using UnityEngine;
-using System.Collections;
-using System.Collections.Specialized;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using DigitalOpus.MB.Core;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -276,7 +272,7 @@ namespace DigitalOpus.MB.Core
                     meshID2MeshChannels.Add(m.GetInstanceID(), mc);
                 }
 
-                switch(channel)
+                switch (channel)
                 {
                     case 0:
                         if (mc.uv0raw == null)
@@ -362,13 +358,15 @@ namespace DigitalOpus.MB.Core
                 if (mc.bindPoses == null)
                 {
                     mc.bindPoses = _getBindPoses(r, out isSkinnedMeshWithBones);
-                } else
+                }
+                else
                 {
                     if (r is SkinnedMeshRenderer &&
                         mc.bindPoses.Length > 0)
                     {
                         isSkinnedMeshWithBones = true;
-                    } else
+                    }
+                    else
                     {
                         isSkinnedMeshWithBones = false;
                         if (r is SkinnedMeshRenderer) Debug.Assert(m.blendShapeCount > 0, "Skinned Mesh Renderer " + r + " had no bones and no blend shapes");
@@ -496,34 +494,36 @@ namespace DigitalOpus.MB.Core
 
             public static Matrix4x4[] _getBindPoses(Renderer r, out bool isSkinnedMeshWithBones)
             {
-                
+
                 Matrix4x4[] poses = null;
                 isSkinnedMeshWithBones = r is SkinnedMeshRenderer;
                 if (r is SkinnedMeshRenderer)
                 {
-                    poses = ((SkinnedMeshRenderer) r).sharedMesh.bindposes;
+                    poses = ((SkinnedMeshRenderer)r).sharedMesh.bindposes;
                     if (poses.Length == 0)
                     {
                         Mesh m = MB_Utility.GetMesh(r.gameObject);
                         if (m.blendShapeCount > 0)
                         {
                             isSkinnedMeshWithBones = false;
-                        } else
+                        }
+                        else
                         {
                             Debug.LogError("Skinned mesh " + r + " had no bindposes AND no blend shapes");
                         }
                     }
                 }
-                
-                if (r is MeshRenderer || 
+
+                if (r is MeshRenderer ||
                    (r is SkinnedMeshRenderer && !isSkinnedMeshWithBones)) // It is possible for a skinned mesh to have blend shapes but no bones. These need to be treated like MeshRenderer meshes.
                 {
                     Matrix4x4 bindPose = Matrix4x4.identity;
                     poses = new Matrix4x4[1];
                     poses[0] = bindPose;
                 }
-                
-                if (poses == null) {
+
+                if (poses == null)
+                {
                     Debug.LogError("Could not _getBindPoses. Object does not have a renderer");
                     return null;
                 }
@@ -548,7 +548,8 @@ namespace DigitalOpus.MB.Core
                     for (int i = 0; i < bws.Length; i++) bws[i] = bw;
                     return bws;
                 }
-                else {
+                else
+                {
                     Debug.LogError("Could not _getBoneWeights. Object does not have a renderer");
                     return null;
                 }

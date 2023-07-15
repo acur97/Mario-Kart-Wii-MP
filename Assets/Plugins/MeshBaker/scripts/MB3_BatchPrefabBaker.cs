@@ -1,13 +1,14 @@
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using DigitalOpus.MB.Core;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class MB3_BatchPrefabBaker : MonoBehaviour {
+public class MB3_BatchPrefabBaker : MonoBehaviour
+{
     public MB2_LogLevel LOG_LEVEL = MB2_LogLevel.info;
 
     [System.Serializable]
-    public class MB3_PrefabBakerRow{
+    public class MB3_PrefabBakerRow
+    {
         public GameObject sourcePrefab;
         public GameObject resultPrefab;
     }
@@ -59,7 +60,7 @@ public class MB3_BatchPrefabBaker : MonoBehaviour {
             resultPrefabs[i].transform.parent = resultRoot.transform;
             srcPrefabs[i].transform.localPosition = srcPos + new Vector3(-b.extents.x, 0, b.extents.z + b.extents.z * .3f);
             resultPrefabs[i].transform.localPosition = resultPos + new Vector3(b.extents.x, 0, b.extents.z + b.extents.z * .3f);
-            srcPos += new Vector3(0,0,b.size.z + 1f);
+            srcPos += new Vector3(0, 0, b.size.z + 1f);
             resultPos += new Vector3(0, 0, b.size.z + 1f);
         }
 #else

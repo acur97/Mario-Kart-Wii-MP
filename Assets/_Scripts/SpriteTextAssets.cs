@@ -1,5 +1,6 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 [ExecuteInEditMode]
 public class SpriteTextAssets : MonoBehaviour
@@ -16,7 +17,7 @@ public class SpriteTextAssets : MonoBehaviour
     {
         if (!(Application.isEditor && !Application.isPlaying))
         {
-            single = FindObjectsOfType(typeof(SpriteTextAssets));
+            single = FindObjectsByType(typeof(SpriteTextAssets), FindObjectsSortMode.None);
             int len = single.Length;
             if (len == 2)
             {

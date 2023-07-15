@@ -132,7 +132,7 @@ public class SampleShowcaseEditor : Editor
         CreateMarkdown(introElement, introText, self.linkColor);
 
         //Create Samples Dropdown
-        if(self.samplesPrefabs.Length > 0)
+        if (self.samplesPrefabs.Length > 0)
         {
             var dropdownField = root.Q<DropdownField>("SampleDropDown");
             List<string> choices = new List<string>();
@@ -179,7 +179,7 @@ public class SampleShowcaseEditor : Editor
             foreach (var word in paragraphText.Split(' '))
             {
                 var displayText = word;
-                
+
                 // Markdown _ for italics, before each word
                 if (word.StartsWith("_")) displayText = $"<i>{word.Replace("_", "")}</i>";
 
@@ -194,18 +194,18 @@ public class SampleShowcaseEditor : Editor
                 {
                     var paren = word.IndexOf("(");
                     Debug.Assert(paren > -1, $"Incorrectly formatted link {word}");
-                    int charsCountToSubtractDisplay = word.EndsWith(")") ? 2 : 1;  
+                    int charsCountToSubtractDisplay = word.EndsWith(")") ? 2 : 1;
                     displayText = word.Substring(1, paren - 2);
                     displayText = displayText.Replace("_", " ");
                     int charsCountToSubtractLink = word.EndsWith(")") ? 2 : 3;  //This is because if there's a coma or a period after the parenthesis, it's going to be included in the word and will break the link.
                     displayText = "<color=#" + ColorUtility.ToHtmlStringRGBA(linkColor) + ">" + "<b><u>" + displayText + "</u></b>" + "</color>";
-                    
+
                     //If there's a period or coma after the parenthesis, it's included in the word, so we need to add it back. 
-                    if(!word.EndsWith(")"))
-                        displayText += word[word.Length-1];
-                    
+                    if (!word.EndsWith(")"))
+                        displayText += word[word.Length - 1];
+
                     linkText = word.Substring(paren + 1, word.Length - paren - charsCountToSubtractLink);
-                    
+
                     var wordElementLink = new Label(displayText);
                     if (linkText != "")
                     {
@@ -216,22 +216,22 @@ public class SampleShowcaseEditor : Editor
                 }
                 // Markdown-style link to highlight objects in hierachy, but we have to use underscores as word separation:
                 // {highlight_text_here}(name_of_the_gameobject_in_hierarchy)
-                else if(word.StartsWith("{"))
+                else if (word.StartsWith("{"))
                 {
                     var paren = word.IndexOf("(");
                     Debug.Assert(paren > -1, $"Incorrectly formatted link {word}");
                     displayText = word.Substring(1, paren - 2);
                     displayText = displayText.Replace("_", " ");
                     displayText = "<color=#" + ColorUtility.ToHtmlStringRGBA(linkColor) + ">" + "<b><u>" + displayText + "</u></b>" + "</color>";
-                    
+
                     //If there's a period or coma after the parenthesis, it's included in the word, so we need to add it back. 
-                    if(!word.EndsWith(")"))
-                        displayText += word[word.Length-1];
-                    
+                    if (!word.EndsWith(")"))
+                        displayText += word[word.Length - 1];
+
                     int charsCountToSubtractLink = word.EndsWith(")") ? 2 : 3;  //This is because if there's a coma or a period after the parenthesis, it's going to be included in the word and will break the link.
                     highlightText = word.Substring(paren + 1, word.Length - paren - charsCountToSubtractLink);
                     highlightText = highlightText.Replace("_", " ");
-                    
+
                     var wordElementHighlight = new Label(displayText);
                     if (highlightText != "")
                     {
@@ -241,7 +241,7 @@ public class SampleShowcaseEditor : Editor
                     paragraph.Add(wordElementHighlight);
                 }
                 else
-                {   
+                {
                     var wordLabel = new Label(displayText);
                     paragraph.Add(wordLabel);
                 }
@@ -267,13 +267,13 @@ public class SampleShowcaseEditor : Editor
             Selection.objects = currentSelection;
         }
     }
-    
+
     private static void Ping(string gameObjectName)
     {
         GameObject go = GameObject.Find(gameObjectName);
         UnityEditor.EditorGUIUtility.PingObject(go);
     }
-    
+
 
 }
 #endif

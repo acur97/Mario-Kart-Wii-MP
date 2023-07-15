@@ -1,12 +1,10 @@
-using UnityEngine;
-using System.Collections;
-using System.IO;
-using System;
-using System.Collections.Specialized;
-using System.Collections.Generic;
 using DigitalOpus.MB.Core;
-using UnityEditor;
 using DigitalOpus.MB.MBEditor;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using UnityEditor;
+using UnityEngine;
 
 public class MB3_MeshBakerEditorFunctions
 {
@@ -128,7 +126,8 @@ public class MB3_MeshBakerEditorFunctions
         else if (prefabOrSceneObject == MB2_OutputOptions.bakeIntoPrefab)
         {
             success = _BakeIntoCombinedPrefab(mom, createdDummyTextureBakeResults, ref so);
-        } else
+        }
+        else
         {
             Debug.LogError("Should be impossible.");
             success = false;
@@ -230,7 +229,8 @@ public class MB3_MeshBakerEditorFunctions
 #pragma warning restore 0169
         {
             throw;
-        } finally
+        }
+        finally
         {
             // Clean up temporary created instances. If success was true then they should have been added to a prefab
             // and cleaned up for us.
@@ -295,7 +295,7 @@ public class MB3_MeshBakerEditorFunctions
                 if (pr == null)
                 {
                     pr = _FindCommonAncestorForBonesAnimatorAndSmr(objsToCombine[i]);
-                    
+
                 }
             }
 

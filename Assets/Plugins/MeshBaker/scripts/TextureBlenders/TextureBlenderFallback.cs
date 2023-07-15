@@ -1,7 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System;
+﻿using System;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -12,7 +10,7 @@ namespace DigitalOpus.MB.Core
 
         Color m_defaultColor = Color.white;
 
-		public bool DoesShaderNameMatch(string shaderName)
+        public bool DoesShaderNameMatch(string shaderName)
         {
             return true; //matches everything
         }
@@ -27,11 +25,12 @@ namespace DigitalOpus.MB.Core
                 {
                     m_tintColor = sourceMat.GetColor("_Color");
                 }
-				else if (sourceMat.HasProperty("_TintColor"))
-				{
-					m_tintColor = sourceMat.GetColor("_TintColor");
-				}
-            } else
+                else if (sourceMat.HasProperty("_TintColor"))
+                {
+                    m_tintColor = sourceMat.GetColor("_TintColor");
+                }
+            }
+            else
             {
                 m_doTintColor = false;
             }
@@ -48,35 +47,35 @@ namespace DigitalOpus.MB.Core
 
         public bool NonTexturePropertiesAreEqual(Material a, Material b)
         {
-			if (a.HasProperty("_Color"))
-			{
-            if (_compareColor(a, b, m_defaultColor, "_Color"))
+            if (a.HasProperty("_Color"))
             {
-                return true;
+                if (_compareColor(a, b, m_defaultColor, "_Color"))
+                {
+                    return true;
+                }
+                //return false;
             }
-				//return false;
-			}
-			else if (a.HasProperty("_TintColor"))
-			{
-				if (_compareColor(a, b, m_defaultColor, "_TintColor"))
-				{
-					return true;
-				}
-				//return false;
-			}
+            else if (a.HasProperty("_TintColor"))
+            {
+                if (_compareColor(a, b, m_defaultColor, "_TintColor"))
+                {
+                    return true;
+                }
+                //return false;
+            }
             return false;
         }
 
         public void SetNonTexturePropertyValuesOnResultMaterial(Material resultMaterial)
         {
-           if (resultMaterial.HasProperty("_Color"))
+            if (resultMaterial.HasProperty("_Color"))
             {
                 resultMaterial.SetColor("_Color", m_defaultColor);
             }
-			else if (resultMaterial.HasProperty("_TintColor"))
-			{
-				resultMaterial.SetColor("_TintColor", m_defaultColor);
-			}
+            else if (resultMaterial.HasProperty("_TintColor"))
+            {
+                resultMaterial.SetColor("_TintColor", m_defaultColor);
+            }
         }
 
         public Color GetColorIfNoTexture(Material mat, ShaderTextureProperty texProperty)
@@ -95,14 +94,14 @@ namespace DigitalOpus.MB.Core
                     }
                     catch (Exception) { }
                 }
-				else if (mat != null && mat.HasProperty("_TintColor"))
-				{
-					try
-					{ //need try because can't garantee _TintColor is a color
-						return mat.GetColor("_TintColor");
-					}
-					catch (Exception) { }
-				}
+                else if (mat != null && mat.HasProperty("_TintColor"))
+                {
+                    try
+                    { //need try because can't garantee _TintColor is a color
+                        return mat.GetColor("_TintColor");
+                    }
+                    catch (Exception) { }
+                }
             }
             else if (texProperty.name.Equals("_SpecGlossMap"))
             {
@@ -177,14 +176,16 @@ namespace DigitalOpus.MB.Core
                                     //is virgin Emission values
                                     return new Color(f, f, f, f);
                                 }
-                                else { //non virgin Emission values
+                                else
+                                { //non virgin Emission values
                                     return c2;
                                 }
                             }
                             catch (Exception) { }
 
                         }
-                        else {
+                        else
+                        {
                             try
                             { //need try because can't garantee _Color is a color
                                 float f = mat.GetFloat("_EmissionScaleUI");

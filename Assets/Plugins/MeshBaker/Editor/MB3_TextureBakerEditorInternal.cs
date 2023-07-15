@@ -2,16 +2,13 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //---------------------------------------------- 
-using UnityEngine;
-using System.Collections;
-using System.IO;
-using System;
-using System.Collections.Specialized;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using DigitalOpus.MB.Core;
-
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.RegularExpressions;
 using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -256,8 +253,8 @@ namespace DigitalOpus.MB.MBEditor
             EditorGUILayout.LabelField("Objects To Be Combined", EditorStyles.boldLabel);
             if (GUILayout.Button(openToolsWindowLabelContent))
             {
-                MB3_MeshBakerEditorWindow mmWin = (MB3_MeshBakerEditorWindow) EditorWindow.GetWindow(editorWindow);
-                mmWin.SetTarget((MB3_MeshBakerRoot) momm);
+                MB3_MeshBakerEditorWindow mmWin = (MB3_MeshBakerEditorWindow)EditorWindow.GetWindow(editorWindow);
+                mmWin.SetTarget((MB3_MeshBakerRoot)momm);
             }
 
             object[] objs = MB3_EditorMethods.DropZone("Drag & Drop Renderers Or Parents Here To Add Objects To Be Combined", 300, 50);
@@ -319,7 +316,7 @@ namespace DigitalOpus.MB.MBEditor
                 }
             }
 
-            if (resultType.enumValueIndex == (int) MB2_TextureBakeResults.ResultType.textureArray)
+            if (resultType.enumValueIndex == (int)MB2_TextureBakeResults.ResultType.textureArray)
             {
                 MB_TextureBakerConfigureTextureArrays.DrawTextureArrayConfiguration(momm, textureBaker, this);
             }
@@ -381,7 +378,7 @@ namespace DigitalOpus.MB.MBEditor
                 }
             }
 
-            if (texturePackingAlgorithm.intValue == (int) MB2_PackingAlgorithmEnum.MeshBakerTexturePaker_Fast_V2_Beta)
+            if (texturePackingAlgorithm.intValue == (int)MB2_PackingAlgorithmEnum.MeshBakerTexturePaker_Fast_V2_Beta)
             {
                 // layer field
                 int newValueLayerTexturePackerFastMesh = EditorGUILayout.LayerField(layerTexturePackerFastMeshGUIContent, layerTexturePackerFastMesh.intValue);
@@ -400,15 +397,16 @@ namespace DigitalOpus.MB.MBEditor
                     if (layerName != null && layerName.Length > 0 && numRenderersOnLayer == 0)
                     {
                         layerTexturePackerFastMeshMessage = null;
-                    } else
+                    }
+                    else
                     {
                         layerTexturePackerFastMeshMessage = layerTexturePackerFastMeshGUIContent.tooltip;
                     }
                 }
 
                 string scriptDefinesErrMessage = ValidatePlayerSettingsDefineSymbols();
-                
-                if (layerTexturePackerFastMesh.intValue == -1 || 
+
+                if (layerTexturePackerFastMesh.intValue == -1 ||
                     (layerTexturePackerFastMeshMessage != null && layerTexturePackerFastMeshMessage.Length > 0) ||
                     (scriptDefinesErrMessage != null))
                 {
@@ -452,7 +450,7 @@ namespace DigitalOpus.MB.MBEditor
             EditorUtility.DisplayProgressBar("Combining Meshes", msg, progress);
         }
 
-        public static void CreateCombinedMaterialAssets(MB3_TextureBaker target, string pth, bool allowOverwrite=true)
+        public static void CreateCombinedMaterialAssets(MB3_TextureBaker target, string pth, bool allowOverwrite = true)
         {
             MB3_TextureBaker mom = (MB3_TextureBaker)target;
             string baseName = Path.GetFileNameWithoutExtension(pth);
@@ -468,7 +466,7 @@ namespace DigitalOpus.MB.MBEditor
                     if (!allowOverwrite) nm = AssetDatabase.GenerateUniqueAssetPath(nm);
                     matNames.Add(nm);
                     AssetDatabase.CreateAsset(new Material(Shader.Find("Diffuse")), matNames[i]);
-                    mom.resultMaterialsTexArray[i].combinedMaterial = (Material) AssetDatabase.LoadAssetAtPath(matNames[i], typeof(Material));
+                    mom.resultMaterialsTexArray[i].combinedMaterial = (Material)AssetDatabase.LoadAssetAtPath(matNames[i], typeof(Material));
                 }
             }
             else
@@ -533,7 +531,7 @@ namespace DigitalOpus.MB.MBEditor
             List<MB3_TextureBaker> outList = new List<MB3_TextureBaker>(targs.Length);
             for (int i = 0; i < targs.Length; i++)
             {
-                outList.Add((MB3_TextureBaker) targs[i]);
+                outList.Add((MB3_TextureBaker)targs[i]);
             }
 
             return outList;
@@ -551,7 +549,7 @@ namespace DigitalOpus.MB.MBEditor
             {
                 if (!scriptDefines.Contains(MBVersion.MB_USING_HDRP))
                 {
-                    s += "The GraphicsSettings -> Render Pipeline Asset is configured to use HDRP. Please add 'MB_USING_HDRP' to PlayerSettings -> Scripting Define Symbols for all the build platforms " + 
+                    s += "The GraphicsSettings -> Render Pipeline Asset is configured to use HDRP. Please add 'MB_USING_HDRP' to PlayerSettings -> Scripting Define Symbols for all the build platforms " +
                         " that you are targeting. If there are compile errors check that the MeshBakerCore.asmdef file has references for:\n\n" +
                         "   Unity.RenderPipelines.HighDefinition.Runtime\n" +
                         "   Unity.RenderPipelines.HighDefinition.Config.Runtime (Unity 2019.3+)\n";

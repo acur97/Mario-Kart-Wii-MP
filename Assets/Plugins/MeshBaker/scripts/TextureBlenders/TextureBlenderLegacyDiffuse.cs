@@ -1,7 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System;
+﻿using System;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -11,14 +9,17 @@ namespace DigitalOpus.MB.Core
         Color m_tintColor;
         Color m_defaultTintColor = Color.white;
 
-		public bool DoesShaderNameMatch(string shaderName)
+        public bool DoesShaderNameMatch(string shaderName)
         {
-            if (shaderName.Equals ("Legacy Shaders/Diffuse")) {
-				return true;
-			} else if (shaderName.Equals ("Diffuse")) {
-				return true;			
-			}
-			return false;
+            if (shaderName.Equals("Legacy Shaders/Diffuse"))
+            {
+                return true;
+            }
+            else if (shaderName.Equals("Diffuse"))
+            {
+                return true;
+            }
+            return false;
         }
 
         public void OnBeforeTintTexture(Material sourceMat, string shaderTexturePropertyName)
@@ -27,7 +28,8 @@ namespace DigitalOpus.MB.Core
             {
                 doColor = true;
                 m_tintColor = sourceMat.GetColor("_Color");
-            } else
+            }
+            else
             {
                 doColor = false;
             }
@@ -65,7 +67,7 @@ namespace DigitalOpus.MB.Core
                     catch (Exception) { }
                 }
             }
-            return new Color(1,1,1,0);
+            return new Color(1, 1, 1, 0);
         }
     }
 }

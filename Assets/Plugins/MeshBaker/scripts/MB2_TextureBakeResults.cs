@@ -1,9 +1,8 @@
-using UnityEngine;
-using System;
-using System.Text;
-using System.Collections;
-using System.Collections.Generic;
 using DigitalOpus.MB.Core;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 
@@ -11,14 +10,15 @@ using UnityEngine.Serialization;
 /// Used internally during the material baking process
 /// </summary>
 [Serializable]
-public class MB_AtlasesAndRects{
+public class MB_AtlasesAndRects
+{
     /// <summary>
     /// One atlas per texture property.
     /// </summary>
 	public Texture2D[] atlases;
     [NonSerialized]
-	public List<MB_MaterialAndUVRect> mat2rect_map;
-	public string[] texPropertyNames;
+    public List<MB_MaterialAndUVRect> mat2rect_map;
+    public string[] texPropertyNames;
 }
 
 public class MB_TextureArrayResultMaterial
@@ -27,10 +27,11 @@ public class MB_TextureArrayResultMaterial
 }
 
 [System.Serializable]
-public class MB_MultiMaterial{
-	public Material combinedMaterial;
+public class MB_MultiMaterial
+{
+    public Material combinedMaterial;
     public bool considerMeshUVs;
-	public List<Material> sourceMaterials = new List<Material>();
+    public List<Material> sourceMaterials = new List<Material>();
 }
 
 [System.Serializable]
@@ -196,7 +197,7 @@ public class MB_MaterialAndUVRect
     /// The source material that was baked into the atlas.
     /// </summary>
     public Material material;
-    
+
     /// <summary>
     /// The rectangle in the atlas where the texture (including all tiling) was copied to.
     /// </summary>
@@ -251,13 +252,13 @@ public class MB_MaterialAndUVRect
     /// <param name="sourceMaterialTiling">allPropsUseSameTiling_sourceMaterialTiling</param>
     /// <param name="samplingEncapsulatingRect">allPropsUseSameTiling_samplingEncapsulatinRect</param>
     /// <param name="srcUVsamplingRect">propsUseDifferntTiling_srcUVsamplingRect</param>
-    public MB_MaterialAndUVRect(Material mat, 
-        Rect destRect, 
+    public MB_MaterialAndUVRect(Material mat,
+        Rect destRect,
         bool allPropsUseSameTiling,
-        Rect sourceMaterialTiling, 
+        Rect sourceMaterialTiling,
         Rect samplingEncapsulatingRect,
         Rect srcUVsamplingRect,
-        MB_TextureTilingTreatment treatment, 
+        MB_TextureTilingTreatment treatment,
         string objName)
     {
         if (allPropsUseSameTiling)
@@ -265,7 +266,8 @@ public class MB_MaterialAndUVRect
             Debug.Assert(srcUVsamplingRect == new Rect(0, 0, 0, 0));
         }
 
-        if (!allPropsUseSameTiling) {
+        if (!allPropsUseSameTiling)
+        {
             Debug.Assert(samplingEncapsulatingRect == new Rect(0, 0, 0, 0));
             Debug.Assert(sourceMaterialTiling == new Rect(0, 0, 0, 0));
         }
@@ -289,7 +291,7 @@ public class MB_MaterialAndUVRect
     {
         if (!(obj is MB_MaterialAndUVRect)) return false;
         MB_MaterialAndUVRect b = (MB_MaterialAndUVRect)obj;
-        return material == b.material && 
+        return material == b.material &&
             allPropsUseSameTiling_samplingEncapsulatinRect == b.allPropsUseSameTiling_samplingEncapsulatinRect &&
             allPropsUseSameTiling_sourceMaterialTiling == b.allPropsUseSameTiling_sourceMaterialTiling &&
             allPropsUseSameTiling == b.allPropsUseSameTiling &&
@@ -328,7 +330,8 @@ public class MB_MaterialAndUVRect
 /// 
 /// It can be saved as an asset in the project so that textures can be baked in one scene and used in another.
 /// </summary>
-public class MB2_TextureBakeResults : ScriptableObject {
+public class MB2_TextureBakeResults : ScriptableObject
+{
 
     public enum ResultType
     {
@@ -398,7 +401,8 @@ public class MB2_TextureBakeResults : ScriptableObject {
         if (resultType == ResultType.atlas)
         {
             return resultMaterials[idx].combinedMaterial;
-        } else
+        }
+        else
         {
             return resultMaterialsTexArray[idx].combinedMaterial;
         }
@@ -429,7 +433,8 @@ public class MB2_TextureBakeResults : ScriptableObject {
         if (resultType == ResultType.atlas)
         {
             return resultMaterials[resultMatIdx].sourceMaterials;
-        } else
+        }
+        else
         {
             // TODO do this once and cache.
             HashSet<Material> output = new HashSet<Material>();
@@ -442,7 +447,7 @@ public class MB2_TextureBakeResults : ScriptableObject {
                 {
                     output.Add(usedMaterials[j]);
                 }
-                
+
             }
 
             List<Material> outMats = new List<Material>(output);
@@ -480,13 +485,13 @@ public class MB2_TextureBakeResults : ScriptableObject {
 
         Material[] rms = new Material[fullMaterialList.Count];
         fullMaterialList.CopyTo(rms);
-        MB2_TextureBakeResults tbr = (MB2_TextureBakeResults) ScriptableObject.CreateInstance( typeof(MB2_TextureBakeResults) );
+        MB2_TextureBakeResults tbr = (MB2_TextureBakeResults)ScriptableObject.CreateInstance(typeof(MB2_TextureBakeResults));
         List<MB_MaterialAndUVRect> mss = new List<MB_MaterialAndUVRect>();
         for (int i = 0; i < rms.Length; i++)
         {
             if (rms[i] != null)
             {
-                MB_MaterialAndUVRect matAndUVRect = new MB_MaterialAndUVRect(rms[i], new Rect(0f, 0f, 1f, 1f), true, new Rect(0f,0f,1f,1f), new Rect(0f,0f,1f,1f), new Rect(0,0,0,0), MB_TextureTilingTreatment.none, "");
+                MB_MaterialAndUVRect matAndUVRect = new MB_MaterialAndUVRect(rms[i], new Rect(0f, 0f, 1f, 1f), true, new Rect(0f, 0f, 1f, 1f), new Rect(0f, 0f, 1f, 1f), new Rect(0, 0, 0, 0), MB_TextureTilingTreatment.none, "");
                 if (!mss.Contains(matAndUVRect))
                 {
                     mss.Add(matAndUVRect);
@@ -495,26 +500,28 @@ public class MB2_TextureBakeResults : ScriptableObject {
         }
 
         tbr.resultMaterials = new MB_MultiMaterial[mss.Count];
-        for (int i = 0; i < mss.Count; i++){
-			tbr.resultMaterials[i] = new MB_MultiMaterial();
-			List<Material> sourceMats = new List<Material>();
-			sourceMats.Add (mss[i].material);
-			tbr.resultMaterials[i].sourceMaterials = sourceMats;
-			tbr.resultMaterials[i].combinedMaterial = mss[i].material;
+        for (int i = 0; i < mss.Count; i++)
+        {
+            tbr.resultMaterials[i] = new MB_MultiMaterial();
+            List<Material> sourceMats = new List<Material>();
+            sourceMats.Add(mss[i].material);
+            tbr.resultMaterials[i].sourceMaterials = sourceMats;
+            tbr.resultMaterials[i].combinedMaterial = mss[i].material;
             tbr.resultMaterials[i].considerMeshUVs = false;
-		}
+        }
         if (rms.Length == 1)
         {
             tbr.doMultiMaterial = false;
-        } else
+        }
+        else
         {
             tbr.doMultiMaterial = true;
         }
 
         tbr.materialsAndUVRects = mss.ToArray();
         return tbr;
-	}
-	
+    }
+
     public bool DoAnyResultMatsUseConsiderMeshUVs()
     {
         if (resultType == ResultType.atlas)
@@ -546,7 +553,8 @@ public class MB2_TextureBakeResults : ScriptableObject {
     {
         for (int i = 0; i < materialsAndUVRects.Length; i++)
         {
-            if (materialsAndUVRects[i].material == m){
+            if (materialsAndUVRects[i].material == m)
+            {
                 return true;
             }
         }
@@ -554,33 +562,39 @@ public class MB2_TextureBakeResults : ScriptableObject {
     }
 
 
-	public string GetDescription(){
-		StringBuilder sb = new StringBuilder();
-		sb.Append("Shaders:\n");
-		HashSet<Shader> shaders = new HashSet<Shader>();
-		if (materialsAndUVRects != null){
-			for (int i = 0; i < materialsAndUVRects.Length; i++){
+    public string GetDescription()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.Append("Shaders:\n");
+        HashSet<Shader> shaders = new HashSet<Shader>();
+        if (materialsAndUVRects != null)
+        {
+            for (int i = 0; i < materialsAndUVRects.Length; i++)
+            {
                 if (materialsAndUVRects[i].material != null)
                 {
                     shaders.Add(materialsAndUVRects[i].material.shader);
-                }	
-			}
-		}
-		
-		foreach(Shader m in shaders){
-			sb.Append("  ").Append(m.name).AppendLine();
-		}
-		sb.Append("Materials:\n");
-		if (materialsAndUVRects != null){
-			for (int i = 0; i < materialsAndUVRects.Length; i++){
+                }
+            }
+        }
+
+        foreach (Shader m in shaders)
+        {
+            sb.Append("  ").Append(m.name).AppendLine();
+        }
+        sb.Append("Materials:\n");
+        if (materialsAndUVRects != null)
+        {
+            for (int i = 0; i < materialsAndUVRects.Length; i++)
+            {
                 if (materialsAndUVRects[i].material != null)
                 {
                     sb.Append("  ").Append(materialsAndUVRects[i].material.name).AppendLine();
                 }
-			}
-		}
-		return sb.ToString();
-	}
+            }
+        }
+        return sb.ToString();
+    }
 
     public void UpgradeToCurrentVersion(MB2_TextureBakeResults tbr)
     {

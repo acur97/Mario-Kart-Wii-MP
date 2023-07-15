@@ -2,9 +2,8 @@
  *	\brief Hax!  DLLs cannot interpret preprocessor directives, so this class acts as a "bridge"
  */
 using System;
-using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 #if MB_USING_HDRP && UNITY_2019_3_OR_NEWER
     using UnityEngine.Rendering.HighDefinition;
@@ -68,7 +67,7 @@ namespace DigitalOpus.MB.Core
             return 0;
 #endif
             */
-            string v = Application.unityVersion;     String[] vs = v.Split(new char[] { '.' });
+            string v = Application.unityVersion; String[] vs = v.Split(new char[] { '.' });
             return Int32.Parse(vs[1]);
         }
 

@@ -1,10 +1,10 @@
-using UnityEngine;
 using UnityEditor.Rendering.HighDefinition;
+using UnityEngine;
 
 [ExecuteInEditMode]
 public class SceneHDRPSettingsSetter : MonoBehaviour
 {
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
     [SerializeField]
     SettingHelperSO settingsHelper;
 
@@ -12,5 +12,5 @@ public class SceneHDRPSettingsSetter : MonoBehaviour
     {
         SettingsOverlay.instance.settingHelperSO = settingsHelper;
     }
-    #endif
+#endif
 }

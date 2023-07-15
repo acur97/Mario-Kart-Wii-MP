@@ -1,8 +1,6 @@
-﻿using UnityEditor;
-using UnityEngine;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using DigitalOpus.MB.Core;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -57,7 +55,7 @@ namespace DigitalOpus.MB.Core
 
         public int[] URPBlendMode_2_StandardBlendMode = new int[]
         {
-            (int) StandardShaderBlendMode.Opaque, 
+            (int) StandardShaderBlendMode.Opaque,
             (int) StandardShaderBlendMode.Transparent
         };
 
@@ -146,17 +144,19 @@ namespace DigitalOpus.MB.Core
                 if (materials[i].shader.name.StartsWith("Standard") && materials[i].HasProperty("_Mode"))
                 {
                     standardShaderBlendModes[i] = (StandardShaderBlendMode)materials[i].GetFloat("_Mode");
-                } else if (materials[i].shader.name.StartsWith("Universal Render Pipeline") && materials[i].HasProperty("_Surface"))
+                }
+                else if (materials[i].shader.name.StartsWith("Universal Render Pipeline") && materials[i].HasProperty("_Surface"))
                 {
-                    int surfaceMode = (int) materials[i].GetFloat("_Surface");
-                    if (surfaceMode < 0 || surfaceMode > (int) URPBlendMode.Transparent)
+                    int surfaceMode = (int)materials[i].GetFloat("_Surface");
+                    if (surfaceMode < 0 || surfaceMode > (int)URPBlendMode.Transparent)
                     {
                         Debug.LogError("Unsupported surface mode, were more surface modes added to the URP?");
                         surfaceMode = Mathf.Clamp(surfaceMode, (int)URPBlendMode.Opaque, (int)URPBlendMode.Transparent);
                     }
 
-                    standardShaderBlendModes[i] = (StandardShaderBlendMode) URPBlendMode_2_StandardBlendMode[surfaceMode];
-                } else if (materials[i].shader.name.StartsWith("HDRP") && materials[i].HasProperty("_SurfaceType"))
+                    standardShaderBlendModes[i] = (StandardShaderBlendMode)URPBlendMode_2_StandardBlendMode[surfaceMode];
+                }
+                else if (materials[i].shader.name.StartsWith("HDRP") && materials[i].HasProperty("_SurfaceType"))
                 {
                     int surfaceMode = (int)materials[i].GetFloat("_SurfaceType");
                     if (surfaceMode < 0 || surfaceMode > (int)HDRPBlendMode.Transparent)

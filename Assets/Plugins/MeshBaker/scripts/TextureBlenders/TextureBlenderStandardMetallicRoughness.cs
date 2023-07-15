@@ -1,7 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System;
+﻿using System;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -9,7 +7,8 @@ namespace DigitalOpus.MB.Core
     {
         static Color NeutralNormalMap = new Color(.5f, .5f, 1f);
 
-        private enum Prop{
+        private enum Prop
+        {
             doColor,
             doMetallic,
             doRoughness,
@@ -63,18 +62,21 @@ namespace DigitalOpus.MB.Core
                 if (sourceMat.HasProperty("_Color"))
                 {
                     m_tintColor = sourceMat.GetColor("_Color");
-                } else
+                }
+                else
                 {
                     m_tintColor = m_generatingTintedAtlasColor;
                 }
-            } else if (shaderTexturePropertyName.Equals("_MetallicGlossMap"))
+            }
+            else if (shaderTexturePropertyName.Equals("_MetallicGlossMap"))
             {
                 propertyToDo = Prop.doMetallic;
                 m_metallic = m_generatingTintedAtlasMetallic;
                 if (sourceMat.GetTexture("_MetallicGlossMap") != null)
                 {
                     m_hasMetallicGlossMap = true;
-                } else
+                }
+                else
                 {
                     m_hasMetallicGlossMap = false;
                 }
@@ -82,7 +84,8 @@ namespace DigitalOpus.MB.Core
                 if (sourceMat.HasProperty("_Metallic"))
                 {
                     m_metallic = sourceMat.GetFloat("_Metallic");
-                } else
+                }
+                else
                 {
                     m_metallic = 0f;
                 }
@@ -122,7 +125,8 @@ namespace DigitalOpus.MB.Core
                     m_bumpScale = m_generatingTintedAtlasBumpScale;
                 }
 
-            } else if (shaderTexturePropertyName.Equals("_EmissionMap"))
+            }
+            else if (shaderTexturePropertyName.Equals("_EmissionMap"))
             {
                 propertyToDo = Prop.doEmission;
                 m_shaderDoesEmission = sourceMat.IsKeywordEnabled("_EMISSION");
@@ -135,10 +139,11 @@ namespace DigitalOpus.MB.Core
                     m_emissionColor = m_notGeneratingAtlasDefaultEmisionColor;
                 }
 
-            } else
+            }
+            else
             {
                 propertyToDo = Prop.doNone;
-            } 
+            }
         }
 
         public Color OnBlendTexturePixel(string propertyToDoshaderPropertyName, Color pixelColor)
@@ -146,7 +151,8 @@ namespace DigitalOpus.MB.Core
             if (propertyToDo == Prop.doColor)
             {
                 return new Color(pixelColor.r * m_tintColor.r, pixelColor.g * m_tintColor.g, pixelColor.b * m_tintColor.b, pixelColor.a * m_tintColor.a);
-            } else if (propertyToDo == Prop.doMetallic)
+            }
+            else if (propertyToDo == Prop.doMetallic)
             {
                 if (m_hasMetallicGlossMap)
                 {
@@ -156,19 +162,23 @@ namespace DigitalOpus.MB.Core
                 {
                     return new Color(m_metallic, 0, 0, m_roughness);
                 }
-            } else if (propertyToDo == Prop.doRoughness)
+            }
+            else if (propertyToDo == Prop.doRoughness)
             {
                 if (m_hasSpecGlossMap)
                 {
                     return pixelColor;
-                } else
+                }
+                else
                 {
                     return new Color(m_roughness, 0, 0, 0);
                 }
-            } else if (propertyToDo == Prop.doBump)
+            }
+            else if (propertyToDo == Prop.doBump)
             {
                 return Color.Lerp(NeutralNormalMap, pixelColor, m_bumpScale);
-            } else if (propertyToDo == Prop.doEmission)
+            }
+            else if (propertyToDo == Prop.doEmission)
             {
                 if (m_shaderDoesEmission)
                 {
@@ -322,9 +332,10 @@ namespace DigitalOpus.MB.Core
                     }
                     catch (Exception) { }
                     return new Color(0f, 0f, 0f, .5f);
-                } else
+                }
+                else
                 {
-                    return new Color(0f,0f,0f,.5f);
+                    return new Color(0f, 0f, 0f, .5f);
                 }
             }
             else if (texPropertyName.name.Equals("_SpecGlossMap"))
@@ -390,7 +401,7 @@ namespace DigitalOpus.MB.Core
             else if (texPropertyName.name.Equals("_DetailMask"))
             {
                 return new Color(0f, 0f, 0f, 0f);
-            } 
+            }
             return new Color(1f, 1f, 1f, 0f);
         }
     }

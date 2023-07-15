@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -119,7 +117,7 @@ namespace DigitalOpus.MB.Core
         public virtual MB_MeshPivotLocation pivotLocationType
         {
             get { return _pivotLocationType; }
-            set{ _pivotLocationType = value; }
+            set { _pivotLocationType = value; }
         }
 
         [SerializeField]
@@ -186,7 +184,7 @@ namespace DigitalOpus.MB.Core
             {
                 if (_assignToMeshCustomizer is IAssignToMeshCustomizer)
                 {
-                    return (IAssignToMeshCustomizer) _assignToMeshCustomizer;
+                    return (IAssignToMeshCustomizer)_assignToMeshCustomizer;
                 }
                 else
                 {

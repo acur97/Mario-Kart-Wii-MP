@@ -2,16 +2,12 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //---------------------------------------------- 
-using UnityEngine;
-using System.Collections;
-using System.IO;
-using System;
-using System.Collections.Specialized;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using DigitalOpus.MB.Core;
-
+using System;
+using System.Collections.Generic;
+using System.IO;
 using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -53,7 +49,7 @@ namespace DigitalOpus.MB.MBEditor
 
             EditorGUILayout.PropertyField(editorInternal.textureArrayOutputFormats, gc_TextureArrayOutputFormats, true);
             EditorGUILayout.BeginHorizontal();
-            editorInternal.resultMaterialsFoldout = EditorGUILayout.Foldout(editorInternal.resultMaterialsFoldout,  MB3_TextureBakerEditorInternal.textureArrayCombinedMaterialFoldoutGUIContent);
+            editorInternal.resultMaterialsFoldout = EditorGUILayout.Foldout(editorInternal.resultMaterialsFoldout, MB3_TextureBakerEditorInternal.textureArrayCombinedMaterialFoldoutGUIContent);
             if (GUILayout.Button(MB3_TextureBakerEditorInternal.insertContent, EditorStyles.miniButtonLeft, MB3_TextureBakerEditorInternal.buttonWidth))
             {
                 if (editorInternal.resultMaterialsTexArray.arraySize == 0)
@@ -74,12 +70,12 @@ namespace DigitalOpus.MB.MBEditor
 
             EditorGUILayout.EndHorizontal();
 
-            
+
             if (editorInternal.resultMaterialsFoldout)
             {
                 for (int i = 0; i < editorInternal.resultMaterialsTexArray.arraySize; i++)
                 {
-                    
+
                     EditorGUILayout.Separator();
                     if (i % 2 == 1)
                     {
@@ -89,7 +85,7 @@ namespace DigitalOpus.MB.MBEditor
                     {
                         EditorGUILayout.BeginVertical(editorInternal.editorStyles.multipleMaterialBackgroundStyleDarker);
                     }
-                    
+
                     string s = "";
                     if (i < momm.resultMaterialsTexArray.Length && momm.resultMaterialsTexArray[i] != null && momm.resultMaterialsTexArray[i].combinedMaterial != null) s = momm.resultMaterialsTexArray[i].combinedMaterial.shader.ToString();
                     EditorGUILayout.BeginHorizontal();
@@ -98,7 +94,7 @@ namespace DigitalOpus.MB.MBEditor
                     {
                         editorInternal.resultMaterialsTexArray.DeleteArrayElementAtIndex(i);
                     }
-                    
+
                     EditorGUILayout.EndHorizontal();
                     if (i < editorInternal.resultMaterialsTexArray.arraySize)
                     {
@@ -108,13 +104,13 @@ namespace DigitalOpus.MB.MBEditor
                         SerializedProperty slices = resMat.FindPropertyRelative("slices");
                         EditorGUILayout.PropertyField(slices, true);
                     }
-                    
+
                     EditorGUILayout.EndVertical();
                 }
             }
 
             EditorGUILayout.EndVertical();
-            
+
         }
 
         public static string ReportTextureSizesAndFormats(MB3_TextureBaker mom)
@@ -166,7 +162,7 @@ namespace DigitalOpus.MB.MBEditor
 
                 MB_AtlasesAndRects atlasesAndRects = new MB_AtlasesAndRects();
                 combiner.CombineTexturesIntoAtlases(null, atlasesAndRects, tempMat, mom.GetObjectsToCombine(), allSourceMaterials, null, packingResults,
-                        onlyPackRects:true, splitAtlasWhenPackingIfTooBig:false);
+                        onlyPackRects: true, splitAtlasWhenPackingIfTooBig: false);
 
                 // Now vist the packing results and collect all the textures
                 Debug.Assert(packingResults.Count == 1);
@@ -195,7 +191,7 @@ namespace DigitalOpus.MB.MBEditor
                                     texWrapMode = ((Texture2D)tex).wrapMode.ToString();
                                 }
 
-                                sb.AppendLine(String.Format("    {0} x {1}  format:{2}  wrapMode:{3}   {4}", tex.width.ToString().PadLeft(6,' '), tex.height.ToString().PadRight(6,' '), texFormatString.PadRight(20,' '), texWrapMode.PadRight(12,' '), tex.name));
+                                sb.AppendLine(String.Format("    {0} x {1}  format:{2}  wrapMode:{3}   {4}", tex.width.ToString().PadLeft(6, ' '), tex.height.ToString().PadRight(6, ' '), texFormatString.PadRight(20, ' '), texWrapMode.PadRight(12, ' '), tex.name));
                             }
                         }
                     }
@@ -264,7 +260,7 @@ namespace DigitalOpus.MB.MBEditor
                 Mesh mesh = MB_Utility.GetMesh(srcGo);
                 Renderer r = MB_Utility.GetRenderer(srcGo);
 
-                if (mom.LOG_LEVEL >= MB2_LogLevel.trace) Debug.Log("1st Pass 'Split By Shader' Processing Mesh: "+ mesh +" Num submeshes: " + r.sharedMaterials.Length);
+                if (mom.LOG_LEVEL >= MB2_LogLevel.trace) Debug.Log("1st Pass 'Split By Shader' Processing Mesh: " + mesh + " Num submeshes: " + r.sharedMaterials.Length);
                 for (int submeshIdx = 0; submeshIdx < r.sharedMaterials.Length; submeshIdx++)
                 {
                     if (r.sharedMaterials[submeshIdx] == null) continue;
@@ -344,15 +340,15 @@ namespace DigitalOpus.MB.MBEditor
 
                     if (mom.LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log("======== 2nd pass. Use atlas packer to split the first slice into multiple if it exceeds atlas size. ");
                     combiner.CombineTexturesIntoAtlases(null, null, tempMat, mom.GetObjectsToCombine(), allMatsThatUserShader, null, packingResults,
-                        onlyPackRects:true, splitAtlasWhenPackingIfTooBig:true);
+                        onlyPackRects: true, splitAtlasWhenPackingIfTooBig: true);
                     if (mom.LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log("======== Completed packing with texture packer. numPackingResults: " + packingResults.Count);
                     newSlices.Clear();
-                        
+
                     // The texture packing just split the atlas into multiple atlases. Each atlas will become a "slice".
                     for (int newSliceIdx = 0; newSliceIdx < packingResults.Count; newSliceIdx++)
                     {
                         List<MB_MaterialAndUVRect> sourceMats = new List<MB_MaterialAndUVRect>();
-                        List<MB_MaterialAndUVRect> packedMatRects = (List<MB_MaterialAndUVRect>) packingResults[newSliceIdx].data;
+                        List<MB_MaterialAndUVRect> packedMatRects = (List<MB_MaterialAndUVRect>)packingResults[newSliceIdx].data;
                         HashSet<Rect> distinctAtlasRects = new HashSet<Rect>();
                         for (int packedMatRectIdx = 0; packedMatRectIdx < packedMatRects.Count; packedMatRectIdx++)
                         {
@@ -400,7 +396,7 @@ namespace DigitalOpus.MB.MBEditor
                     Slice slice = srcSlices[sliceIdx];
                     MB_TexArraySlice resSlice = new MB_TexArraySlice();
                     List<Material> usedMats = new List<Material>();
-                    
+
                     for (int srcMatIdx = 0; srcMatIdx < slice.atlasRects.Count; srcMatIdx++)
                     {
                         MB_MaterialAndUVRect matAndUVRect = slice.atlasRects[srcMatIdx];
@@ -519,7 +515,7 @@ namespace DigitalOpus.MB.MBEditor
                             slice.sourceMaterials.Clear();
                             foreach (Material mat in distinctMats)
                             {
-                                slice.sourceMaterials.Add(new MB_TexArraySliceRendererMatPair() {sourceMaterial = mat });
+                                slice.sourceMaterials.Add(new MB_TexArraySliceRendererMatPair() { sourceMaterial = mat });
                             }
                         }
                     }

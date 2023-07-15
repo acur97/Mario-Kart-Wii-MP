@@ -2,13 +2,11 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
-using UnityEngine;
-using System.Collections;
-using System.IO;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
+using UnityEngine;
 
 /*
   
@@ -113,7 +111,9 @@ namespace DigitalOpus.MB.Core
             internal CreateAtlasForProperty[] allTexturesAreNullAndSameColor;
             internal MB2_TextureBakeResults.ResultType resultType;
 
-            internal int numAtlases { get
+            internal int numAtlases
+            {
+                get
                 {
                     if (texPropertyNames != null) return texPropertyNames.Count;
                     else return 0;
@@ -126,7 +126,7 @@ namespace DigitalOpus.MB.Core
                 if (distinctMaterialTextures != null &&
                     distinctMaterialTextures.Count == 1 &&
                     distinctMaterialTextures[0].thisIsOnlyTexSetInAtlas == true &&
-                    !_fixOutOfBoundsUVs && 
+                    !_fixOutOfBoundsUVs &&
                     !_considerNonTextureProperties)
                 {
                     return true;
@@ -209,7 +209,8 @@ namespace DigitalOpus.MB.Core
                     if (mat.IsKeywordEnabled("_EMISSION"))
                     {
                         return mat.GetTexture(propertyName);
-                    } else
+                    }
+                    else
                     {
                         return null;
                     }
@@ -369,7 +370,7 @@ namespace DigitalOpus.MB.Core
                                     else
                                     {
                                         //TRIED to copy texture using tex2.SetPixels(tex1.GetPixels()) but bug in 3.5 means DTX1 and 5 compressed textures come out skewe
-                                        if (Application.isPlaying && 
+                                        if (Application.isPlaying &&
                                             data._packingAlgorithm != MB2_PackingAlgorithmEnum.MeshBakerTexturePacker_Fast &&
                                             data._packingAlgorithm != MB2_PackingAlgorithmEnum.MeshBakerTexturePaker_Fast_V2_Beta)
                                         {
@@ -744,18 +745,20 @@ namespace DigitalOpus.MB.Core
                 if (USE_EXPERIMENTAL_HOIZONTALVERTICAL)
                 {
                     return new MB3_TextureCombinerPackerMeshBakerHorizontalVertical(MB3_TextureCombinerPackerMeshBakerHorizontalVertical.AtlasDirection.horizontal);
-                } else
+                }
+                else
                 {
                     return new MB3_TextureCombinerPackerMeshBaker();
                 }
-                
+
             }
             else if (packingAlgorithm == MB2_PackingAlgorithmEnum.MeshBakerTexturePacker_Vertical)
             {
                 if (USE_EXPERIMENTAL_HOIZONTALVERTICAL)
                 {
                     return new MB3_TextureCombinerPackerMeshBakerHorizontalVertical(MB3_TextureCombinerPackerMeshBakerHorizontalVertical.AtlasDirection.vertical);
-                } else
+                }
+                else
                 {
                     return new MB3_TextureCombinerPackerMeshBaker();
                 }
@@ -771,7 +774,8 @@ namespace DigitalOpus.MB.Core
             else if (packingAlgorithm == MB2_PackingAlgorithmEnum.MeshBakerTexturePacker_Fast)
             {
                 return new MB3_TextureCombinerPackerMeshBakerFast();
-            } else
+            }
+            else
             {
                 Debug.LogError("Unknown texture packer type. " + packingAlgorithm + " This should never happen.");
                 return null;
@@ -1097,7 +1101,8 @@ namespace DigitalOpus.MB.Core
             {
                 offset = mat.GetTextureOffset("_MainTex");
                 scale = mat.GetTextureScale("_MainTex");
-            } else 
+            }
+            else
             {
                 offset = mat.GetTextureOffset(propertyName);
                 scale = mat.GetTextureScale(propertyName);

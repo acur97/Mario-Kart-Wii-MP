@@ -1,6 +1,6 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System;
 using UnityEngine;
 
 namespace DigitalOpus.MB.Core
@@ -83,7 +83,8 @@ namespace DigitalOpus.MB.Core
                     if (IsLinearProperty(masterListOfTexProperties, propName))
                     {
                         isLinear = true;
-                    } else
+                    }
+                    else
                     {
                         isLinear = false;
                     }
@@ -233,18 +234,18 @@ namespace DigitalOpus.MB.Core
             }
         }
 
-        public static IEnumerator _CreateAtlasesCoroutineSingleResultMaterial(int resMatIdx, 
-                            MB_TextureArrayResultMaterial bakedMatsAndSlicesResMat, 
-                            MB_MultiMaterialTexArray resMatConfig, 
+        public static IEnumerator _CreateAtlasesCoroutineSingleResultMaterial(int resMatIdx,
+                            MB_TextureArrayResultMaterial bakedMatsAndSlicesResMat,
+                            MB_MultiMaterialTexArray resMatConfig,
                             List<GameObject> objsToMesh,
                             MB3_TextureCombiner combiner,
                             MB_TextureArrayFormatSet[] textureArrayOutputFormats,
                             MB_MultiMaterialTexArray[] resultMaterialsTexArray,
                             List<ShaderTextureProperty> customShaderProperties,
                             ProgressUpdateDelegate progressInfo,
-                            MB3_TextureCombiner.CreateAtlasesCoroutineResult coroutineResult, 
-                            bool saveAtlasesAsAssets = false, 
-                            MB2_EditorMethodsInterface editorMethods = null, 
+                            MB3_TextureCombiner.CreateAtlasesCoroutineResult coroutineResult,
+                            bool saveAtlasesAsAssets = false,
+                            MB2_EditorMethodsInterface editorMethods = null,
                             float maxTimePerFrame = .01f)
         {
             MB2_LogLevel LOG_LEVEL = combiner.LOG_LEVEL;

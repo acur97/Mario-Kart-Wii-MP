@@ -2,15 +2,12 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
-using UnityEngine;
-using System.Collections;
-using System.IO;
-using System;
-using System.Collections.Specialized;
-using System.Collections.Generic;
 using DigitalOpus.MB.Core;
-
+using System;
+using System.Collections.Generic;
+using System.IO;
 using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -211,7 +208,7 @@ namespace DigitalOpus.MB.MBEditor
             {
                 if (GUILayout.Button(gc_openToolsWindowLabelContent))
                 {
-                    MB3_MeshBakerEditorWindow mmWin = (MB3_MeshBakerEditorWindow) EditorWindow.GetWindow(editorWindowType);
+                    MB3_MeshBakerEditorWindow mmWin = (MB3_MeshBakerEditorWindow)EditorWindow.GetWindow(editorWindowType);
                     mmWin.SetTarget((MB3_MeshBakerRoot)momm);
                 }
 
@@ -226,7 +223,7 @@ namespace DigitalOpus.MB.MBEditor
                     List<MB3_MeshBakerCommon> selectedBakers = _getBakersFromTargets(targets);
                     List<GameObject> obsToCombine = new List<GameObject>();
 
-                    foreach(MB3_MeshBakerCommon baker in selectedBakers) obsToCombine.AddRange(baker.GetObjectsToCombine());
+                    foreach (MB3_MeshBakerCommon baker in selectedBakers) obsToCombine.AddRange(baker.GetObjectsToCombine());
                     Selection.objects = obsToCombine.ToArray();
                     if (momm.GetObjectsToCombine().Count > 0)
                     {
@@ -293,7 +290,7 @@ namespace DigitalOpus.MB.MBEditor
                 }
 
                 Transform pgo = (Transform)EditorGUILayout.ObjectField(gc_parentSceneObject, parentSceneObject.objectReferenceValue, typeof(Transform), true);
-                if (pgo != null && MB_Utility.IsSceneInstance(pgo.gameObject)) 
+                if (pgo != null && MB_Utility.IsSceneInstance(pgo.gameObject))
                 {
                     parentSceneObject.objectReferenceValue = pgo;
                 }
@@ -311,7 +308,8 @@ namespace DigitalOpus.MB.MBEditor
                     {
                         Debug.LogError("The " + gc_combinedMeshPrefabGUIContent.text + " must be a prefab asset, not a scene GameObject");
                         momm.resultPrefab = null;
-                    } else
+                    }
+                    else
                     {
                         MB_PrefabType pt = MBVersionEditor.GetPrefabType(momm.resultPrefab);
                         if (pt != MB_PrefabType.prefabAsset)
@@ -320,7 +318,8 @@ namespace DigitalOpus.MB.MBEditor
                             momm.resultPrefab = null;
                         }
                     }
-                } else
+                }
+                else
                 {
                     if (GUILayout.Button("Create Empty Prefab"))
                     {
@@ -487,11 +486,11 @@ namespace DigitalOpus.MB.MBEditor
             {
                 List<MB3_MeshBakerCommon> selectedBakers = _getBakersFromTargets(targets);
                 if (selectedBakers.Count > 1) Debug.Log("About to bake " + selectedBakers.Count);
-                foreach(MB3_MeshBakerCommon baker in selectedBakers)
+                foreach (MB3_MeshBakerCommon baker in selectedBakers)
                 {
                     // Why are we caching and recreating the SerializedObject? Because "bakeIntoPrefab" corrupts the serialized object
                     // and the meshBaker SerializedObject throws an NRE the next time it gets used.
-                    MB3_MeshBakerCommon mbr  = (MB3_MeshBakerCommon) meshBaker.targetObject;
+                    MB3_MeshBakerCommon mbr = (MB3_MeshBakerCommon)meshBaker.targetObject;
                     bake(baker);
                     meshBaker = new SerializedObject(mbr);
                 }
@@ -542,7 +541,7 @@ namespace DigitalOpus.MB.MBEditor
             List<MB3_MeshBakerCommon> outList = new List<MB3_MeshBakerCommon>(targs.Length);
             for (int i = 0; i < targs.Length; i++)
             {
-                outList.Add((MB3_MeshBakerCommon) targs[i]);
+                outList.Add((MB3_MeshBakerCommon)targs[i]);
             }
 
             return outList;
@@ -560,7 +559,7 @@ namespace DigitalOpus.MB.MBEditor
                 PrefabUtility.CreatePrefab(fullName, go);
                 GameObject.DestroyImmediate(go);
                 SerializedObject so = new SerializedObject(mom);
-                so.FindProperty("resultPrefab").objectReferenceValue =  (GameObject)AssetDatabase.LoadAssetAtPath(fullName, typeof(GameObject));
+                so.FindProperty("resultPrefab").objectReferenceValue = (GameObject)AssetDatabase.LoadAssetAtPath(fullName, typeof(GameObject));
                 so.ApplyModifiedProperties();
             }
         }

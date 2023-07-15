@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEditor;
-using DigitalOpus.MB.MBEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {

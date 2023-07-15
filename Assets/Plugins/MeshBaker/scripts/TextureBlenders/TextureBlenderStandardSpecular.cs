@@ -1,7 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System;
+﻿using System;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -47,14 +45,14 @@ namespace DigitalOpus.MB.Core
         // These are the default property values that will be assigned to the result materials if 
         // none of the source materials have a value for these properties.
         Color m_notGeneratingAtlasDefaultColor = Color.white;
-        Color m_notGeneratingAtlasDefaultSpecularColor = new Color(0f,0f,0f,1f);
+        Color m_notGeneratingAtlasDefaultSpecularColor = new Color(0f, 0f, 0f, 1f);
         float m_notGeneratingAtlasDefaultGlossiness = .5f;
         Color m_notGeneratingAtlasDefaultEmisionColor = Color.black;
 
         public bool DoesShaderNameMatch(string shaderName)
-		{
-			return shaderName.Equals("Standard (Specular setup)");
-		}
+        {
+            return shaderName.Equals("Standard (Specular setup)");
+        }
 
         public void OnBeforeTintTexture(Material sourceMat, string shaderTexturePropertyName)
         {
@@ -86,7 +84,8 @@ namespace DigitalOpus.MB.Core
                 if (sourceMat.HasProperty("_SpecColor"))
                 {
                     m_specColor = sourceMat.GetColor("_SpecColor");
-                } else
+                }
+                else
                 {
                     m_specColor = new Color(0f, 0f, 0f, 1f);
                 }
@@ -108,7 +107,8 @@ namespace DigitalOpus.MB.Core
                 {
                     m_glossiness = 0f;
                 }
-            } else if (shaderTexturePropertyName.Equals("_BumpMap"))
+            }
+            else if (shaderTexturePropertyName.Equals("_BumpMap"))
             {
                 propertyToDo = Prop.doBump;
                 if (sourceMat.HasProperty(shaderTexturePropertyName))
@@ -120,20 +120,24 @@ namespace DigitalOpus.MB.Core
                 {
                     m_bumpScale = m_generatingTintedAtlaBumpScale;
                 }
-            } else if (shaderTexturePropertyName.Equals("_EmissionMap"))
+            }
+            else if (shaderTexturePropertyName.Equals("_EmissionMap"))
             {
                 propertyToDo = Prop.doEmission;
                 m_shaderDoesEmission = sourceMat.IsKeywordEnabled("_EMISSION");
-                if (sourceMat.HasProperty("_EmissionColor")) {
+                if (sourceMat.HasProperty("_EmissionColor"))
+                {
                     m_emissionColor = sourceMat.GetColor("_EmissionColor");
-                } else
+                }
+                else
                 {
                     m_generatingTintedAtlaColor = m_notGeneratingAtlasDefaultEmisionColor;
                 }
-            } else
+            }
+            else
             {
                 propertyToDo = Prop.doNone;
-            } 
+            }
         }
 
 
@@ -239,13 +243,16 @@ namespace DigitalOpus.MB.Core
                 resultMaterial.SetColor("_Color", (Color)sourceMaterialPropertyCache.GetValueIfAllSourceAreTheSameOrDefault("_Color", m_notGeneratingAtlasDefaultColor));
             }
 
-            if (resultMaterial.GetTexture("_SpecGlossMap") != null) {
+            if (resultMaterial.GetTexture("_SpecGlossMap") != null)
+            {
                 resultMaterial.SetColor("_SpecColor", m_generatingTintedAtlaSpecular);
                 resultMaterial.SetFloat("_GlossMapScale", m_generatingTintedAtlaSpecGlossMapScale);
                 resultMaterial.SetFloat("_Glossiness", m_generatingTintedAtlaGlossiness);
-            } else {
-                resultMaterial.SetColor("_SpecColor", (Color) sourceMaterialPropertyCache.GetValueIfAllSourceAreTheSameOrDefault("_SpecColor", m_notGeneratingAtlasDefaultSpecularColor));
-                resultMaterial.SetFloat("_Glossiness", (float) sourceMaterialPropertyCache.GetValueIfAllSourceAreTheSameOrDefault("_Glossiness", m_notGeneratingAtlasDefaultGlossiness));
+            }
+            else
+            {
+                resultMaterial.SetColor("_SpecColor", (Color)sourceMaterialPropertyCache.GetValueIfAllSourceAreTheSameOrDefault("_SpecColor", m_notGeneratingAtlasDefaultSpecularColor));
+                resultMaterial.SetFloat("_Glossiness", (float)sourceMaterialPropertyCache.GetValueIfAllSourceAreTheSameOrDefault("_Glossiness", m_notGeneratingAtlasDefaultGlossiness));
             }
 
             if (resultMaterial.GetTexture("_BumpMap") != null)

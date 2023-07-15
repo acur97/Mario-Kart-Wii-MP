@@ -1,10 +1,4 @@
-﻿using UnityEditor;
-using UnityEngine;
-using System;
-using System.Collections.Generic;
-using DigitalOpus.MB.Core;
-
-namespace DigitalOpus.MB.Core
+﻿namespace DigitalOpus.MB.Core
 {
 
     public class MB3_GroupByStandardShaderType : IGroupByFilter

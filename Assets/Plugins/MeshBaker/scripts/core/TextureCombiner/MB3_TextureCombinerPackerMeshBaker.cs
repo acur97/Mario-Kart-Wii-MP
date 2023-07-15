@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections;
 using UnityEngine;
-using System;
 
 namespace DigitalOpus.MB.Core
 {
@@ -113,7 +112,7 @@ namespace DigitalOpus.MB.Core
             Texture2D t = source.GetTexture2D();
             if (LOG_LEVEL >= MB2_LogLevel.debug)
             {
-                Debug.Log(String.Format("CopyScaledAndTiledToAtlas: {0} inAtlasX={1} inAtlasY={2} inAtlasW={3} inAtlasH={4} paddX={5} paddY={6} srcSamplingRect={7}", 
+                Debug.Log(String.Format("CopyScaledAndTiledToAtlas: {0} inAtlasX={1} inAtlasY={2} inAtlasW={3} inAtlasH={4} paddX={5} paddY={6} srcSamplingRect={7}",
                     t, targX, targY, targW, targH, padding.leftRight, padding.topBottom, srcSamplingRect));
             }
             float newWidth = targW;

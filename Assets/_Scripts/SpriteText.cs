@@ -3,33 +3,33 @@ using TMPro;
 using System.Text;
 
 #if UNITY_EDITOR
-    using UnityEditor;
+using UnityEditor;
 
-    [CustomEditor(typeof(SpriteText))]
-    class SpriteTextEditor : Editor
+[CustomEditor(typeof(SpriteText))]
+class SpriteTextEditor : Editor
+{
+    private const string Text1 = "Set Text";
+    private const string Text2 = "Texto seteado";
+
+    public override void OnInspectorGUI()
     {
-        private const string Text1 = "Set Text";
-        private const string Text2 = "Texto seteado";
-
-        public override void OnInspectorGUI()
+        base.OnInspectorGUI();
+        SpriteText _SpriteText = (SpriteText)target;
+        if (GUILayout.Button(Text1))
         {
-            base.OnInspectorGUI();
-            SpriteText _SpriteText = (SpriteText)target;
-            if (GUILayout.Button(Text1))
-            {
-                _SpriteText.SetText(_SpriteText._text);
-                Debug.Log(Text2);
-            }
+            _SpriteText.SetText(_SpriteText._text);
+            Debug.Log(Text2);
         }
     }
+}
 #endif
 
-[ExecuteInEditMode, RequireComponent(typeof (TextMeshProUGUI))]
+[ExecuteInEditMode, RequireComponent(typeof(TextMeshProUGUI))]
 public class SpriteText : MonoBehaviour
 {
     public enum Fuente { turbo_PointNum, turbo_messageFontOutline, turbo_PointNum_Led }
     public Fuente _fuente;
-    [TextArea(minLines:5, maxLines:10)]
+    [TextArea(minLines: 5, maxLines: 10)]
     public string _text;
 
     private TextMeshProUGUI TMPtext;
@@ -50,7 +50,7 @@ public class SpriteText : MonoBehaviour
         spriteTextAssets = SpriteTextAssets._SpriteTextAssets;
         if (spriteTextAssets == null)
         {
-            spriteTextAssets = FindObjectOfType<SpriteTextAssets>(true);
+            spriteTextAssets = FindFirstObjectByType<SpriteTextAssets>(FindObjectsInactive.Include);
         }
         if (_text != null)
         {
@@ -92,11 +92,11 @@ public class SpriteText : MonoBehaviour
 
         TMPtext.SetText(sb);
 
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
         SetFont();
         TMPtext.enabled = false;
         TMPtext.enabled = true;
-    #endif
+#endif
     }
 
     public void SetFont()

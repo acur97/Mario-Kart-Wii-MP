@@ -2,7 +2,7 @@
 
 public class Rotate : MonoBehaviour
 {
-    public Vector3 axis = new Vector3(0, 1, 0);
+    public Vector3 axis = new(0, 1, 0);
     public float velocidad;
 
     private float val = 0;

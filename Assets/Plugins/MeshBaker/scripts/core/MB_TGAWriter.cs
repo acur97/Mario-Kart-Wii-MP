@@ -1,48 +1,46 @@
-﻿using UnityEngine;
-using System.Collections;
-using System;
-using System.IO;
+﻿using System.IO;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
-public static class MB_TGAWriter
-{
-    public static void Write(Color[] pixels, int width, int height, string path)
+    public static class MB_TGAWriter
     {
-        // Delete the file if it exists.
-        if (File.Exists(path))
+        public static void Write(Color[] pixels, int width, int height, string path)
         {
-            File.Delete(path);
-        }
-
-        //Create the file.
-        FileStream fs = File.Create(path);
-        Write(pixels, width, height, fs);
-    }
-
-
-    public static void Write(Color[] pixels, int width, int height, Stream output)
-    {
-        byte[] pixelsArr = new byte[pixels.Length * 4];
-
-        int offsetSource = 0;
-        int offsetDest = 0;
-        for (int y = 0; y < height; y++)
-        {
-            for (int x = 0; x < width; x++)
+            // Delete the file if it exists.
+            if (File.Exists(path))
             {
-                Color value = pixels[offsetSource];
-                pixelsArr[offsetDest] = (byte)(value.b * 255); // b
-                pixelsArr[offsetDest + 1] = (byte)(value.g * 255); // g
-                pixelsArr[offsetDest + 2] = (byte)(value.r * 255); // r
-                pixelsArr[offsetDest + 3] = (byte)(value.a * 255); // a
-
-                offsetSource++;
-                offsetDest += 4;
+                File.Delete(path);
             }
+
+            //Create the file.
+            FileStream fs = File.Create(path);
+            Write(pixels, width, height, fs);
         }
 
-        byte[] header = new byte[] {
+
+        public static void Write(Color[] pixels, int width, int height, Stream output)
+        {
+            byte[] pixelsArr = new byte[pixels.Length * 4];
+
+            int offsetSource = 0;
+            int offsetDest = 0;
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    Color value = pixels[offsetSource];
+                    pixelsArr[offsetDest] = (byte)(value.b * 255); // b
+                    pixelsArr[offsetDest + 1] = (byte)(value.g * 255); // g
+                    pixelsArr[offsetDest + 2] = (byte)(value.r * 255); // r
+                    pixelsArr[offsetDest + 3] = (byte)(value.a * 255); // a
+
+                    offsetSource++;
+                    offsetDest += 4;
+                }
+            }
+
+            byte[] header = new byte[] {
             0, // ID length
             0, // no color map
             2, // uncompressed, true color
@@ -56,10 +54,10 @@ public static class MB_TGAWriter
             32, // 32 bit bitmap
             0 };
 
-        using (BinaryWriter writer = new BinaryWriter(output))
-        {
-            writer.Write(header);
-            writer.Write(pixelsArr);
+            using (BinaryWriter writer = new BinaryWriter(output))
+            {
+                writer.Write(header);
+                writer.Write(pixelsArr);
             }
         }
     }

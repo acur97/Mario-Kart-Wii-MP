@@ -1,11 +1,9 @@
-﻿using UnityEngine;
+﻿using DigitalOpus.MB.Core;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using DigitalOpus.MB.Core;
+using UnityEngine;
 
 #if UNITY_EDITOR
-    using UnityEditor;
 #endif
 
 public class MB3_MeshBakerGrouper : MonoBehaviour, MB_IMeshBakerSettingsHolder
@@ -18,7 +16,7 @@ public class MB3_MeshBakerGrouper : MonoBehaviour, MB_IMeshBakerSettingsHolder
         agglomerative,
     }
 
-    public static readonly Color WHITE_TRANSP = new Color(1f,1f,1f,.1f);
+    public static readonly Color WHITE_TRANSP = new Color(1f, 1f, 1f, .1f);
 
     public MB3_MeshBakerGrouperCore grouper;
     public ClusterType clusterType = ClusterType.none;
@@ -31,7 +29,7 @@ public class MB3_MeshBakerGrouper : MonoBehaviour, MB_IMeshBakerSettingsHolder
 
     //these are for getting a resonable bounds in which to draw gizmos.
     [HideInInspector] public Bounds sourceObjectBounds = new Bounds(Vector3.zero, Vector3.one);
-    
+
     public string prefabOptions_outputFolder = "";
     public bool prefabOptions_autoGeneratePrefabs;
     public bool prefabOptions_mergeOutputIntoSinglePrefab;
@@ -530,7 +528,7 @@ namespace DigitalOpus.MB.Core
 
         public override void DrawGizmos(Bounds sourceObjectBounds)
         {
-            
+
             if (d.pieAxis.magnitude < .1f) return;
             if (d.pieNumSegments < 1) return;
 
@@ -543,7 +541,7 @@ namespace DigitalOpus.MB.Core
             {
                 DrawCircle(d.pieAxis.normalized, d.origin, d.ringSpacing * (i + 1), 24);
             }
-            
+
             Quaternion yIsUp2PieAxis = Quaternion.FromToRotation(Vector3.up, d.pieAxis);
             Quaternion rStep = Quaternion.AngleAxis(180f / d.pieNumSegments, Vector3.up);
             Vector3 r = Vector3.forward;

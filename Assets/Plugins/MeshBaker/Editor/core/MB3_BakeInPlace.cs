@@ -1,9 +1,7 @@
-using UnityEngine;
-using UnityEditor;
-using System.IO;
-using System.Collections;
 using System.Collections.Generic;
-using DigitalOpus.MB.Core;
+using System.IO;
+using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {

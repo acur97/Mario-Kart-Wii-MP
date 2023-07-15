@@ -1,8 +1,7 @@
-﻿using UnityEngine;
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -30,7 +29,7 @@ namespace DigitalOpus.MB.Core
 
             public MaterialPropertyValueAveraged GetAverageCalculator()
             {
-                return _averageCalc; 
+                return _averageCalc;
             }
 
             public object GetDefaultValue()
@@ -103,7 +102,8 @@ namespace DigitalOpus.MB.Core
                     if (numValues > 0)
                     {
                         mat.SetFloat(property.PropertyName, averageVal);
-                    } else
+                    }
+                    else
                     {
                         mat.SetFloat(property.PropertyName, (float)property.GetDefaultValue());
                     }
@@ -146,7 +146,7 @@ namespace DigitalOpus.MB.Core
                     }
                     else
                     {
-                        mat.SetColor(property.PropertyName, (Color) property.GetDefaultValue());
+                        mat.SetColor(property.PropertyName, (Color)property.GetDefaultValue());
                     }
                 }
             }
@@ -432,7 +432,7 @@ namespace DigitalOpus.MB.Core
             {
                 if (!tt.IsAbstract && !tt.IsInterface)
                 {
-                    TextureBlender instance = (TextureBlender) System.Activator.CreateInstance(tt);
+                    TextureBlender instance = (TextureBlender)System.Activator.CreateInstance(tt);
                     if (instance is TextureBlenderFallback)
                     {
                         fallbackTB = instance;

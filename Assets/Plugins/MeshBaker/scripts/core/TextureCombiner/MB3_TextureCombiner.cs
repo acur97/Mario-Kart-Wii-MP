@@ -2,13 +2,10 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
-using UnityEngine;
 using System.Collections;
-using System.IO;
-using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Reflection;
+using UnityEngine;
 
 /*
   
@@ -458,8 +455,8 @@ namespace DigitalOpus.MB.Core
         }
 
         MB3_TextureCombinerPipeline.TexturePipelineData LoadPipelineData(Material resultMaterial,
-            List<ShaderTextureProperty> texPropertyNames, 
-            List<GameObject> objsToMesh, 
+            List<ShaderTextureProperty> texPropertyNames,
+            List<GameObject> objsToMesh,
             List<Material> allowedMaterialsFilter,
             List<MB_TexSet> distinctMaterialTextures)
         {

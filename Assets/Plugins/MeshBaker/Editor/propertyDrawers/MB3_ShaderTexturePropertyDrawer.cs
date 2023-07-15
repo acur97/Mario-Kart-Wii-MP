@@ -1,6 +1,6 @@
-﻿using UnityEditor;
+﻿using DigitalOpus.MB.Core;
+using UnityEditor;
 using UnityEngine;
-using DigitalOpus.MB.Core;
 
 namespace DigitalOpus.MB.MBEditor
 {

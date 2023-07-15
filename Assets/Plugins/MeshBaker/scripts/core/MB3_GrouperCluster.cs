@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using UnityEngine;
 
-public class MB3_KMeansClustering {
+public class MB3_KMeansClustering
+{
 
     class DataPoint
     {
@@ -31,7 +31,8 @@ public class MB3_KMeansClustering {
             {
                 DataPoint dp = new DataPoint(gos[i]);
                 _normalizedDataToCluster.Add(dp);
-            } else
+            }
+            else
             {
                 Debug.LogWarning(String.Format("Object {0} in list of objects to cluster was null.", i));
             }
@@ -48,7 +49,7 @@ public class MB3_KMeansClustering {
         }
         _numberOfClusters = numClusters;
         if (_numberOfClusters <= 0) _numberOfClusters = 1;
-        
+
         _clusters = new Vector3[_numberOfClusters];
     }
 
@@ -57,7 +58,7 @@ public class MB3_KMeansClustering {
         //todo error if more clusters than objs
         for (int i = 0; i < _numberOfClusters; ++i)
         {
-            _normalizedDataToCluster[i].Cluster =  i;
+            _normalizedDataToCluster[i].Cluster = i;
         }
         for (int i = _numberOfClusters; i < _normalizedDataToCluster.Count; i++)
         {
@@ -79,7 +80,7 @@ public class MB3_KMeansClustering {
         }
         for (int i = 0; i < _numberOfClusters; i++)
         {
-            _clusters[i] = means[i] / numInCluster[i]; 
+            _clusters[i] = means[i] / numInCluster[i];
         }
         return true;
     }
@@ -124,7 +125,7 @@ public class MB3_KMeansClustering {
             }
             else
             {
-              
+
             }
 
         }
@@ -165,7 +166,7 @@ public class MB3_KMeansClustering {
         UpdateDataPointMeans(true);
         List<Renderer> gos = new List<Renderer>();
         mean = _clusters[idx];
-        float longestDist = 0; 
+        float longestDist = 0;
         for (int i = 0; i < _normalizedDataToCluster.Count; i++)
         {
             if (_normalizedDataToCluster[i].Cluster == idx)

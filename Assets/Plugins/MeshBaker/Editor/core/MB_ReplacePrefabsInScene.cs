@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor;
-using System;
 using DigitalOpus.MB.Core;
+using System;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -170,7 +169,8 @@ namespace DigitalOpus.MB.MBEditor
                 }
 
                 return VisitObj(src, src, targ, src2targetObjMap, component2MeshAndMats);
-            } else
+            }
+            else
             {
                 targ.layer = src.layer;
                 targ.tag = src.tag;
@@ -257,7 +257,8 @@ namespace DigitalOpus.MB.MBEditor
                             {
                                 parentArrayPath = arrayPropParent.propertyPath;
                                 parentArraySize = arrayPropParent.arraySize;
-                            } else
+                            }
+                            else
                             {
                                 parentArrayPath = "";
                                 parentArraySize = -1;

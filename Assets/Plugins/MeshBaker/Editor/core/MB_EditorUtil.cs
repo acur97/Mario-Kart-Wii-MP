@@ -3,10 +3,9 @@
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
 
+using System;
 using UnityEditor;
 using UnityEngine;
-using System;
-using System.Collections.Generic;
 
 public static class MB_EditorUtil
 {

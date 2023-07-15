@@ -1,7 +1,7 @@
-using UnityEngine;
-using System.Collections.Specialized;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -199,7 +199,7 @@ namespace DigitalOpus.MB.Core
             {
                 _meshBirth = MeshCreationConditions.NoMesh;
             }
-           
+
             _mesh = m;
         }
 
@@ -214,7 +214,8 @@ namespace DigitalOpus.MB.Core
             {
                 return lightmapIndex;
             }
-            else {
+            else
+            {
                 return -1;
             }
         }
@@ -232,7 +233,8 @@ namespace DigitalOpus.MB.Core
             {
                 return dgo.numVerts;
             }
-            else {
+            else
+            {
                 return -1;
             }
         }
@@ -305,9 +307,10 @@ namespace DigitalOpus.MB.Core
                 if (LOG_LEVEL >= MB2_LogLevel.debug)
                     Debug.Log("Baker used old systems that duplicated bones. Upgrading to new system by building indexesOfBonesUsed");
             }
-			if (LOG_LEVEL >= MB2_LogLevel.trace) {
-				Debug.Log (String.Format ("_initialize numObjsInCombined={0}", mbDynamicObjectsInCombinedMesh.Count));
-			}
+            if (LOG_LEVEL >= MB2_LogLevel.trace)
+            {
+                Debug.Log(String.Format("_initialize numObjsInCombined={0}", mbDynamicObjectsInCombinedMesh.Count));
+            }
 
             return true;
         }
@@ -330,7 +333,8 @@ namespace DigitalOpus.MB.Core
                     }
                     dgo.targetSubmeshIdxs[i] = (int)sourceMats2submeshIdx_map[sharedMaterials[i]];
                 }
-                else {
+                else
+                {
                     dgo.targetSubmeshIdxs[i] = 0;
                 }
                 dgo._tmpSubmeshTris[i] = new SerializableIntArray();
@@ -363,11 +367,11 @@ namespace DigitalOpus.MB.Core
 
                 meshAnalysisResults.Add(m.GetInstanceID(), res);
             }
-            
+
             int numUsedSrcSubMeshes = sharedMaterials.Length;
             if (numUsedSrcSubMeshes > m.subMeshCount) numUsedSrcSubMeshes = m.subMeshCount;
             dgo.obUVRects = new Rect[numUsedSrcSubMeshes];
-            
+
             // We might have fewer sharedMaterials than submeshes in the mesh.
             for (int submeshIdx = 0; submeshIdx < numUsedSrcSubMeshes; submeshIdx++)
             {
@@ -570,7 +574,8 @@ namespace DigitalOpus.MB.Core
                         totalDeleteSubmeshTris[j] += dgo.submeshNumTris[j];
                     }
                 }
-                else {
+                else
+                {
                     if (LOG_LEVEL >= MB2_LogLevel.warn) Debug.LogWarning("Trying to delete an object that is not in combined mesh");
                 }
             }
@@ -594,9 +599,9 @@ namespace DigitalOpus.MB.Core
                     MB_DynamicGameObject dgo = new MB_DynamicGameObject();
 
                     GameObject go = _goToAdd[i];
-                    
+
                     Material[] sharedMaterials = MB_Utility.GetGOMaterials(go);
-                    if (LOG_LEVEL >= MB2_LogLevel.trace) Debug.Log(String.Format("Getting {0} shared materials for {1}",sharedMaterials.Length, go));
+                    if (LOG_LEVEL >= MB2_LogLevel.trace) Debug.Log(String.Format("Getting {0} shared materials for {1}", sharedMaterials.Length, go));
                     if (sharedMaterials == null)
                     {
                         Debug.LogError("Object " + go.name + " does not have a Renderer");
@@ -637,7 +642,7 @@ namespace DigitalOpus.MB.Core
                         dgo.instanceID = _goToAdd[i].GetInstanceID();
                         dgo.gameObject = _goToAdd[i];
                         dgo.numVerts = m.vertexCount;
-                        
+
                         if (settings.doBlendShapes)
                         {
                             dgo.numBlendShapes = m.blendShapeCount;
@@ -707,7 +712,8 @@ namespace DigitalOpus.MB.Core
                         if (doAnyResultsUseConsiderMeshUVs) Debug.Assert(dgo.targetSubmeshIdxs.Length == dgo.obUVRects.Length, "Array length mismatch targetSubmeshIdxs, uvRects");
                     }
                 }
-                else {
+                else
+                {
                     if (LOG_LEVEL >= MB2_LogLevel.warn) Debug.LogWarning("Object " + _goToAdd[i].name + " has already been added");
                     _goToAdd[i] = null;
                 }
@@ -845,7 +851,8 @@ namespace DigitalOpus.MB.Core
                     targBlendShapeIdx += dgo.numBlendShapes;
                     targVidx += dgo.numVerts;
                 }
-                else {
+                else
+                {
                     if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug("Not copying obj: " + i, LOG_LEVEL);
                     triangleIdxAdjustment += dgo.numVerts;
                 }
@@ -942,7 +949,8 @@ namespace DigitalOpus.MB.Core
                         }
                     }
                 }
-                else {
+                else
+                {
                     //for skinned meshes leave in bind pose
                     boneProcessor.CopyVertsNormsTansToBuffers(dgo, settings, vertsIdx, nnorms, ntangs, nverts, normals, tangents, verts);
                 }
@@ -1076,7 +1084,7 @@ namespace DigitalOpus.MB.Core
 
         void _copyAndAdjustUV2FromMesh(MB_DynamicGameObject dgo, Mesh mesh, int vertsIdx, MeshChannelsCache meshChannelsCache)
         {
-            Vector2[] nuv2s = meshChannelsCache.GetUVChannel(2,mesh);
+            Vector2[] nuv2s = meshChannelsCache.GetUVChannel(2, mesh);
             if (settings.lightmapOption == MB2_LightmapOptions.preserve_current_lightmapping)
             { //has a lightmap
                 //this does not work in Unity 5. the lightmapTilingOffset is always 1,1,0,0 for all objects
@@ -1112,7 +1120,7 @@ namespace DigitalOpus.MB.Core
         {
             bool doBones = false;
             if (settings.renderType == MB_RenderType.skinnedMeshRenderer) doBones = true;
-            Apply(true, true, settings.doNorm, settings.doTan, 
+            Apply(true, true, settings.doNorm, settings.doTan,
                 settings.doUV, doUV2(), settings.doUV3, settings.doUV4, settings.doUV5, settings.doUV6, settings.doUV7, settings.doUV8,
                 settings.doCol, doBones, settings.doBlendShapes, uv2GenerationMethod);
         }
@@ -1144,7 +1152,8 @@ namespace DigitalOpus.MB.Core
                     }
                     _updateMaterialsOnTargetRenderer(submeshTrisToUse, numNonZero);
                 }
-                else {
+                else
+                {
                     _mesh.triangles = submeshTrisToUse[0].data;
                 }
 
@@ -1166,7 +1175,8 @@ namespace DigitalOpus.MB.Core
                 }
                 if (LOG_LEVEL >= MB2_LogLevel.trace) Debug.Log("ApplyShowHide");
             }
-            else {
+            else
+            {
                 Debug.LogError("Need to add objects to this meshbaker before calling ApplyShowHide");
             }
         }
@@ -1230,17 +1240,19 @@ namespace DigitalOpus.MB.Core
                 if (vertices)
                 {
                     Vector3[] verts2Write = verts;
-                    if (verts.Length > 0) {
+                    if (verts.Length > 0)
+                    {
                         if (settings.renderType == MB_RenderType.skinnedMeshRenderer)
                         {
                             targetRenderer.transform.position = Vector3.zero;
-                        } else if (settings.pivotLocationType == MB_MeshPivotLocation.worldOrigin)
+                        }
+                        else if (settings.pivotLocationType == MB_MeshPivotLocation.worldOrigin)
                         {
                             targetRenderer.transform.position = Vector3.zero;
                         }
-                        else if(settings.pivotLocationType == MB_MeshPivotLocation.boundsCenter)
+                        else if (settings.pivotLocationType == MB_MeshPivotLocation.boundsCenter)
                         {
-                            
+
                             Vector3 max = verts[0], min = verts[0];
                             for (int i = 1; i < verts.Length; i++)
                             {
@@ -1262,7 +1274,8 @@ namespace DigitalOpus.MB.Core
                             }
 
                             targetRenderer.transform.position = center;
-                        } else if (settings.pivotLocationType == MB_MeshPivotLocation.customLocation)
+                        }
+                        else if (settings.pivotLocationType == MB_MeshPivotLocation.customLocation)
                         {
                             Vector3 center = settings.pivotLocation;
                             for (int i = 0; i < verts.Length; i++)
@@ -1282,7 +1295,8 @@ namespace DigitalOpus.MB.Core
                     {
                         Debug.LogError("Texture Bake Result was not set.");
                     }
-                    else {
+                    else
+                    {
                         SerializableIntArray[] submeshTrisToUse = GetSubmeshTrisWithShowHideApplied();
 
                         //submeshes with zero length tris cause error messages. must exclude these
@@ -1302,8 +1316,10 @@ namespace DigitalOpus.MB.Core
                 }
                 if (normals)
                 {
-                    if (settings.doNorm) {
-                    _mesh.normals = this.normals; }
+                    if (settings.doNorm)
+                    {
+                        _mesh.normals = this.normals;
+                    }
                     else { Debug.LogError("normal flag was set in Apply but MeshBaker didn't generate normals"); }
                 }
 
@@ -1354,7 +1370,7 @@ namespace DigitalOpus.MB.Core
                         {
                             settings.assignToMeshCustomizer.meshAssign_UV2(2, settings, textureBakeResults, _mesh, this.uv2s, this.uvsSliceIdx);
                         }
-                        
+
                     }
                     else { Debug.LogError("uv2 flag was set in Apply but lightmapping option was set to " + settings.lightmapOption); }
                 }
@@ -1365,7 +1381,8 @@ namespace DigitalOpus.MB.Core
                         if (settings.assignToMeshCustomizer == null)
                         {
                             MBVersion.MeshAssignUVChannel(3, _mesh, this.uv3s);
-                        } else
+                        }
+                        else
                         {
                             settings.assignToMeshCustomizer.meshAssign_UV3(3, settings, textureBakeResults, _mesh, this.uv3s, this.uvsSliceIdx);
                         }
@@ -1461,7 +1478,8 @@ namespace DigitalOpus.MB.Core
                         uv2GenerationMethod(_mesh, settings.uv2UnwrappingParamsHardAngle, settings.uv2UnwrappingParamsPackMargin);
                         if (LOG_LEVEL >= MB2_LogLevel.trace) Debug.Log("generating new UV2 layout for the combined mesh ");
                     }
-                    else {
+                    else
+                    {
                         Debug.LogError("No GenerateUV2Delegate method was supplied. UV2 cannot be generated.");
                     }
                     do_generate_new_UV2_layout = true;
@@ -1482,7 +1500,8 @@ namespace DigitalOpus.MB.Core
                         //disable mesh renderer to avoid skinning warning
                         targetRenderer.enabled = false;
                     }
-                    else {
+                    else
+                    {
                         targetRenderer.enabled = true;
                     }
                     //needed so that updating local bounds will take affect
@@ -1511,12 +1530,14 @@ namespace DigitalOpus.MB.Core
                 {
                     if (LOG_LEVEL >= MB2_LogLevel.trace) Debug.Log("recalculating bounds on mesh.");
                     _mesh.RecalculateBounds();
-                } if (settings.optimizeAfterBake && !Application.isPlaying)
+                }
+                if (settings.optimizeAfterBake && !Application.isPlaying)
                 {
                     MBVersion.OptimizeMesh(_mesh);
                 }
             }
-            else {
+            else
+            {
                 Debug.LogError("Need to add objects to this meshbaker before calling Apply or ApplyAll");
             }
             if (LOG_LEVEL >= MB2_LogLevel.debug)
@@ -1528,7 +1549,7 @@ namespace DigitalOpus.MB.Core
         int _numNonZeroLengthSubmeshTris(SerializableIntArray[] subTris)
         {
             int num = 0;
-            for (int i = 0; i < subTris.Length; i++) { if (subTris[i].data.Length > 0) num++;}
+            for (int i = 0; i < subTris.Length; i++) { if (subTris[i].data.Length > 0) num++; }
             return num;
         }
 
@@ -1540,7 +1561,8 @@ namespace DigitalOpus.MB.Core
             int submeshIdx = 0;
             for (int i = 0; i < subTris.Length; i++)
             {
-                if (subTris[i].data.Length > 0) {
+                if (subTris[i].data.Length > 0)
+                {
                     resMats[submeshIdx] = _textureBakeResults.GetCombinedMaterialForSubmesh(i);
                     submeshIdx++;
                 }
@@ -1599,7 +1621,8 @@ namespace DigitalOpus.MB.Core
                 }
                 return newSubmeshTris;
             }
-            else {
+            else
+            {
                 return submeshTris;
             }
         }
@@ -1631,12 +1654,12 @@ namespace DigitalOpus.MB.Core
             if (LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log("UpdateGameObjects called on " + gos.Length + " objects.");
             int numResultMats = 1;
             if (textureBakeResults.doMultiMaterial) numResultMats = textureBakeResults.NumResultMaterials();
-            
+
             if (!_Initialize(numResultMats))
             {
                 return false;
             }
-            
+
             if (_mesh.vertexCount > 0 && _instance2combined_map.Count == 0)
             {
                 Debug.LogWarning("There were vertices in the combined mesh but nothing in the MeshBaker buffers. If you are trying to bake in the editor and modify at runtime, make sure 'Clear Buffers After Bake' is unchecked.");
@@ -1646,7 +1669,8 @@ namespace DigitalOpus.MB.Core
             UVAdjuster_Atlas uvAdjuster = null;
             OrderedDictionary sourceMats2submeshIdx_map = null;
             Dictionary<int, MB_Utility.MeshAnalysisResult[]> meshAnalysisResultsCache = null;
-            if (updateUV){
+            if (updateUV)
+            {
                 sourceMats2submeshIdx_map = BuildSourceMatsToSubmeshIdxMap(numResultMats);
                 if (sourceMats2submeshIdx_map == null)
                 {
@@ -1659,7 +1683,7 @@ namespace DigitalOpus.MB.Core
 
             for (int i = 0; i < gos.Length; i++)
             {
-                success = success && _updateGameObject(gos[i], updateVertices, updateNormals, updateTangents, updateUV, updateUV2, updateUV3, updateUV4, updateUV5, updateUV6, updateUV7, updateUV8, updateColors, updateSkinningInfo, 
+                success = success && _updateGameObject(gos[i], updateVertices, updateNormals, updateTangents, updateUV, updateUV2, updateUV3, updateUV4, updateUV5, updateUV6, updateUV7, updateUV8, updateColors, updateSkinningInfo,
                     meshChannelCache, meshAnalysisResultsCache, sourceMats2submeshIdx_map, uvAdjuster);
             }
             if (recalcBounds)
@@ -1669,7 +1693,7 @@ namespace DigitalOpus.MB.Core
 
         bool _updateGameObject(GameObject go, bool updateVertices, bool updateNormals, bool updateTangents,
                                         bool updateUV, bool updateUV2, bool updateUV3, bool updateUV4, bool updateUV5, bool updateUV6, bool updateUV7, bool updateUV8,
-                                        bool updateColors, bool updateSkinningInfo, 
+                                        bool updateColors, bool updateSkinningInfo,
                                         MeshChannelsCache meshChannelCache, Dictionary<int, MB_Utility.MeshAnalysisResult[]> meshAnalysisResultsCache,
                                         OrderedDictionary sourceMats2submeshIdx_map, UVAdjuster_Atlas uVAdjuster)
         {
@@ -1835,7 +1859,8 @@ namespace DigitalOpus.MB.Core
                     {
                         Debug.LogError("The " + i + "th object on the list of objects to delete is 'Null'");
                     }
-                    else {
+                    else
+                    {
                         delInstanceIDs[i] = deleteGOs[i].GetInstanceID();
                     }
                 }
@@ -1970,11 +1995,13 @@ namespace DigitalOpus.MB.Core
             if (Application.isPlaying)
             {
                 _meshBirth = MeshCreationConditions.CreatedAtRuntime;
-            } else {
+            }
+            else
+            {
                 _meshBirth = MeshCreationConditions.CreatedInEditor;
             }
             Mesh m = new Mesh();
-            
+
             return m;
         }
 
@@ -1987,7 +2014,8 @@ namespace DigitalOpus.MB.Core
             {
                 MBVersion.MeshClear(_mesh, false);
             }
-            else {
+            else
+            {
                 _mesh = NewMesh();
             }
             ClearBuffers();
@@ -2048,13 +2076,15 @@ namespace DigitalOpus.MB.Core
                 if (_LOG_LEVEL >= MB2_LogLevel.error) Debug.LogError("Result Scene Object was not set.");
                 return false;
             }
-            else {
+            else
+            {
                 if (_targetRenderer == null)
                 {
                     if (_LOG_LEVEL >= MB2_LogLevel.error) Debug.LogError("Target Renderer was not set.");
                     return false;
                 }
-                else {
+                else
+                {
                     if (_targetRenderer.transform.parent != _resultSceneObject.transform)
                     {
                         if (_LOG_LEVEL >= MB2_LogLevel.error) Debug.LogError("Target Renderer game object is not a child of Result Scene Object was not set.");
@@ -2223,7 +2253,7 @@ namespace DigitalOpus.MB.Core
             GameObject meshGO = new GameObject(mom.name + "-mesh");
             meshGO.transform.parent = instantiatedPrefabRoot.transform;
             Transform mt = meshGO.transform;
-            
+
             mt.parent = instantiatedPrefabRoot.transform;
             meshGO = mt.gameObject;
             if (mom.settings.renderType == MB_RenderType.skinnedMeshRenderer)
@@ -2263,11 +2293,11 @@ namespace DigitalOpus.MB.Core
                         targMap.srcToCombinedMap.combinedMeshTargetGameObject[i] = meshGO;
                     }
                 }
-                
+
             }
 
             _ConfigureSceneHierarch(mom, instantiatedPrefabRoot, mr, mf, smr, m, objsToBeAdded);
-            
+
             //First try to get the materials from the target renderer. This is because the mesh may have fewer submeshes than number of result materials if some of the submeshes had zero length tris.
             //If we have just baked then materials on the target renderer will be correct wheras materials on the textureBakeResult may not be correct.
             if (mom.targetRenderer != null)
@@ -2300,7 +2330,8 @@ namespace DigitalOpus.MB.Core
                 //smr.sharedMesh = m; can't assign mesh for skinned mesh until it has skinning information
                 smr.lightmapIndex = mom.GetLightmapIndex();
             }
-            else {
+            else
+            {
                 meshGO = mr.gameObject;
                 mf.sharedMesh = m;
                 mr.lightmapIndex = mom.GetLightmapIndex();
@@ -2440,13 +2471,14 @@ namespace DigitalOpus.MB.Core
                 //need to compress the range. Scale until is MAX_UV_VAL - MIN_UV_VAL in size and shift
                 scale = (MAX_UV_VAL - MIN_UV_VAL) / (maxSize - minSize);
                 offset = MIN_UV_VAL - minSize * scale;
-            } else
+            }
+            else
             {
                 scale = MAX_UV_VAL / maxSize;
             }
             for (int i = 0; i < mbDynamicObjectsInCombinedMesh.Count; i++)
             {
-                
+
                 float zz = mbDynamicObjectsInCombinedMesh[i].meshSize.magnitude;
                 zz = zz * scale + offset;
                 Vector2 sz = Vector2.one * zz;

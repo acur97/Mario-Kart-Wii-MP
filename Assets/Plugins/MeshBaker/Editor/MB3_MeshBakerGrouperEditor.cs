@@ -2,16 +2,12 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
-using UnityEngine;
-using System.Collections;
-using System.IO;
-using System;
-using System.Collections.Specialized;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-
 using DigitalOpus.MB.Core;
+using System;
+using System.Collections.Generic;
+using System.IO;
 using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -35,7 +31,7 @@ namespace DigitalOpus.MB.MBEditor
         static GUIContent gc_Settings = new GUIContent("Use Shared Settings Asset", "Different bakers can share the same settings. If this field is None, then the settings below will be used.");
         static GUIContent gc_PieRingSpacing = new GUIContent("Ring Spacing", "Pie segments will be divided into rings.");
         static GUIContent gc_PieCombineAllInCenterRing = new GUIContent("Combine Center Ring Segments Together", "All segments in the centermost ring will be merged into a single segment.");
-        static GUIContent gc_ParentSceneObject = new GUIContent("Parent Scene Object","Must be a scene GameObject. Generated combined meshes will be children of this GameObject.");
+        static GUIContent gc_ParentSceneObject = new GUIContent("Parent Scene Object", "Must be a scene GameObject. Generated combined meshes will be children of this GameObject.");
         static GUIContent gc_prefabOptions_outputFolder = new GUIContent("Prefab Output Folder", "Prefabs will be saved to this output folder.");
         static GUIContent gc_prefabOptions_autoGeneratePrefabs = new GUIContent("Auto Generate Prefabs", "Configure each generated baker to use 'Bake Into Prefab' and generate a prefab in the output folder for the baker.");
 
@@ -97,7 +93,7 @@ namespace DigitalOpus.MB.MBEditor
             DrawGrouperInspector();
             if (GUILayout.Button("Generate Mesh Bakers"))
             {
-                for(int tIdx = 0; tIdx < targets.Length; tIdx++)
+                for (int tIdx = 0; tIdx < targets.Length; tIdx++)
                 {
                     _generateMeshBakers(targets[tIdx]);
                 }

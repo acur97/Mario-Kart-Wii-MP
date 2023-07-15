@@ -2,9 +2,8 @@
  *	DLLs cannot interpret preprocessor directives, so this class acts as a "bridge"
  */
 using System;
-using UnityEngine;
 using UnityEditor;
-using System.Collections;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {

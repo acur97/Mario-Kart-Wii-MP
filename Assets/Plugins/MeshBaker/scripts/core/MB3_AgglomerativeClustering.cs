@@ -1,8 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -101,16 +99,16 @@ namespace DigitalOpus.MB.Core
 
             float largestDistInQ = 0;
             long usedMemory = GC.GetTotalMemory(false) / 1000000;
-            PriorityQueue < float, ClusterDistance > pq = new PriorityQueue<float, ClusterDistance>();
+            PriorityQueue<float, ClusterDistance> pq = new PriorityQueue<float, ClusterDistance>();
             //largestDistInQ = _RefillPriorityQWithSome(pq, unclustered, clusters /*,null,null*/);
             int numRefills = 0;
             while (unclustered.Count > 1)
             {
-                
+
                 int numToFindClosetPair = 0;
                 height++;
                 //find closest pair
-                
+
                 if (pq.Count == 0)
                 {
                     numRefills++;
@@ -123,7 +121,8 @@ namespace DigitalOpus.MB.Core
                 KeyValuePair<float, ClusterDistance> closestPair = pq.Dequeue();
                 // should only consider unclustered pairs. It is more effecient to discard nodes that have already been clustered as they are popped off the Q
                 // than to try to remove them from the Q when they have been clustered.
-                while (!closestPair.Value.a.isUnclustered || !closestPair.Value.b.isUnclustered) {
+                while (!closestPair.Value.a.isUnclustered || !closestPair.Value.b.isUnclustered)
+                {
                     if (pq.Count == 0)
                     {
                         numRefills++;
@@ -176,7 +175,7 @@ namespace DigitalOpus.MB.Core
                 //}
                 if (wasCanceled) break;
                 usedMemory = GC.GetTotalMemory(false) / 1000000;
-                if (progFunc != null) wasCanceled = progFunc("Creating clusters:" + ((float)(items.Count - unclustered.Count)*100) / items.Count + " unclustered:" + unclustered.Count + " inQ:" + pq.Count + " usedMem:" + usedMemory, 
+                if (progFunc != null) wasCanceled = progFunc("Creating clusters:" + ((float)(items.Count - unclustered.Count) * 100) / items.Count + " unclustered:" + unclustered.Count + " inQ:" + pq.Count + " usedMem:" + usedMemory,
                     ((float)(items.Count - unclustered.Count)) / items.Count);
             }
             if (progFunc != null) wasCanceled = progFunc("Finished clustering:", 100);
@@ -198,23 +197,23 @@ namespace DigitalOpus.MB.Core
             List<float> allDist = new List<float>(2048);
             for (int i = 0; i < unclustered.Count; i++)
             {
-                for (int j = i+1; j < unclustered.Count; j++)
+                for (int j = i + 1; j < unclustered.Count; j++)
                 {
-                    
-                   // if (unclustered[i] == omitA || unclustered[i] == omitB ||
-                   //     unclustered[j] == omitA || unclustered[j] == omitB)
-                   // {
-                        
-                   // } else
-                   // {
-               
-                        allDist.Add(euclidean_distance(unclustered[i].centroid, unclustered[j].centroid));
-                   // }
+
+                    // if (unclustered[i] == omitA || unclustered[i] == omitB ||
+                    //     unclustered[j] == omitA || unclustered[j] == omitB)
+                    // {
+
+                    // } else
+                    // {
+
+                    allDist.Add(euclidean_distance(unclustered[i].centroid, unclustered[j].centroid));
+                    // }
                 }
                 wasCanceled = progFunc("Refilling Queue Part A:", i / (unclustered.Count * 2f));
                 if (wasCanceled) return 10f;
             }
-            
+
             if (allDist.Count == 0)
             {
                 return 10e10f;
@@ -289,99 +288,99 @@ namespace DigitalOpus.MB.Core
 
 
 
-            public static void Main()
+        public static void Main()
+        {
+
+            List<float> inputArray = new List<float>();
+            inputArray.AddRange(new float[] { 19, 18, 17, 16, 15, 10, 11, 12, 13, 14 });
+            // Loop 10 times
+            Debug.Log("Loop quick select 10 times.");
+
+            Debug.Log(NthSmallestElement(inputArray, 0));
+
+        }
+
+        // n is 0 indexed
+        public static T NthSmallestElement<T>(List<T> array, int n) where T : IComparable<T>
+        {
+            if (n < 0)
+                n = 0;
+
+            if (n > array.Count - 1)
+                n = array.Count - 1;
+            if (array.Count == 0)
+                throw new ArgumentException("Array is empty.", "array");
+            if (array.Count == 1)
+                return array[0];
+
+            return QuickSelectSmallest(array, n)[n];
+        }
+
+        private static List<T> QuickSelectSmallest<T>(List<T> input, int n) where T : IComparable<T>
+        {
+            // Let's not mess up with our input array
+            // For very large arrays - we should optimize this somehow - or just mess up with our input
+            var partiallySortedArray = input;
+
+            // Initially we are going to execute quick select to entire array
+            var startIndex = 0;
+            var endIndex = input.Count - 1;
+
+            // Selecting initial pivot
+            // Maybe we are lucky and array is sorted initially?
+            var pivotIndex = n;
+
+            // Loop until there is nothing to loop (this actually shouldn't happen - we should find our value before we run out of values)
+            var r = new System.Random();
+            while (endIndex > startIndex)
             {
+                pivotIndex = QuickSelectPartition(partiallySortedArray, startIndex, endIndex, pivotIndex);
+                if (pivotIndex == n)
+                    // We found our n:th smallest value - it is stored to pivot index
+                    break;
+                if (pivotIndex > n)
+                    // Array before our pivot index have more elements that we are looking for                    
+                    endIndex = pivotIndex - 1;
+                else
+                    // Array before our pivot index has less elements that we are looking for                    
+                    startIndex = pivotIndex + 1;
 
-                List<float> inputArray = new List<float>();
-                inputArray.AddRange(new float[] { 19, 18, 17, 16, 15, 10, 11, 12, 13, 14 });
-                // Loop 10 times
-                Debug.Log("Loop quick select 10 times.");
-
-                Debug.Log(NthSmallestElement(inputArray, 0));
-                
+                // Omnipotent beings don't need to roll dices - but we do...
+                // Randomly select a new pivot index between end and start indexes (there are other methods, this is just most brutal and simplest)
+                pivotIndex = r.Next(startIndex, endIndex);
             }
+            return partiallySortedArray;
+        }
 
-            // n is 0 indexed
-            public static T NthSmallestElement<T>(List<T> array, int n) where T : IComparable<T>
+        private static int QuickSelectPartition<T>(List<T> array, int startIndex, int endIndex, int pivotIndex) where T : IComparable<T>
+        {
+            var pivotValue = array[pivotIndex];
+            // Initially we just assume that value in pivot index is largest - so we move it to end (makes also for loop more straight forward)
+            Swap(array, pivotIndex, endIndex);
+            for (var i = startIndex; i < endIndex; i++)
             {
-                if (n < 0)
-                    n = 0;
+                if (array[i].CompareTo(pivotValue) > 0)
+                    continue;
 
-                if (n > array.Count - 1)
-                    n = array.Count - 1;
-                if (array.Count == 0)
-                    throw new ArgumentException("Array is empty.", "array");
-                if (array.Count == 1)
-                    return array[0];
-
-                return QuickSelectSmallest(array, n)[n];
+                // Value stored to i was smaller than or equal with pivot value - let's move it to start
+                Swap(array, i, startIndex);
+                // Move start one index forward 
+                startIndex++;
             }
+            // Start index is now pointing to index where we should store our pivot value from end of array
+            Swap(array, endIndex, startIndex);
+            return startIndex;
+        }
 
-            private static List<T> QuickSelectSmallest<T>(List<T> input, int n) where T : IComparable<T>
-            {
-                // Let's not mess up with our input array
-                // For very large arrays - we should optimize this somehow - or just mess up with our input
-                var partiallySortedArray = input;
+        private static void Swap<T>(List<T> array, int index1, int index2)
+        {
+            if (index1 == index2)
+                return;
 
-                // Initially we are going to execute quick select to entire array
-                var startIndex = 0;
-                var endIndex = input.Count - 1;
+            var temp = array[index1];
+            array[index1] = array[index2];
+            array[index2] = temp;
+        }
 
-                // Selecting initial pivot
-                // Maybe we are lucky and array is sorted initially?
-                var pivotIndex = n;
-
-                // Loop until there is nothing to loop (this actually shouldn't happen - we should find our value before we run out of values)
-                var r = new System.Random();
-                while (endIndex > startIndex)
-                {
-                    pivotIndex = QuickSelectPartition(partiallySortedArray, startIndex, endIndex, pivotIndex);
-                    if (pivotIndex == n)
-                        // We found our n:th smallest value - it is stored to pivot index
-                        break;
-                    if (pivotIndex > n)
-                        // Array before our pivot index have more elements that we are looking for                    
-                        endIndex = pivotIndex - 1;
-                    else
-                        // Array before our pivot index has less elements that we are looking for                    
-                        startIndex = pivotIndex + 1;
-
-                    // Omnipotent beings don't need to roll dices - but we do...
-                    // Randomly select a new pivot index between end and start indexes (there are other methods, this is just most brutal and simplest)
-                    pivotIndex = r.Next(startIndex, endIndex);
-                }
-                return partiallySortedArray;
-            }
-
-            private static int QuickSelectPartition<T>(List<T> array, int startIndex, int endIndex, int pivotIndex) where T : IComparable<T>
-            {
-                var pivotValue = array[pivotIndex];
-                // Initially we just assume that value in pivot index is largest - so we move it to end (makes also for loop more straight forward)
-                Swap(array, pivotIndex, endIndex);
-                for (var i = startIndex; i < endIndex; i++)
-                {
-                    if (array[i].CompareTo(pivotValue) > 0)
-                        continue;
-
-                    // Value stored to i was smaller than or equal with pivot value - let's move it to start
-                    Swap(array, i, startIndex);
-                    // Move start one index forward 
-                    startIndex++;
-                }
-                // Start index is now pointing to index where we should store our pivot value from end of array
-                Swap(array, endIndex, startIndex);
-                return startIndex;
-            }
-
-            private static void Swap<T>(List<T> array, int index1, int index2)
-            {
-                if (index1 == index2)
-                    return;
-
-                var temp = array[index1];
-                array[index1] = array[index2];
-                array[index2] = temp;
-            }
-       
     }
 }

@@ -1,10 +1,9 @@
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using System;
-using System.IO;
+using System.Collections.Generic;
+using UnityEngine;
 
-namespace DigitalOpus.MB.Core{
+namespace DigitalOpus.MB.Core
+{
     // uses this algorithm http://blackpawn.com/texts/lightmaps/
 
     [System.Serializable]
@@ -206,7 +205,7 @@ namespace DigitalOpus.MB.Core{
         Padding should be subtracted from pixel perfect rect to create pixel perfect square 
         TODO this doesn't handle each rectangle having different padding
         */
-        internal bool ScaleAtlasToFitMaxDim(Vector2 rootWH, List<Image> images, int maxDimensionX, int maxDimensionY, AtlasPadding padding, int minImageSizeX, int minImageSizeY, int masterImageSizeX, int masterImageSizeY, 
+        internal bool ScaleAtlasToFitMaxDim(Vector2 rootWH, List<Image> images, int maxDimensionX, int maxDimensionY, AtlasPadding padding, int minImageSizeX, int minImageSizeY, int masterImageSizeX, int masterImageSizeY,
             ref int outW, ref int outH, out float padX, out float padY, out int newMinSizeX, out int newMinSizeY)
         {
             newMinSizeX = minImageSizeX;
@@ -274,48 +273,56 @@ namespace DigitalOpus.MB.Core{
         }
     }
 
-    public class MB2_TexturePackerRegular : MB2_TexturePacker {		
-		class ProbeResult{
-			public int w;
-			public int h;
+    public class MB2_TexturePackerRegular : MB2_TexturePacker
+    {
+        class ProbeResult
+        {
+            public int w;
+            public int h;
             public int outW;
             public int outH;
-			public Node root;
-			public bool largerOrEqualToMaxDim;
-			public float efficiency;
-			public float squareness;
+            public Node root;
+            public bool largerOrEqualToMaxDim;
+            public float efficiency;
+            public float squareness;
 
             //these are for the multiAtlasPacker
             public float totalAtlasArea;
             public int numAtlases;
-			
-			public void Set(int ww, int hh, int outw, int outh, Node r, bool fits, float e, float sq){
-				w = ww;
-				h = hh;
+
+            public void Set(int ww, int hh, int outw, int outh, Node r, bool fits, float e, float sq)
+            {
+                w = ww;
+                h = hh;
                 outW = outw;
                 outH = outh;
-				root = r;
-				largerOrEqualToMaxDim = fits;
-				efficiency = e;
-				squareness = sq;
-			}
-			
-			public float GetScore(bool doPowerOfTwoScore){
-				float fitsScore = largerOrEqualToMaxDim ? 1f : 0f;
-				if (doPowerOfTwoScore){
-					return fitsScore * 2f + efficiency;
-				} else {
-					return squareness + 2 * efficiency + fitsScore;
-				}
-			}
+                root = r;
+                largerOrEqualToMaxDim = fits;
+                efficiency = e;
+                squareness = sq;
+            }
+
+            public float GetScore(bool doPowerOfTwoScore)
+            {
+                float fitsScore = largerOrEqualToMaxDim ? 1f : 0f;
+                if (doPowerOfTwoScore)
+                {
+                    return fitsScore * 2f + efficiency;
+                }
+                else
+                {
+                    return squareness + 2 * efficiency + fitsScore;
+                }
+            }
 
             public void PrintTree()
             {
                 printTree(root, "  ");
             }
-		}
-		
-		internal class Node {
+        }
+
+        internal class Node
+        {
             internal NodeType isFullAtlas; //is this node a full atlas used for scaling to fit  
             internal Node[] child = new Node[2];
             internal PixRect r;
@@ -326,120 +333,144 @@ namespace DigitalOpus.MB.Core{
                 isFullAtlas = rootType;
             }
 
-            private bool isLeaf(){
-				if (child[0] == null || child[1] == null){
-					return true;
-				}
-				return false;
-			}
-			
-			internal Node Insert(Image im, bool handed){
-				int a,b;
-				if (handed){
-				  a = 0;
-				  b = 1;
-				} else {
-				  a = 1;
-				  b = 0;
-				}
-				if (!isLeaf()){
-					//try insert into first child
-					Node newNode = child[a].Insert(im,handed);
-					if (newNode != null)
-						return newNode;
-					//no room insert into second
-					return child[b].Insert(im,handed);
-				} else {
-			        //(if there's already a img here, return)
-			        if (img != null) 
-						return null;
-			
-			        //(if space too small, return)
-			        if (r.w < im.w || r.h < im.h)
-			            return null;
-					
-			        //(if space just right, accept)
-			        if (r.w == im.w && r.h == im.h){
-						img = im;
-			            return this;
-					}
-			        
-			        //(otherwise, gotta split this node and create some kids)
-			        child[a] = new Node(NodeType.regular);
-			        child[b] = new Node(NodeType.regular);
-			        
-			        //(decide which way to split)
-			        int dw = r.w - im.w;
-			        int dh = r.h - im.h;
-			        
-			        if (dw > dh){
-			            child[a].r = new PixRect(r.x, r.y, im.w, r.h);
-			            child[b].r = new PixRect(r.x + im.w, r.y, r.w - im.w, r.h);
-					} else {
-			            child[a].r = new PixRect(r.x, r.y, r.w, im.h);
-			            child[b].r = new PixRect(r.x, r.y+ im.h, r.w, r.h - im.h);
-					}
-			        return child[a].Insert(im,handed);				
-				}
-			}
-		}
+            private bool isLeaf()
+            {
+                if (child[0] == null || child[1] == null)
+                {
+                    return true;
+                }
+                return false;
+            }
+
+            internal Node Insert(Image im, bool handed)
+            {
+                int a, b;
+                if (handed)
+                {
+                    a = 0;
+                    b = 1;
+                }
+                else
+                {
+                    a = 1;
+                    b = 0;
+                }
+                if (!isLeaf())
+                {
+                    //try insert into first child
+                    Node newNode = child[a].Insert(im, handed);
+                    if (newNode != null)
+                        return newNode;
+                    //no room insert into second
+                    return child[b].Insert(im, handed);
+                }
+                else
+                {
+                    //(if there's already a img here, return)
+                    if (img != null)
+                        return null;
+
+                    //(if space too small, return)
+                    if (r.w < im.w || r.h < im.h)
+                        return null;
+
+                    //(if space just right, accept)
+                    if (r.w == im.w && r.h == im.h)
+                    {
+                        img = im;
+                        return this;
+                    }
+
+                    //(otherwise, gotta split this node and create some kids)
+                    child[a] = new Node(NodeType.regular);
+                    child[b] = new Node(NodeType.regular);
+
+                    //(decide which way to split)
+                    int dw = r.w - im.w;
+                    int dh = r.h - im.h;
+
+                    if (dw > dh)
+                    {
+                        child[a].r = new PixRect(r.x, r.y, im.w, r.h);
+                        child[b].r = new PixRect(r.x + im.w, r.y, r.w - im.w, r.h);
+                    }
+                    else
+                    {
+                        child[a].r = new PixRect(r.x, r.y, r.w, im.h);
+                        child[b].r = new PixRect(r.x, r.y + im.h, r.w, r.h - im.h);
+                    }
+                    return child[a].Insert(im, handed);
+                }
+            }
+        }
 
         ProbeResult bestRoot;
         public int atlasY;
 
-        static void printTree(Node r, string spc){
+        static void printTree(Node r, string spc)
+        {
             Debug.Log(spc + "Nd img=" + (r.img != null) + " r=" + r.r);
-			if (r.child[0] != null)
-				printTree(r.child[0], spc + "      ");
-			if (r.child[1] != null)
-				printTree(r.child[1], spc + "      ");		
-		}
-		
-		static void flattenTree(Node r, List<Image> putHere){
-			if (r.img != null){
-				r.img.x = r.r.x;
-				r.img.y = r.r.y;				
-				putHere.Add(r.img);
-			}
-			if (r.child[0] != null)
-				flattenTree(r.child[0], putHere);
-			if (r.child[1] != null)
-				flattenTree(r.child[1], putHere);		
-		}
-		
-		static void drawGizmosNode(Node r){
-			Vector3 extents = new Vector3(r.r.w, r.r.h, 0);
-			Vector3 pos = new Vector3(r.r.x + extents.x/2, -r.r.y - extents.y/2, 0f);
+            if (r.child[0] != null)
+                printTree(r.child[0], spc + "      ");
+            if (r.child[1] != null)
+                printTree(r.child[1], spc + "      ");
+        }
+
+        static void flattenTree(Node r, List<Image> putHere)
+        {
+            if (r.img != null)
+            {
+                r.img.x = r.r.x;
+                r.img.y = r.r.y;
+                putHere.Add(r.img);
+            }
+            if (r.child[0] != null)
+                flattenTree(r.child[0], putHere);
+            if (r.child[1] != null)
+                flattenTree(r.child[1], putHere);
+        }
+
+        static void drawGizmosNode(Node r)
+        {
+            Vector3 extents = new Vector3(r.r.w, r.r.h, 0);
+            Vector3 pos = new Vector3(r.r.x + extents.x / 2, -r.r.y - extents.y / 2, 0f);
             Gizmos.color = Color.yellow;
-			Gizmos.DrawWireCube(pos,extents);
-			if (r.img != null){
-				Gizmos.color = new Color(UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value);
+            Gizmos.DrawWireCube(pos, extents);
+            if (r.img != null)
+            {
+                Gizmos.color = new Color(UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value);
                 extents = new Vector3(r.img.w, r.img.h, 0);
                 pos = new Vector3(r.r.x + extents.x / 2, -r.r.y - extents.y / 2, 0f);
-                Gizmos.DrawCube(pos,extents);
-			}
-			if (r.child[0] != null){
-				Gizmos.color = Color.red;
-				drawGizmosNode(r.child[0]);
-			}
-			if (r.child[1] != null){
-				Gizmos.color = Color.green;
-				drawGizmosNode(r.child[1]);
-			}
-		}
-	    	
-		static Texture2D createFilledTex(Color c, int w, int h){
-			Texture2D t = new Texture2D(w,h);
-			for (int i = 0; i < w; i++){
-				for (int j = 0; j < h; j++){
-					t.SetPixel(i,j,c);
-				}
-			}
-			t.Apply();
-			return t;
-		}
-		
-		public void DrawGizmos(){
+                Gizmos.DrawCube(pos, extents);
+            }
+            if (r.child[0] != null)
+            {
+                Gizmos.color = Color.red;
+                drawGizmosNode(r.child[0]);
+            }
+            if (r.child[1] != null)
+            {
+                Gizmos.color = Color.green;
+                drawGizmosNode(r.child[1]);
+            }
+        }
+
+        static Texture2D createFilledTex(Color c, int w, int h)
+        {
+            Texture2D t = new Texture2D(w, h);
+            for (int i = 0; i < w; i++)
+            {
+                for (int j = 0; j < h; j++)
+                {
+                    t.SetPixel(i, j, c);
+                }
+            }
+            t.Apply();
+            return t;
+        }
+
+        public void DrawGizmos()
+        {
             if (bestRoot != null)
             {
                 drawGizmosNode(bestRoot.root);
@@ -448,49 +479,57 @@ namespace DigitalOpus.MB.Core{
                 Vector3 pos = new Vector3(extents.x / 2, extents.y / 2, 0f);
                 Gizmos.DrawWireCube(pos, extents);
             }
-		}
+        }
 
-		bool ProbeSingleAtlas(Image[] imgsToAdd, int idealAtlasW, int idealAtlasH, float imgArea, int maxAtlasDimX, int maxAtlasDimY, ProbeResult pr){
-			Node root = new Node(NodeType.maxDim);
-			root.r = new PixRect(0,0,idealAtlasW,idealAtlasH);
+        bool ProbeSingleAtlas(Image[] imgsToAdd, int idealAtlasW, int idealAtlasH, float imgArea, int maxAtlasDimX, int maxAtlasDimY, ProbeResult pr)
+        {
+            Node root = new Node(NodeType.maxDim);
+            root.r = new PixRect(0, 0, idealAtlasW, idealAtlasH);
             //Debug.Assert(maxAtlasDim >= 1);
-			for (int i = 0; i < imgsToAdd.Length; i++){
-				Node n = root.Insert(imgsToAdd[i],false);
-				if (n == null){
-					return false;
-				} else if (i == imgsToAdd.Length -1){
-					int usedW = 0; 
-					int usedH = 0; 
-					GetExtent(root,ref usedW, ref usedH);
-					float efficiency,squareness;
-					bool fitsInMaxDim;
+            for (int i = 0; i < imgsToAdd.Length; i++)
+            {
+                Node n = root.Insert(imgsToAdd[i], false);
+                if (n == null)
+                {
+                    return false;
+                }
+                else if (i == imgsToAdd.Length - 1)
+                {
+                    int usedW = 0;
+                    int usedH = 0;
+                    GetExtent(root, ref usedW, ref usedH);
+                    float efficiency, squareness;
+                    bool fitsInMaxDim;
                     int atlasW = usedW;
                     int atlasH = usedH;
-					if (atlasMustBePowerOfTwo){
-						atlasW = Mathf.Min (CeilToNearestPowerOfTwo(usedW), maxAtlasDimX);
-						atlasH = Mathf.Min (CeilToNearestPowerOfTwo(usedH), maxAtlasDimY);
-						if (atlasH < atlasW / 2) atlasH = atlasW / 2;
-						if (atlasW < atlasH / 2) atlasW = atlasH / 2;
-						fitsInMaxDim = usedW <= maxAtlasDimX && usedH <= maxAtlasDimY;
-						float scaleW = Mathf.Max (1f,((float)usedW)/ maxAtlasDimX);
-						float scaleH = Mathf.Max (1f,((float)usedH)/ maxAtlasDimY);
-						float atlasArea = atlasW * scaleW * atlasH * scaleH; //area if we scaled it up to something large enough to contain images
-						efficiency = 1f - (atlasArea - imgArea) / atlasArea;
-						squareness = 1f; //don't care about squareness in power of two case
-					} else {
-						efficiency = 1f - (usedW * usedH - imgArea) / (usedW * usedH);
-						if (usedW < usedH) squareness = (float) usedW / (float) usedH;
-						else squareness = (float) usedH / (float) usedW;
-						fitsInMaxDim = usedW <= maxAtlasDimX && usedH <= maxAtlasDimY;
-					}
-					pr.Set(usedW,usedH,atlasW,atlasH,root,fitsInMaxDim,efficiency,squareness);
-					if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug("Probe success efficiency w=" + usedW + " h=" + usedH + " e=" + efficiency + " sq=" + squareness + " fits=" + fitsInMaxDim);
-					return true;
-				}
-			}	
-			Debug.LogError("Should never get here.");
-			return false;
-		}
+                    if (atlasMustBePowerOfTwo)
+                    {
+                        atlasW = Mathf.Min(CeilToNearestPowerOfTwo(usedW), maxAtlasDimX);
+                        atlasH = Mathf.Min(CeilToNearestPowerOfTwo(usedH), maxAtlasDimY);
+                        if (atlasH < atlasW / 2) atlasH = atlasW / 2;
+                        if (atlasW < atlasH / 2) atlasW = atlasH / 2;
+                        fitsInMaxDim = usedW <= maxAtlasDimX && usedH <= maxAtlasDimY;
+                        float scaleW = Mathf.Max(1f, ((float)usedW) / maxAtlasDimX);
+                        float scaleH = Mathf.Max(1f, ((float)usedH) / maxAtlasDimY);
+                        float atlasArea = atlasW * scaleW * atlasH * scaleH; //area if we scaled it up to something large enough to contain images
+                        efficiency = 1f - (atlasArea - imgArea) / atlasArea;
+                        squareness = 1f; //don't care about squareness in power of two case
+                    }
+                    else
+                    {
+                        efficiency = 1f - (usedW * usedH - imgArea) / (usedW * usedH);
+                        if (usedW < usedH) squareness = (float)usedW / (float)usedH;
+                        else squareness = (float)usedH / (float)usedW;
+                        fitsInMaxDim = usedW <= maxAtlasDimX && usedH <= maxAtlasDimY;
+                    }
+                    pr.Set(usedW, usedH, atlasW, atlasH, root, fitsInMaxDim, efficiency, squareness);
+                    if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug("Probe success efficiency w=" + usedW + " h=" + usedH + " e=" + efficiency + " sq=" + squareness + " fits=" + fitsInMaxDim);
+                    return true;
+                }
+            }
+            Debug.LogError("Should never get here.");
+            return false;
+        }
 
         bool ProbeMultiAtlas(Image[] imgsToAdd, int idealAtlasW, int idealAtlasH, float imgArea, int maxAtlasDimX, int maxAtlasDimY, ProbeResult pr)
         {
@@ -505,7 +544,8 @@ namespace DigitalOpus.MB.Core{
                     if (imgsToAdd[i].x > idealAtlasW && imgsToAdd[i].y > idealAtlasH)
                     {
                         return false;
-                    } else
+                    }
+                    else
                     {
                         // create a new root node wider than previous atlas
                         Node newRoot = new Node(NodeType.Container);
@@ -547,15 +587,19 @@ namespace DigitalOpus.MB.Core{
                 GetExtent(r.child[1], ref x, ref y);
         }
 
-        int StepWidthHeight(int oldVal, int step, int maxDim){
-			if (atlasMustBePowerOfTwo && oldVal < maxDim){
-				return oldVal * 2;
-			} else {
-				int newVal = oldVal + step;
-				if (newVal > maxDim && oldVal < maxDim) newVal = maxDim;
-				return newVal;
-			}
-		}
+        int StepWidthHeight(int oldVal, int step, int maxDim)
+        {
+            if (atlasMustBePowerOfTwo && oldVal < maxDim)
+            {
+                return oldVal * 2;
+            }
+            else
+            {
+                int newVal = oldVal + step;
+                if (newVal > maxDim && oldVal < maxDim) newVal = maxDim;
+                return newVal;
+            }
+        }
 
         public override AtlasPackingResult[] GetRects(List<Vector2> imgWidthHeights, int maxDimensionX, int maxDimensionY, int atPadding)
         {
@@ -569,7 +613,8 @@ namespace DigitalOpus.MB.Core{
             return GetRects(imgWidthHeights, padding, maxDimensionX, maxDimensionY, false);
         }
 
-        public override AtlasPackingResult[] GetRects(List<Vector2> imgWidthHeights, List<AtlasPadding> paddings, int maxDimensionX, int maxDimensionY, bool doMultiAtlas){
+        public override AtlasPackingResult[] GetRects(List<Vector2> imgWidthHeights, List<AtlasPadding> paddings, int maxDimensionX, int maxDimensionY, bool doMultiAtlas)
+        {
             Debug.Assert(imgWidthHeights.Count == paddings.Count, imgWidthHeights.Count + " " + paddings.Count);
             int maxPaddingX = 0;
             int maxPaddingY = 0;
@@ -588,12 +633,13 @@ namespace DigitalOpus.MB.Core{
                 if (apr == null)
                 {
                     return null;
-                } else
+                }
+                else
                 {
                     return new AtlasPackingResult[] { apr };
                 }
             }
-		}
+        }
 
         //------------------ Algorithm for fitting everything into one atlas and scaling down
         // 
@@ -602,47 +648,53 @@ namespace DigitalOpus.MB.Core{
         // Explore space to find a resonably efficient packing. Grow the atlas gradually until a fit is found
         // Scale atlas to fit
         //
-        AtlasPackingResult _GetRectsSingleAtlas(List<Vector2> imgWidthHeights, List<AtlasPadding> paddings, int maxDimensionX, int maxDimensionY, int minImageSizeX, int minImageSizeY, int masterImageSizeX, int masterImageSizeY, int recursionDepth){
-			if (LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log (String.Format("_GetRects numImages={0}, maxDimension={1}, minImageSizeX={2}, minImageSizeY={3}, masterImageSizeX={4}, masterImageSizeY={5}, recursionDepth={6}",
-			                                                                 imgWidthHeights.Count, maxDimensionX, minImageSizeX, minImageSizeY, masterImageSizeX, masterImageSizeY, recursionDepth));
-            if (recursionDepth > MAX_RECURSION_DEPTH) {
+        AtlasPackingResult _GetRectsSingleAtlas(List<Vector2> imgWidthHeights, List<AtlasPadding> paddings, int maxDimensionX, int maxDimensionY, int minImageSizeX, int minImageSizeY, int masterImageSizeX, int masterImageSizeY, int recursionDepth)
+        {
+            if (LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log(String.Format("_GetRects numImages={0}, maxDimension={1}, minImageSizeX={2}, minImageSizeY={3}, masterImageSizeX={4}, masterImageSizeY={5}, recursionDepth={6}",
+                                                                             imgWidthHeights.Count, maxDimensionX, minImageSizeX, minImageSizeY, masterImageSizeX, masterImageSizeY, recursionDepth));
+            if (recursionDepth > MAX_RECURSION_DEPTH)
+            {
                 if (LOG_LEVEL >= MB2_LogLevel.error) Debug.LogError("Maximum recursion depth reached. The baked atlas is likely not very good. " +
                     " This happens when the packed atlases exceeds the maximum" +
                     " atlas size in one or both dimensions so that the atlas needs to be downscaled AND there are some very thin or very small images (only-a-few-pixels)." +
                     " these very thin images can 'vanish' completely when the atlas is downscaled.\n\n" +
                     " Try one or more of the following: using multiple atlases, increase the maximum atlas size, don't use 'force-power-of-two', remove the source materials that are are using very small/thin textures.");
-				//return null;
-			}
-			float area = 0;
-			int maxW = 0;
-			int maxH = 0;
-			Image[] imgsToAdd = new Image[imgWidthHeights.Count];
-			for (int i = 0; i < imgsToAdd.Length; i++){
+                //return null;
+            }
+            float area = 0;
+            int maxW = 0;
+            int maxH = 0;
+            Image[] imgsToAdd = new Image[imgWidthHeights.Count];
+            for (int i = 0; i < imgsToAdd.Length; i++)
+            {
                 int iw = (int)imgWidthHeights[i].x;
                 int ih = (int)imgWidthHeights[i].y;
                 Image im = imgsToAdd[i] = new Image(i, iw, ih, paddings[i], minImageSizeX, minImageSizeY);
-				area += im.w * im.h;
-				maxW = Mathf.Max(maxW, im.w);
-				maxH = Mathf.Max(maxH, im.h);
-			}
-			
-			if ((float)maxH/(float)maxW > 2){
-				if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug("Using height Comparer");
-				Array.Sort(imgsToAdd,new ImageHeightComparer());
-			}
-			else if ((float)maxH/(float)maxW < .5){
-				if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug("Using width Comparer");
-				Array.Sort(imgsToAdd,new ImageWidthComparer());
-			}
-			else{
-				if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug("Using area Comparer");
-				Array.Sort(imgsToAdd,new ImageAreaComparer());
-			}
+                area += im.w * im.h;
+                maxW = Mathf.Max(maxW, im.w);
+                maxH = Mathf.Max(maxH, im.h);
+            }
 
-			//explore the space to find a resonably efficient packing 
-			int sqrtArea = (int) Mathf.Sqrt(area);
-			int idealAtlasW; 
-			int idealAtlasH;
+            if ((float)maxH / (float)maxW > 2)
+            {
+                if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug("Using height Comparer");
+                Array.Sort(imgsToAdd, new ImageHeightComparer());
+            }
+            else if ((float)maxH / (float)maxW < .5)
+            {
+                if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug("Using width Comparer");
+                Array.Sort(imgsToAdd, new ImageWidthComparer());
+            }
+            else
+            {
+                if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug("Using area Comparer");
+                Array.Sort(imgsToAdd, new ImageAreaComparer());
+            }
+
+            //explore the space to find a resonably efficient packing 
+            int sqrtArea = (int)Mathf.Sqrt(area);
+            int idealAtlasW;
+            int idealAtlasH;
 
             if (atlasMustBePowerOfTwo)
             {
@@ -672,15 +724,15 @@ namespace DigitalOpus.MB.Core{
                 }
             }
 
-			if (idealAtlasW == 0) idealAtlasW = 4;
-			if (idealAtlasH == 0) idealAtlasH = 4;
-			int stepW = (int)(idealAtlasW * .15f);
-			int stepH = (int)(idealAtlasH * .15f);
-			if (stepW == 0) stepW = 1;
-			if (stepH == 0) stepH = 1;
-			int numWIterations=2;
-			int steppedWidth = idealAtlasW;
-			int steppedHeight = idealAtlasH;
+            if (idealAtlasW == 0) idealAtlasW = 4;
+            if (idealAtlasH == 0) idealAtlasH = 4;
+            int stepW = (int)(idealAtlasW * .15f);
+            int stepH = (int)(idealAtlasH * .15f);
+            if (stepW == 0) stepW = 1;
+            if (stepH == 0) stepH = 1;
+            int numWIterations = 2;
+            int steppedWidth = idealAtlasW;
+            int steppedHeight = idealAtlasH;
 
             while (numWIterations >= 1 && steppedHeight < sqrtArea * 1000)
             {
@@ -691,7 +743,7 @@ namespace DigitalOpus.MB.Core{
                 {
                     ProbeResult pr = new ProbeResult();
                     if (LOG_LEVEL >= MB2_LogLevel.trace) Debug.Log("Probing h=" + steppedHeight + " w=" + steppedWidth);
-                    if (ProbeSingleAtlas (imgsToAdd, steppedWidth, steppedHeight, area, maxDimensionX, maxDimensionY, pr))
+                    if (ProbeSingleAtlas(imgsToAdd, steppedWidth, steppedHeight, area, maxDimensionX, maxDimensionY, pr))
                     {
                         successW = true;
                         if (bestRoot == null) bestRoot = pr;
@@ -713,13 +765,15 @@ namespace DigitalOpus.MB.Core{
             }
 
             int outW = 0;
-			int outH = 0;
-			if (atlasMustBePowerOfTwo){
-				outW = Mathf.Min (CeilToNearestPowerOfTwo(bestRoot.w), maxDimensionX);
-				outH = Mathf.Min (CeilToNearestPowerOfTwo(bestRoot.h), maxDimensionY);
-				if (outH < outW / 2) outH = outW / 2; //smaller dim can't be less than half larger
-				if (outW < outH / 2) outW = outH / 2;
-			} else
+            int outH = 0;
+            if (atlasMustBePowerOfTwo)
+            {
+                outW = Mathf.Min(CeilToNearestPowerOfTwo(bestRoot.w), maxDimensionX);
+                outH = Mathf.Min(CeilToNearestPowerOfTwo(bestRoot.h), maxDimensionY);
+                if (outH < outW / 2) outH = outW / 2; //smaller dim can't be less than half larger
+                if (outW < outH / 2) outW = outH / 2;
+            }
+            else
             {
                 outW = Mathf.Min(bestRoot.w, maxDimensionX);
                 outH = Mathf.Min(bestRoot.h, maxDimensionY);
@@ -727,21 +781,21 @@ namespace DigitalOpus.MB.Core{
 
             bestRoot.outW = outW;
             bestRoot.outH = outH;
-			if (LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log("Best fit found: atlasW=" + outW + " atlasH" + outH + " w=" + bestRoot.w + " h=" + bestRoot.h + " efficiency=" + bestRoot.efficiency + " squareness=" + bestRoot.squareness + " fits in max dimension=" + bestRoot.largerOrEqualToMaxDim);
+            if (LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log("Best fit found: atlasW=" + outW + " atlasH" + outH + " w=" + bestRoot.w + " h=" + bestRoot.h + " efficiency=" + bestRoot.efficiency + " squareness=" + bestRoot.squareness + " fits in max dimension=" + bestRoot.largerOrEqualToMaxDim);
 
-			//Debug.Assert(images.Count != imgsToAdd.Length, "Result images not the same lentgh as source"));
+            //Debug.Assert(images.Count != imgsToAdd.Length, "Result images not the same lentgh as source"));
 
             //the atlas can be larger than the max dimension scale it if this is the case
-			//int newMinSizeX = minImageSizeX;
-			//int	newMinSizeY = minImageSizeY;
-         
+            //int newMinSizeX = minImageSizeX;
+            //int	newMinSizeY = minImageSizeY;
+
 
             List<Image> images = new List<Image>();
             flattenTree(bestRoot.root, images);
             images.Sort(new ImgIDComparer());
             // the atlas may be packed larger than the maxDimension. If so then the atlas needs to be scaled down to fit
             Vector2 rootWH = new Vector2(bestRoot.w, bestRoot.h);
-            float padX, padY; 
+            float padX, padY;
             int newMinSizeX, newMinSizeY;
             if (!ScaleAtlasToFitMaxDim(rootWH, images, maxDimensionX, maxDimensionY, paddings[0], minImageSizeX, minImageSizeY, masterImageSizeX, masterImageSizeY,
                 ref outW, ref outH, out padX, out padY, out newMinSizeX, out newMinSizeY) ||
@@ -764,7 +818,7 @@ namespace DigitalOpus.MB.Core{
                     res.srcImgIdxs[i] = im.imgId;
                     if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug("Image: " + i + " imgID=" + im.imgId + " x=" + r.x * outW +
                                " y=" + r.y * outH + " w=" + r.width * outW +
-                               " h=" + r.height * outH + " padding=" + (paddings[i].leftRight * 2) + "x" + (paddings[i].topBottom*2));
+                               " h=" + r.height * outH + " padding=" + (paddings[i].leftRight * 2) + "x" + (paddings[i].topBottom * 2));
                 }
                 res.CalcUsedWidthAndHeight();
                 return res;
@@ -780,9 +834,9 @@ namespace DigitalOpus.MB.Core{
 
 
             //if (LOG_LEVEL >= MB2_LogLevel.debug) MB2_Log.LogDebug(String.Format("Done GetRects atlasW={0} atlasH={1}", bestRoot.w, bestRoot.h));		
-			
-			//return res;			
-		}
+
+            //return res;			
+        }
 
 
         //----------------- Algorithm for fitting everything into multiple Atlases
@@ -918,7 +972,7 @@ namespace DigitalOpus.MB.Core{
                 }
                 AtlasPackingResult res = new AtlasPackingResult(paddings.ToArray());
                 GetExtent(atlasNodes[i], ref res.usedW, ref res.usedH);
-                res.usedW -= atlasNodes[i].r.x; 
+                res.usedW -= atlasNodes[i].r.x;
                 int outW = atlasNodes[i].r.w;
                 int outH = atlasNodes[i].r.h;
                 if (atlasMustBePowerOfTwo)
@@ -927,7 +981,8 @@ namespace DigitalOpus.MB.Core{
                     outH = Mathf.Min(CeilToNearestPowerOfTwo(res.usedH), atlasNodes[i].r.h);
                     if (outH < outW / 2) outH = outW / 2; //smaller dim can't be less than half larger
                     if (outW < outH / 2) outW = outH / 2;
-                } else
+                }
+                else
                 {
                     outW = res.usedW;
                     outH = res.usedH;
@@ -935,7 +990,7 @@ namespace DigitalOpus.MB.Core{
 
                 res.atlasY = outH;
                 res.atlasX = outW;
-                
+
                 res.rects = rss;
                 res.srcImgIdxs = srcImgIdx;
                 res.CalcUsedWidthAndHeight();
@@ -946,7 +1001,7 @@ namespace DigitalOpus.MB.Core{
 
             return rs.ToArray();
         }
-	}
+    }
 
 
 }

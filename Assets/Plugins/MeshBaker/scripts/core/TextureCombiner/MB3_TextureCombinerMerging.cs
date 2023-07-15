@@ -1,7 +1,6 @@
-using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -122,11 +121,16 @@ namespace DigitalOpus.MB.Core
                 MB_TexSet tx = distinctMaterialTextures[i];
                 for (int matIdx = 0; matIdx < tx.matsAndGOs.mats.Count; matIdx++)
                 {
-                    if (tx.matsAndGOs.gos.Count > 0) {
+                    if (tx.matsAndGOs.gos.Count > 0)
+                    {
                         tx.matsAndGOs.mats[matIdx].objName = tx.matsAndGOs.gos[0].name;
-                    } else if (tx.ts[0] != null) {
-                        tx.matsAndGOs.mats[matIdx].objName = string.Format("[objWithTx:{0} atlasBlock:{1} matIdx{2}]",tx.ts[0].GetTexName(),i,matIdx);
-                    } else {
+                    }
+                    else if (tx.ts[0] != null)
+                    {
+                        tx.matsAndGOs.mats[matIdx].objName = string.Format("[objWithTx:{0} atlasBlock:{1} matIdx{2}]", tx.ts[0].GetTexName(), i, matIdx);
+                    }
+                    else
+                    {
                         tx.matsAndGOs.mats[matIdx].objName = string.Format("[objWithTx:{0} atlasBlock:{1} matIdx{2}]", "Unknown", i, matIdx);
                     }
                 }
@@ -453,7 +457,7 @@ namespace DigitalOpus.MB.Core
                         MatAndTransformToMerged mat = tx1.matsAndGOs.mats[matIdx];
                         DRect uvR = mat.obUVRectIfTilingSame;
                         DRect matR = mat.materialTiling;
-                        if (!MB2_TextureBakeResults.IsMeshAndMaterialRectEnclosedByAtlasRect(tx1.tilingTreatment, uvR.GetRect(), matR.GetRect(), tx1.ts[0].GetEncapsulatingSamplingRect().GetRect(),MB2_LogLevel.info))
+                        if (!MB2_TextureBakeResults.IsMeshAndMaterialRectEnclosedByAtlasRect(tx1.tilingTreatment, uvR.GetRect(), matR.GetRect(), tx1.ts[0].GetEncapsulatingSamplingRect().GetRect(), MB2_LogLevel.info))
                         {
                             Debug.LogErrorFormat("mesh " + tx1.matsAndGOs.mats[matIdx].objName + "\n" +
                                                 " uv=" + uvR + "\n" +

@@ -554,7 +554,7 @@ namespace UnityMeshSimplifier
                 skinnedMeshRenderer.skinnedMotionVectors = level.SkinnedMotionVectors;
             }
         }
-        
+
         private static Renderer[] GetChildRenderersForLOD(GameObject gameObject)
         {
             var resultRenderers = new List<Renderer>();

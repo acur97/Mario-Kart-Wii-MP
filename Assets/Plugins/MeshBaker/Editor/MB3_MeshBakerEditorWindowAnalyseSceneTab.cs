@@ -2,13 +2,12 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
+using DigitalOpus.MB.Core;
+using System;
+using System.Collections.Generic;
+using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-using System;
-using System.Reflection;
-using System.Collections.Generic;
-using System.Linq;
-using DigitalOpus.MB.Core;
 
 namespace DigitalOpus.MB.MBEditor
 {
@@ -189,12 +188,12 @@ namespace DigitalOpus.MB.MBEditor
             {
                 try
                 {
-                    MB3_TextureBaker[] texBakers = (MB3_TextureBaker[]) GameObject.FindObjectsOfType(typeof(MB3_TextureBaker));
+                    MB3_TextureBaker[] texBakers = (MB3_TextureBaker[])GameObject.FindObjectsOfType(typeof(MB3_TextureBaker));
                     for (int i = 0; i < texBakers.Length; i++)
                     {
                         texBakers[i].CreateAtlases(updateProgressBar, true, new MB3_EditorMethods());
                     }
-                    MB3_MeshBakerCommon[] mBakers = (MB3_MeshBakerCommon[]) GameObject.FindObjectsOfType(typeof(MB3_MeshBakerCommon));
+                    MB3_MeshBakerCommon[] mBakers = (MB3_MeshBakerCommon[])GameObject.FindObjectsOfType(typeof(MB3_MeshBakerCommon));
                     bool createTempMaterialBakeResult;
                     for (int i = 0; i < mBakers.Length; i++)
                     {
@@ -321,7 +320,7 @@ namespace DigitalOpus.MB.MBEditor
 
             //collect all renderers in scene
             List<GameObjectFilterInfo> gameObjects = new List<GameObjectFilterInfo>();
-            Renderer[] rs = (Renderer[]) GameObject.FindObjectsOfType(typeof(Renderer));
+            Renderer[] rs = (Renderer[])GameObject.FindObjectsOfType(typeof(Renderer));
             //		Profile.StartProfile("listMaterialsInScene1");
             EditorUtility.DisplayProgressBar("Analysing Scene", "Collecting Renderers", .25f);
             for (int i = 0; i < rs.Length; i++)
@@ -546,7 +545,7 @@ namespace DigitalOpus.MB.MBEditor
                     Material tempResMat = k.materials[0]; //we don't write to the materials so can use this as the result material
                     MB_AtlasesAndRects tempAtlasesAndRects = new MB_AtlasesAndRects();
                     if (tc.CombineTexturesIntoAtlases(null, tempAtlasesAndRects, tempResMat, objsInGroup, null, null, packingResults,
-                        onlyPackRects:true, splitAtlasWhenPackingIfTooBig:false))
+                        onlyPackRects: true, splitAtlasWhenPackingIfTooBig: false))
                     {
                         List<List<GameObjectFilterInfo>> atlasGroups = new List<List<GameObjectFilterInfo>>();
                         for (int i = 0; i < packingResults.Count; i++)
@@ -705,7 +704,7 @@ namespace DigitalOpus.MB.MBEditor
 
         void bakeAllBakersInScene()
         {
-            MB3_MeshBakerRoot[] bakers = (MB3_MeshBakerRoot[]) GameObject.FindObjectsOfType(typeof(MB3_MeshBakerRoot));
+            MB3_MeshBakerRoot[] bakers = (MB3_MeshBakerRoot[])GameObject.FindObjectsOfType(typeof(MB3_MeshBakerRoot));
             for (int i = 0; i < bakers.Length; i++)
             {
                 if (bakers[i] is MB3_TextureBaker)

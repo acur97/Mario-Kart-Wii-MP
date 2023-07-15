@@ -2,13 +2,8 @@
 //            MeshBaker
 // Copyright © 2011-2012 Ian Deane
 //----------------------------------------------
-using UnityEngine;
-using System.Collections;
-using System.Collections.Specialized;
-using System;
 using System.Collections.Generic;
-using System.Text;
-using DigitalOpus.MB.Core;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -655,7 +650,7 @@ namespace DigitalOpus.MB.Core
                 {
                     MB_Utility.Destroy(meshCombiners[i].combinedMesh.targetRenderer.gameObject);
                 }
-                
+
                 meshCombiners[i].combinedMesh.DestroyMesh();
             }
 
@@ -684,7 +679,7 @@ namespace DigitalOpus.MB.Core
         {
             targ.validationLevel = _validationLevel;
             targ.textureBakeResults = textureBakeResults;
-            
+
             // Even though the MultiMeshBaker supports baking into prefabs, the sub-combiners don't do bake into prefab when
             // this is happening. They do bake into sceneObject, then the MultiMeshBaker takes their output and combines it
             // into a prefab.
@@ -692,7 +687,8 @@ namespace DigitalOpus.MB.Core
             if (settingsHolder != null)
             {
                 targ.settingsHolder = settingsHolder;
-            } else 
+            }
+            else
             {
                 targ.renderType = renderType;
                 targ.lightmapOption = lightmapOption;

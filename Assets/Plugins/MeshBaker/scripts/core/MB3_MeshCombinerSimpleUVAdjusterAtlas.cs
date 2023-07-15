@@ -1,10 +1,7 @@
-using UnityEngine;
-using System.Collections;
-using System.Collections.Specialized;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using DigitalOpus.MB.Core;
+using System.Collections.Specialized;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -58,7 +55,7 @@ namespace DigitalOpus.MB.Core
                 bool checkTargetSubmeshIdxsFromPreviousBake,
                 Mesh m, MeshChannelsCache meshChannelsCache,
                 Dictionary<int, MB_Utility.MeshAnalysisResult[]> meshAnalysisResultsCache,
-                OrderedDictionary sourceMats2submeshIdx_map, GameObject go,  MB_DynamicGameObject dgoOut)
+                OrderedDictionary sourceMats2submeshIdx_map, GameObject go, MB_DynamicGameObject dgoOut)
             {
                 MB_TextureTilingTreatment[] tilingTreatment = new MB_TextureTilingTreatment[sharedMaterials.Length];
                 Rect[] uvRectsInAtlas = new Rect[sharedMaterials.Length];
@@ -66,7 +63,7 @@ namespace DigitalOpus.MB.Core
                 Rect[] sourceMaterialTiling = new Rect[sharedMaterials.Length];
                 int[] sliceIdx = new int[sharedMaterials.Length];
                 String errorMsg = "";
-                for (int srcSubmeshIdx = 0; srcSubmeshIdx<sharedMaterials.Length; srcSubmeshIdx++)
+                for (int srcSubmeshIdx = 0; srcSubmeshIdx < sharedMaterials.Length; srcSubmeshIdx++)
                 {
                     System.Object subIdx = sourceMats2submeshIdx_map[sharedMaterials[srcSubmeshIdx]];
                     int resMatIdx;
@@ -77,7 +74,7 @@ namespace DigitalOpus.MB.Core
                     }
                     else
                     {
-                        resMatIdx = (int) subIdx;
+                        resMatIdx = (int)subIdx;
                         if (checkTargetSubmeshIdxsFromPreviousBake)
                         {
                             /*
@@ -133,7 +130,7 @@ namespace DigitalOpus.MB.Core
                 bool doTextureArray = tbr.resultType == MB2_TextureBakeResults.ResultType.textureArray;
                 for (int srcSubmeshIdx = 0; srcSubmeshIdx < dgo.targetSubmeshIdxs.Length; srcSubmeshIdx++)
                 {
-                     
+
                     int[] srcSubTris;
                     if (dgo._tmpSubmeshTris != null)
                     {
@@ -165,9 +162,9 @@ namespace DigitalOpus.MB.Core
                         {
                             done[srcVertIdx] = srcSubmeshIdx; //prevents a uv from being adjusted twice. Same vert can be on more than one submesh.
                             Vector2 nuv = nuvs[srcVertIdx]; //don't modify nuvs directly because it is cached and we might be re-using
-                                                      //if (textureBakeResults.fixOutOfBoundsUVs) {
-                                                      //uvRectInSrc can be larger than (out of bounds uvs) or smaller than 0..1
-                                                      //this transforms the uvs so they fit inside the uvRectInSrc sample box 
+                                                            //if (textureBakeResults.fixOutOfBoundsUVs) {
+                                                            //uvRectInSrc can be larger than (out of bounds uvs) or smaller than 0..1
+                                                            //this transforms the uvs so they fit inside the uvRectInSrc sample box 
 
                             // scale, shift to fit in atlas rect
                             nuv.x = rr.x + nuv.x * rr.width;

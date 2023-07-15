@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.HighDefinition;
 
@@ -12,7 +10,7 @@ public class ProjectCaustics : MonoBehaviour
 
     void Update()
     {
-        if(waterSurface.GetCausticsBuffer(out regionSize) != null && decal.GetTexture("_Texture2D") == null)
+        if (waterSurface.GetCausticsBuffer(out regionSize) != null && decal.GetTexture("_Texture2D") == null)
         {
             decal.SetTexture("_Texture2D", waterSurface.GetCausticsBuffer(out regionSize));
         }

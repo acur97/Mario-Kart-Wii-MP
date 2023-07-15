@@ -1,8 +1,5 @@
-using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
-using System;
-using System.IO;
+using UnityEngine;
 
 
 /*
@@ -14,11 +11,13 @@ Tests For All Texture Packers
     can handle images larger than maxdim
     
 */
- 
-namespace DigitalOpus.MB.Core{
+
+namespace DigitalOpus.MB.Core
+{
     // uses this algorithm http://blackpawn.com/texts/lightmaps/
-    public class MB2_TexturePackerHorizontalVert : MB2_TexturePacker {
-		
+    public class MB2_TexturePackerHorizontalVert : MB2_TexturePacker
+    {
+
         public enum TexturePackingOrientation
         {
             horizontal,
@@ -39,7 +38,8 @@ namespace DigitalOpus.MB.Core{
                 {
                     p.leftRight = 0;
                     p.topBottom = 8;
-                } else
+                }
+                else
                 {
                     p.leftRight = 8;
                     p.topBottom = 0;
@@ -49,7 +49,8 @@ namespace DigitalOpus.MB.Core{
             return GetRects(imgWidthHeights, paddings, maxDimensionX, maxDimensionY, false);
         }
 
-        public override AtlasPackingResult[] GetRects(List<Vector2> imgWidthHeights, List<AtlasPadding> paddings, int maxDimensionX, int maxDimensionY, bool doMultiAtlas){
+        public override AtlasPackingResult[] GetRects(List<Vector2> imgWidthHeights, List<AtlasPadding> paddings, int maxDimensionX, int maxDimensionY, bool doMultiAtlas)
+        {
             Debug.Assert(imgWidthHeights.Count == paddings.Count);
             int maxPaddingX = 0;
             int maxPaddingY = 0;
@@ -63,7 +64,8 @@ namespace DigitalOpus.MB.Core{
                 if (packingOrientation == TexturePackingOrientation.vertical)
                 {
                     return _GetRectsMultiAtlasVertical(imgWidthHeights, paddings, maxDimensionX, maxDimensionY, 2 + maxPaddingX * 2, 2 + maxPaddingY * 2, 2 + maxPaddingX * 2, 2 + maxPaddingY * 2);
-                } else
+                }
+                else
                 {
                     return _GetRectsMultiAtlasHorizontal(imgWidthHeights, paddings, maxDimensionX, maxDimensionY, 2 + maxPaddingX * 2, 2 + maxPaddingY * 2, 2 + maxPaddingX * 2, 2 + maxPaddingY * 2);
                 }
@@ -74,12 +76,13 @@ namespace DigitalOpus.MB.Core{
                 if (apr == null)
                 {
                     return null;
-                } else
+                }
+                else
                 {
                     return new AtlasPackingResult[] { apr };
                 }
             }
-		}
+        }
 
         AtlasPackingResult _GetRectsSingleAtlas(List<Vector2> imgWidthHeights, List<AtlasPadding> paddings, int maxDimensionX, int maxDimensionY, int minImageSizeX, int minImageSizeY, int masterImageSizeX, int masterImageSizeY, int recursionDepth)
         {
@@ -93,7 +96,7 @@ namespace DigitalOpus.MB.Core{
             if (LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log("Packing rects for: " + imgWidthHeights.Count);
             for (int i = 0; i < imgWidthHeights.Count; i++)
             {
-                Image im = new Image(i, (int) imgWidthHeights[i].x, (int) imgWidthHeights[i].y, paddings[i], minImageSizeX, minImageSizeY);
+                Image im = new Image(i, (int)imgWidthHeights[i].x, (int)imgWidthHeights[i].y, paddings[i], minImageSizeX, minImageSizeY);
 
                 // if images are stacked horizontally then there is no padding at the top or bottom
                 if (packingOrientation == TexturePackingOrientation.vertical)
@@ -104,7 +107,8 @@ namespace DigitalOpus.MB.Core{
                     rects.Add(new Rect(im.w, im.h, extent, 0));
                     extent += im.w;
                     maxh = Mathf.Max(maxh, im.h);
-                } else
+                }
+                else
                 {
                     im.w -= paddings[i].leftRight * 2;
                     im.y = extent;
@@ -118,10 +122,11 @@ namespace DigitalOpus.MB.Core{
             //scale atlas to fit maxDimension
             Vector2 rootWH;
             if (packingOrientation == TexturePackingOrientation.vertical) { rootWH = new Vector2(extent, maxh); }
-            else { rootWH = new Vector2(maxw,extent); }
-            int outW = (int) rootWH.x;
-            int outH = (int) rootWH.y;
-            if (packingOrientation == TexturePackingOrientation.vertical) {
+            else { rootWH = new Vector2(maxw, extent); }
+            int outW = (int)rootWH.x;
+            int outH = (int)rootWH.y;
+            if (packingOrientation == TexturePackingOrientation.vertical)
+            {
                 if (atlasMustBePowerOfTwo)
                 {
                     outW = Mathf.Min(CeilToNearestPowerOfTwo(outW), maxDimensionX);
@@ -130,7 +135,8 @@ namespace DigitalOpus.MB.Core{
                 {
                     outW = Mathf.Min(outW, maxDimensionX);
                 }
-            } else
+            }
+            else
             {
                 if (atlasMustBePowerOfTwo)
                 {
@@ -163,7 +169,8 @@ namespace DigitalOpus.MB.Core{
                                                              (float)im.y / (float)outH,
                                                              (float)im.w / (float)outW - padX * 2f,
                                                              stretchImagesToEdges ? 1f : (float)im.h / (float)outH); // all images are stretched to fill the height
-                    } else
+                    }
+                    else
                     {
                         r = res.rects[i] = new Rect((float)im.x / (float)outW,
                                                              (float)im.y / (float)outH + padY,
@@ -188,9 +195,9 @@ namespace DigitalOpus.MB.Core{
             int extent = 0;
             int maxh = 0;
             int maxw = 0;
-            
+
             if (LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log("Packing rects for: " + imgWidthHeights.Count);
-            
+
             List<Image> allImages = new List<Image>();
             for (int i = 0; i < imgWidthHeights.Count; i++)
             {
@@ -215,8 +222,8 @@ namespace DigitalOpus.MB.Core{
                     int[] srcImgIdx = new int[images.Count];
                     for (int j = 0; j < images.Count; j++)
                     {
-                        Rect r = new Rect(images[j].x, images[j].y, 
-                                        images[j].w, 
+                        Rect r = new Rect(images[j].x, images[j].y,
+                                        images[j].w,
                                         stretchImagesToEdges ? maxh : images[j].h);
                         rss[j] = r;
                         srcImgIdx[j] = images[j].imgId;
@@ -230,7 +237,8 @@ namespace DigitalOpus.MB.Core{
                     maxh = 0;
                     rs.Add(apr);
                     spaceRemaining = maxDimensionPassedX;
-                } else
+                }
+                else
                 {
                     im.x = extent;
                     im.y = 0;
@@ -264,10 +272,11 @@ namespace DigitalOpus.MB.Core{
                                      ref outW, ref outH, out padX, out padY, out newMinSizeX, out newMinSizeY);
             }
 
-            
+
 
             //normalize atlases so that that rects are 0 to 1
-            for (int i = 0; i < rs.Count; i++) {
+            for (int i = 0; i < rs.Count; i++)
+            {
                 ConvertToRectsWithoutPaddingAndNormalize01(rs[i], paddings[i]);
                 rs[i].CalcUsedWidthAndHeight();
             }
@@ -377,12 +386,13 @@ namespace DigitalOpus.MB.Core{
             if (images.Count == 0)
             {
                 return null;
-            } 
+            }
 
             if (packingOrientation == TexturePackingOrientation.vertical)
             {
                 imageDim = images[0].w;
-            } else
+            }
+            else
             {
                 imageDim = images[0].h;
             }
@@ -393,7 +403,8 @@ namespace DigitalOpus.MB.Core{
                     Image im = images[0];
                     images.RemoveAt(0);
                     return im;
-                } else
+                }
+                else
                 {
                     return null;
                 }
@@ -410,7 +421,8 @@ namespace DigitalOpus.MB.Core{
                 Image im = images[i];
                 images.RemoveAt(i);
                 return im;
-            } else
+            }
+            else
             {
                 return null;
             }

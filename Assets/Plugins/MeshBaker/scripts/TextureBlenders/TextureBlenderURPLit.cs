@@ -1,7 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System;
+﻿using System;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -45,7 +43,7 @@ namespace DigitalOpus.MB.Core
         Color m_tintColor;
 
         float m_smoothness; // shared by both metallic maps and spec maps
-        
+
         Color m_specColor;   // Used if no spec map
         bool m_hasSpecGlossMap;
 
@@ -53,7 +51,7 @@ namespace DigitalOpus.MB.Core
         bool m_hasMetallicGlossMap;
 
         float m_bumpScale;
-        
+
         bool m_shaderDoesEmission;
         Color m_emissionColor;
 
@@ -76,15 +74,15 @@ namespace DigitalOpus.MB.Core
         float m_notGeneratingAtlasDefaultMetallic = 0;
         float m_notGeneratingAtlasDefaultSmoothness_MetallicWorkflow = 0f;
         float m_notGeneratingAtlasDefaultSmoothness_SpecularWorkflow = 1f;
-        Color m_notGeneratingAtlasDefaultSpecularColor = new Color(.2f,.2f,.2f,1f);
+        Color m_notGeneratingAtlasDefaultSpecularColor = new Color(.2f, .2f, .2f, 1f);
         Color m_notGeneratingAtlasDefaultEmisionColor = Color.black;
 
         public bool DoesShaderNameMatch(string shaderName)
-		{
-			return  shaderName.Equals("Universal Render Pipeline/Lit") ||
+        {
+            return shaderName.Equals("Universal Render Pipeline/Lit") ||
                     shaderName.Equals("Universal Render Pipeline/Simple Lit") ||
                     shaderName.Equals("Universal Render Pipeline/Baked Lit");
-		}
+        }
 
         private WorkflowMode _MapFloatToWorkflowMode(float workflowMode)
         {
@@ -103,7 +101,8 @@ namespace DigitalOpus.MB.Core
             if (workflowMode == WorkflowMode.specular)
             {
                 return 0f;
-            } else
+            }
+            else
             {
                 return 1f;
             }
@@ -141,11 +140,12 @@ namespace DigitalOpus.MB.Core
                 {
                     m_workflowMode = _MapFloatToWorkflowMode(sourceMat.GetFloat("_WorkflowMode"));
                 }
-            } else
+            }
+            else
             {
                 if (sourceMat.HasProperty("_WorkflowMode") && _MapFloatToWorkflowMode(sourceMat.GetFloat("_WorkflowMode")) != m_workflowMode)
                 {
-                    Debug.LogError("Using the Universal Render Pipeline TextureBlender to blend non-texture-propertyes. Some of the source materials used different 'WorkflowModes'. These "+
+                    Debug.LogError("Using the Universal Render Pipeline TextureBlender to blend non-texture-propertyes. Some of the source materials used different 'WorkflowModes'. These " +
                         " cannot be blended properly. Results will be unpredictable.");
                 }
             }
@@ -156,7 +156,8 @@ namespace DigitalOpus.MB.Core
                 {
                     m_smoothnessTextureChannel = _MapFloatToTextureChannel(sourceMat.GetFloat("_SmoothnessTextureChannel"));
                 }
-            } else
+            }
+            else
             {
                 if (sourceMat.HasProperty("_SmoothnessTextureChannel") && _MapFloatToTextureChannel(sourceMat.GetFloat("_SmoothnessTextureChannel")) != m_smoothnessTextureChannel)
                 {
@@ -193,7 +194,8 @@ namespace DigitalOpus.MB.Core
                 if (sourceMat.HasProperty("_SpecColor"))
                 {
                     m_specColor = sourceMat.GetColor("_SpecColor");
-                } else
+                }
+                else
                 {
                     m_specColor = new Color(0f, 0f, 0f, 1f);
                 }
@@ -237,7 +239,7 @@ namespace DigitalOpus.MB.Core
                 {
                     m_smoothness = 0f;
                 }
-                
+
 
             }
             else if (shaderTexturePropertyName.Equals("_BumpMap"))
@@ -252,17 +254,21 @@ namespace DigitalOpus.MB.Core
                 {
                     m_bumpScale = m_generatingTintedAtlaBumpScale;
                 }
-            } else if (shaderTexturePropertyName.Equals("_EmissionMap"))
+            }
+            else if (shaderTexturePropertyName.Equals("_EmissionMap"))
             {
                 propertyToDo = Prop.doEmission;
                 m_shaderDoesEmission = sourceMat.IsKeywordEnabled("_EMISSION");
-                if (sourceMat.HasProperty("_EmissionColor")) {
+                if (sourceMat.HasProperty("_EmissionColor"))
+                {
                     m_emissionColor = sourceMat.GetColor("_EmissionColor");
-                } else
+                }
+                else
                 {
                     m_generatingTintedAtlaColor = m_notGeneratingAtlasDefaultEmisionColor;
                 }
-            } else
+            }
+            else
             {
                 propertyToDo = Prop.doNone;
             }
@@ -329,7 +335,8 @@ namespace DigitalOpus.MB.Core
                 return false;
             }
 
-            if (m_workflowMode == WorkflowMode.specular){
+            if (m_workflowMode == WorkflowMode.specular)
+            {
                 bool aHasSpecTex = a.HasProperty("_SpecGlossMap") && a.GetTexture("_SpecGlossMap") != null;
                 bool bHasSpecTex = b.HasProperty("_SpecGlossMap") && b.GetTexture("_SpecGlossMap") != null;
 
@@ -357,7 +364,8 @@ namespace DigitalOpus.MB.Core
                 }
             }
 
-            if (m_workflowMode == WorkflowMode.metallic) {
+            if (m_workflowMode == WorkflowMode.metallic)
+            {
                 bool aHasMetallicTex = a.HasProperty("_MetallicGlossMap") && a.GetTexture("_MetallicGlossMap") != null;
                 bool bHasMetallicTex = b.HasProperty("_MetallicGlossMap") && b.GetTexture("_MetallicGlossMap") != null;
                 if (aHasMetallicTex && bHasMetallicTex)
@@ -525,7 +533,7 @@ namespace DigitalOpus.MB.Core
                     { //need try because can't garantee _Metallic is a float
                         float v = mat.GetFloat("_Metallic");
                         Color c = new Color(v, v, v);
-                        
+
                         if (mat.HasProperty("_Smoothness"))
                         {
                             try
@@ -535,7 +543,7 @@ namespace DigitalOpus.MB.Core
 
                             catch (Exception) { }
                         }
-                        
+
                         sourceMaterialPropertyCache.CacheMaterialProperty(mat, "_Metallic", v);
                         sourceMaterialPropertyCache.CacheMaterialProperty(mat, "_Smoothness", c.a);
                     }

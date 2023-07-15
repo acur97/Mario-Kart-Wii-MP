@@ -1,7 +1,6 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 namespace DigitalOpus.MB.Core
 {
@@ -197,7 +196,8 @@ namespace DigitalOpus.MB.Core
             if (_atlasDirection == AtlasDirection.horizontal)
             {
                 pipeline = new HorizontalPipeline();
-            } else
+            }
+            else
             {
                 pipeline = new VerticalPipeline();
             }
@@ -228,7 +228,8 @@ namespace DigitalOpus.MB.Core
                     if (LOG_LEVEL >= MB2_LogLevel.debug) Debug.Log("Calculated max atlas width: " + maxWidth);
                     data._maxAtlasWidth = maxWidth;
                 }
-            } else
+            }
+            else
             {
                 if (!data._useMaxAtlasHeightOverride)
                 {
@@ -240,8 +241,9 @@ namespace DigitalOpus.MB.Core
                         if (data._fixOutOfBoundsUVs)
                         {
                             Vector2 rawHeightWidth = ts.GetMaxRawTextureHeightWidth();
-                            h = (int) rawHeightWidth.y;
-                        } else
+                            h = (int)rawHeightWidth.y;
+                        }
+                        else
                         {
                             h = ts.idealHeight;
                         }
@@ -316,7 +318,7 @@ namespace DigitalOpus.MB.Core
                     padding.leftRight = data._atlasPadding;
                     paddingsRegular.Add(padding);
                 }
- 
+
                 int atlasRegularMaxWidth, atlasRegularMaxHeight;
                 int usedHorizontalVertWidth = 0, usedHorizontalVertHeight = 0;
                 if (packerRectsHorizontalVertical.Length > 0)
@@ -332,7 +334,7 @@ namespace DigitalOpus.MB.Core
             {
                 packerRectsRegular = new AtlasPackingResult[0];
             }
-            
+
 
             AtlasPackingResult result = null;
             if (packerRectsHorizontalVertical.Length == 0 && packerRectsRegular.Length == 0)
@@ -360,7 +362,7 @@ namespace DigitalOpus.MB.Core
             data.distinctMaterialTextures = horizontalVerticalDistinctMaterialTextures;
             AtlasPackingResult[] results;
             if (result != null) results = new AtlasPackingResult[] { result };
-            else results = new AtlasPackingResult[0]; 
+            else results = new AtlasPackingResult[0];
             return results;
         }
 

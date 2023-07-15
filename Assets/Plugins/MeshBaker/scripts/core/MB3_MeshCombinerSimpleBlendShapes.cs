@@ -1,7 +1,6 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 namespace DigitalOpus.MB.Core
 {
@@ -107,7 +106,7 @@ namespace DigitalOpus.MB.Core
                     }
                     blendShapesInCombined[bsIdx] = blendShape;
                 }
-                
+
                 //this is necessary to get the renderer to refresh its data about the blendshapes.
                 ((SkinnedMeshRenderer)_targetRenderer).sharedMesh = null;
                 ((SkinnedMeshRenderer)_targetRenderer).sharedMesh = _mesh;
@@ -206,13 +205,13 @@ namespace DigitalOpus.MB.Core
                             if (frmIdx == 0)
                             {
                                 db_numVertsAdded += frame.vertices.Length;
-                                db_vIdx += blendShape.gameObject.name + " " + destIdx + ":" +(destIdx + frame.vertices.Length) + ", ";
+                                db_vIdx += blendShape.gameObject.name + " " + destIdx + ":" + (destIdx + frame.vertices.Length) + ", ";
                             }
                         }
 
                         db_numObjsAdded += groupOfSrcObjs.Count;
                         MBVersion.AddBlendShapeFrame(_mesh, shapeName, firstFrameWeight, targVerts, targNorms, targTans);
-                        
+
                         // We re-use these arrays restore them to zero
                         _ZeroArray(targVerts, 0, targVerts.Length);
                         _ZeroArray(targNorms, 0, targNorms.Length);
@@ -223,7 +222,7 @@ namespace DigitalOpus.MB.Core
                     bsInCombinedIdx++;
                 }
 
-                
+
 
                 //this is necessary to get the renderer to refresh its data about the blendshapes.
                 ((SkinnedMeshRenderer)_targetRenderer).sharedMesh = null;

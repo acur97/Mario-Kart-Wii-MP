@@ -1,6 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
-using System;
+﻿using System;
+using UnityEngine;
 
 // A UV Transform is a transform considering only scale and offset it is used to represent the scaling and offset
 // from UVs outside the 0,0..1,1 box and material tiling
@@ -42,12 +41,13 @@ namespace DigitalOpus.MB.Core
             if (x >= r.x && y >= r.y && x <= r.x + r.width && y <= r.y + r.height)
             {
                 return true;
-            } else
+            }
+            else
             {
                 return false;
             }
         }
-        
+
         public bool IsContainedInWithMargin(DRect r)
         {
             if (x >= r.x - epsilon && y >= r.y - epsilon && x <= r.x + r.width + epsilon && y <= r.y + r.height + epsilon)
@@ -162,8 +162,10 @@ namespace DigitalOpus.MB.Core
             }
         }
 
-        public Vector2 size {
-            get {
+        public Vector2 size
+        {
+            get
+            {
                 return new Vector2((float)(width), (float)(height));
             }
         }
@@ -178,7 +180,7 @@ namespace DigitalOpus.MB.Core
 
         public override bool Equals(object obj)
         {
-            DRect dr = (DRect) obj;
+            DRect dr = (DRect)obj;
             if (dr.x == x && dr.y == y && dr.width == width && dr.height == height)
             {
                 return true;
@@ -198,7 +200,7 @@ namespace DigitalOpus.MB.Core
 
         public override string ToString()
         {
-                return String.Format("(x={0},y={1},w={2},h={3})", x.ToString("F5"), y.ToString("F5"), width.ToString("F5"), height.ToString("F5"));
+            return String.Format("(x={0},y={1},w={2},h={3})", x.ToString("F5"), y.ToString("F5"), width.ToString("F5"), height.ToString("F5"));
         }
 
         public void Expand(float amt)
@@ -226,10 +228,10 @@ namespace DigitalOpus.MB.Core
                     bmny <= smxy && smxy <= bmxy;
         }
 
-		public override int GetHashCode ()
-		{
-			return x.GetHashCode() ^ y.GetHashCode() ^ width.GetHashCode() ^ height.GetHashCode();
-		}
+        public override int GetHashCode()
+        {
+            return x.GetHashCode() ^ y.GetHashCode() ^ width.GetHashCode() ^ height.GetHashCode();
+        }
     }
 
     public class MB3_UVTransformUtility
@@ -269,7 +271,7 @@ namespace DigitalOpus.MB.Core
             */
             //DRect rawUV = new DRect(0, 0, 1, 1);
             DRect rawMat = new DRect(.5, .5, 2, 2);
-            DRect fullSample = new DRect(.25,.25,3,3);
+            DRect fullSample = new DRect(.25, .25, 3, 3);
             //DRect altasRect = new DRect(0, 0, 1, 1);
 
             DRect invRawMat = InverseTransform(ref rawMat);
@@ -286,7 +288,7 @@ namespace DigitalOpus.MB.Core
 
         public static float TransformX(DRect r, double x)
         {
-            return (float) (r.width * x + r.x);
+            return (float)(r.width * x + r.x);
         }
 
         public static DRect CombineTransforms(ref DRect r1, ref DRect r2)
@@ -347,7 +349,7 @@ namespace DigitalOpus.MB.Core
             DVector2 diff = DVector2.Subtract(ac, bc);
             double dx = Convert.ToInt32(diff.x);
             double dy = Convert.ToInt32(diff.y);
-            return new DRect(dx,dy,1.0,1.0);
+            return new DRect(dx, dy, 1.0, 1.0);
         }
 
         /// <summary>
@@ -530,7 +532,7 @@ namespace DigitalOpus.MB.Core
 
         public static Vector2 TransformPoint(ref DRect r, Vector2 p)
         {
-            return new Vector2((float) (r.width * p.x + r.x),(float)(r.height * p.y + r.y));
+            return new Vector2((float)(r.width * p.x + r.x), (float)(r.height * p.y + r.y));
         }
 
         public static DVector2 TransformPoint(ref DRect r, DVector2 p)

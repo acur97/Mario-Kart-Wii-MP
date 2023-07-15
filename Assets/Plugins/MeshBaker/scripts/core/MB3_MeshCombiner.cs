@@ -1,12 +1,8 @@
-using UnityEngine;
-using System.Collections;
-using System.Collections.Specialized;
-using System;
 using System.Collections.Generic;
-using System.Text;
-using DigitalOpus.MB.Core;
+using UnityEngine;
 
-namespace DigitalOpus.MB.Core {
+namespace DigitalOpus.MB.Core
+{
 
     //TODO bug with triangles if using showHide with AddDelete reproduce by using the AddDeleteParts script and changeing some of it to show hide
     [System.Serializable]
@@ -53,7 +49,8 @@ namespace DigitalOpus.MB.Core {
             public int blendShapeIndex;
         }
 
-        public static bool EVAL_VERSION {
+        public static bool EVAL_VERSION
+        {
             get { return false; }
         }
 
@@ -134,13 +131,16 @@ namespace DigitalOpus.MB.Core {
         [SerializeField] protected UnityEngine.Object _settingsHolder;
         public virtual MB_IMeshBakerSettingsHolder settingsHolder
         {
-            get {
+            get
+            {
                 if (_settingsHolder != null)
                 {
                     if (_settingsHolder is MB_IMeshBakerSettingsHolder)
                     {
                         return (MB_IMeshBakerSettingsHolder)_settingsHolder;
-                    } else {
+                    }
+                    else
+                    {
                         _settingsHolder = null;
                     }
                 }
@@ -151,7 +151,8 @@ namespace DigitalOpus.MB.Core {
                 if (value is UnityEngine.Object)
                 {
                     _settingsHolder = (UnityEngine.Object)value;
-                } else
+                }
+                else
                 {
                     Debug.LogError("The settings holder must be a UnityEngine.Object");
                 }
@@ -175,7 +176,8 @@ namespace DigitalOpus.MB.Core {
         /// <summary>
         /// ALWAYS ACCESS THROUGH this.settings.outputOption NOT this.outputOption THERE MAY BE A SETTINGS HOLDER ASSIGNED.
         /// </summary>
-        public virtual MB_RenderType renderType {
+        public virtual MB_RenderType renderType
+        {
             get { return _renderType; }
             set { _renderType = value; }
         }
@@ -185,10 +187,12 @@ namespace DigitalOpus.MB.Core {
         /// <summary>
         /// ALWAYS ACCESS THROUGH this.settings.lightmapOption NOT this.lightmapOption THERE MAY BE A SETTINGS HOLDER ASSIGNED.
         /// </summary>
-        public virtual MB2_LightmapOptions lightmapOption {
+        public virtual MB2_LightmapOptions lightmapOption
+        {
             get { return _lightmapOption; }
-            set {
-                _lightmapOption = value; 
+            set
+            {
+                _lightmapOption = value;
             }
         }
 
@@ -197,7 +201,8 @@ namespace DigitalOpus.MB.Core {
         /// <summary>
         /// ALWAYS ACCESS THROUGH this.settings.doNorm NOT this.doNorm THERE MAY BE A SETTINGS HOLDER ASSIGNED.
         /// </summary>
-        public virtual bool doNorm {
+        public virtual bool doNorm
+        {
             get { return _doNorm; }
             set { _doNorm = value; }
         }
@@ -208,7 +213,8 @@ namespace DigitalOpus.MB.Core {
         /// <summary>
         /// ALWAYS ACCESS THROUGH this.settings.doTan NOT this.doTan THERE MAY BE A SETTINGS HOLDER ASSIGNED.
         /// </summary>
-        public virtual bool doTan {
+        public virtual bool doTan
+        {
             get { return _doTan; }
             set { _doTan = value; }
         }
@@ -217,7 +223,8 @@ namespace DigitalOpus.MB.Core {
         /// <summary>
         /// ALWAYS ACCESS THROUGH this.settings.doCol NOT this.doCol THERE MAY BE A SETTINGS HOLDER ASSIGNED.
         /// </summary>
-        public virtual bool doCol {
+        public virtual bool doCol
+        {
             get { return _doCol; }
             set { _doCol = value; }
         }
@@ -226,7 +233,8 @@ namespace DigitalOpus.MB.Core {
         /// <summary>
         /// ALWAYS ACCESS THROUGH this.settings.doUV NOT this.doUV THERE MAY BE A SETTINGS HOLDER ASSIGNED.
         /// </summary>
-        public virtual bool doUV {
+        public virtual bool doUV
+        {
             get { return _doUV; }
             set { _doUV = value; }
         }
@@ -234,12 +242,14 @@ namespace DigitalOpus.MB.Core {
         /// <summary>
         /// only included for backward compatibility. Does nothing
         /// </summary>
-        public virtual bool doUV1 {
+        public virtual bool doUV1
+        {
             get { return false; }
             set { }
         }
 
-        public virtual bool doUV2() {
+        public virtual bool doUV2()
+        {
             bool result = settings.lightmapOption == MB2_LightmapOptions.copy_UV2_unchanged || settings.lightmapOption == MB2_LightmapOptions.preserve_current_lightmapping || settings.lightmapOption == MB2_LightmapOptions.copy_UV2_unchanged_to_separate_rects;
             return result;
         }
@@ -249,7 +259,8 @@ namespace DigitalOpus.MB.Core {
         /// <summary>
         /// ALWAYS ACCESS THROUGH this.settings.doUV3 NOT this.doUV3 THERE MAY BE A SETTINGS HOLDER ASSIGNED.
         /// </summary>
-        public virtual bool doUV3 {
+        public virtual bool doUV3
+        {
             get { return _doUV3; }
             set { _doUV3 = value; }
         }
@@ -258,7 +269,8 @@ namespace DigitalOpus.MB.Core {
         /// <summary>
         /// ALWAYS ACCESS THROUGH this.settings.doUV4 NOT this.doUV4 THERE MAY BE A SETTINGS HOLDER ASSIGNED.
         /// </summary>
-        public virtual bool doUV4 {
+        public virtual bool doUV4
+        {
             get { return _doUV4; }
             set { _doUV4 = value; }
         }
@@ -345,7 +357,8 @@ namespace DigitalOpus.MB.Core {
         public virtual bool clearBuffersAfterBake
         {
             get { return _clearBuffersAfterBake; }
-            set {
+            set
+            {
                 Debug.LogError("Not implemented.");
                 _clearBuffersAfterBake = value;
             }
@@ -429,22 +442,22 @@ namespace DigitalOpus.MB.Core {
             }
             set
             {
-                _assignToMeshCustomizer = (UnityEngine.Object) value;
+                _assignToMeshCustomizer = (UnityEngine.Object)value;
             }
         }
 
         protected bool _usingTemporaryTextureBakeResult;
         public abstract int GetLightmapIndex();
-		public abstract void ClearBuffers();
-		public abstract void ClearMesh();
+        public abstract void ClearBuffers();
+        public abstract void ClearMesh();
         public abstract void ClearMesh(MB2_EditorMethodsInterface editorMethods);
         public abstract void DisposeRuntimeCreated();
         public abstract void DestroyMesh();
-		public abstract void DestroyMeshEditor(MB2_EditorMethodsInterface editorMethods);
-		public abstract List<GameObject> GetObjectsInCombined();
-		public abstract int GetNumObjectsInCombined();
-		public abstract int GetNumVerticesFor(GameObject go);
-		public abstract int GetNumVerticesFor(int instanceID);
+        public abstract void DestroyMeshEditor(MB2_EditorMethodsInterface editorMethods);
+        public abstract List<GameObject> GetObjectsInCombined();
+        public abstract int GetNumObjectsInCombined();
+        public abstract int GetNumVerticesFor(GameObject go);
+        public abstract int GetNumVerticesFor(int instanceID);
 
         /// <summary>
         /// Builds a map for mapping blend shapes in the source SkinnedMeshRenderers to blend shapes in the
@@ -456,17 +469,18 @@ namespace DigitalOpus.MB.Core {
         /// <summary>
         /// Copies Mesh Baker internal data to the mesh.
         /// </summary>		
-        public virtual void Apply(){
-			Apply(null);
-		}
-		
-		/// <summary>
-		/// Copies Mesh Baker internal data to the mesh.
-		/// </summary>
-		/// <param name='uv2GenerationMethod'>
-		/// Uv2 generation method. This is normally editor class method Unwrapping.GenerateSecondaryUVSet
-		/// </param>
-		public abstract void Apply(GenerateUV2Delegate uv2GenerationMethod);
+        public virtual void Apply()
+        {
+            Apply(null);
+        }
+
+        /// <summary>
+        /// Copies Mesh Baker internal data to the mesh.
+        /// </summary>
+        /// <param name='uv2GenerationMethod'>
+        /// Uv2 generation method. This is normally editor class method Unwrapping.GenerateSecondaryUVSet
+        /// </param>
+        public abstract void Apply(GenerateUV2Delegate uv2GenerationMethod);
 
         /// <summary>
         /// Apply the specified triangles, vertices, normals, tangents, uvs, colors, uv1, uv2, bones and uv2GenerationMethod.
@@ -559,17 +573,17 @@ namespace DigitalOpus.MB.Core {
         /// Uv2 generation method. This is normally method Unwrapping.GenerateSecondaryUVSet. This should be null when calling Apply at runtime.
         /// </param>		
         public abstract void Apply(bool triangles,
-						  bool vertices,
-						  bool normals,
-						  bool tangents,
-						  bool uvs,
+                          bool vertices,
+                          bool normals,
+                          bool tangents,
+                          bool uvs,
                           bool uv2,
                           bool uv3,
                           bool uv4,
                           bool colors,
-						  bool bones=false,
-                          bool blendShapeFlag=false,
-						  GenerateUV2Delegate uv2GenerationMethod = null);
+                          bool bones = false,
+                          bool blendShapeFlag = false,
+                          GenerateUV2Delegate uv2GenerationMethod = null);
 
 
         public virtual bool UpdateGameObjects(GameObject[] gos)
@@ -604,7 +618,7 @@ namespace DigitalOpus.MB.Core {
         public abstract bool UpdateGameObjects(GameObject[] gos, bool recalcBounds,
                                         bool updateVertices, bool updateNormals, bool updateTangents,
                                         bool updateUV, bool updateUV2, bool updateUV3, bool updateUV4,
-										bool updateColors, bool updateSkinningInfo);
+                                        bool updateColors, bool updateSkinningInfo);
 
         /// <summary>
         /// Updates the data in the combined mesh for meshes that are already in the combined mesh.
@@ -621,72 +635,83 @@ namespace DigitalOpus.MB.Core {
                                         bool updateUV5, bool updateUV6, bool updateUV7, bool updateUV8,
                                         bool updateColors, bool updateSkinningInfo);
 
-        public abstract bool AddDeleteGameObjects(GameObject[] gos, GameObject[] deleteGOs, bool disableRendererInSource=true);
+        public abstract bool AddDeleteGameObjects(GameObject[] gos, GameObject[] deleteGOs, bool disableRendererInSource = true);
 
-		public abstract bool AddDeleteGameObjectsByID(GameObject[] gos, int[] deleteGOinstanceIDs, bool disableRendererInSource);
-		public abstract bool CombinedMeshContains(GameObject go);
-		public abstract void UpdateSkinnedMeshApproximateBounds();
-		public abstract void UpdateSkinnedMeshApproximateBoundsFromBones();
+        public abstract bool AddDeleteGameObjectsByID(GameObject[] gos, int[] deleteGOinstanceIDs, bool disableRendererInSource);
+        public abstract bool CombinedMeshContains(GameObject go);
+        public abstract void UpdateSkinnedMeshApproximateBounds();
+        public abstract void UpdateSkinnedMeshApproximateBoundsFromBones();
         public abstract void CheckIntegrity();
 
         /// <summary>
         /// Updates the skinned mesh approximate bounds from the bounds of the source objects.
         /// </summary>		
         public abstract void UpdateSkinnedMeshApproximateBoundsFromBounds();
-		
-		/// <summary>
-		/// Updates the skinned mesh bounds by creating a bounding box that contains the bones (skeleton) of the source objects.
-		/// </summary>		
-		public static void UpdateSkinnedMeshApproximateBoundsFromBonesStatic(Transform[] bs, SkinnedMeshRenderer smr){
-			Vector3 max, min;
-			max = bs[0].position;
-			min = bs[0].position;
-			for (int i = 1; i < bs.Length; i++){
-				Vector3 v = bs[i].position;
-				if (v.x < min.x) min.x = v.x;
-				if (v.y < min.y) min.y = v.y;
-				if (v.z < min.z) min.z = v.z;
-				if (v.x > max.x) max.x = v.x;
-				if (v.y > max.y) max.y = v.y;
-				if (v.z > max.z) max.z = v.z;			
-			}
-			Vector3 center = (max + min)/2f;
-			Vector3 size = max - min;
-			Matrix4x4 w2l = smr.worldToLocalMatrix;
-			Bounds b = new Bounds(w2l * center, w2l * size);		
-			smr.localBounds = b;
-		}
 
-		public static void UpdateSkinnedMeshApproximateBoundsFromBoundsStatic(List<GameObject> objectsInCombined,SkinnedMeshRenderer smr){
-			Bounds b = new Bounds();
-			Bounds bigB = new Bounds();
-			if (MB_Utility.GetBounds(objectsInCombined[0],out b)){
-				bigB = b;
-			} else {
-				Debug.LogError("Could not get bounds. Not updating skinned mesh bounds");	
-				return;
-			}
-			for (int i = 1; i < objectsInCombined.Count; i++){
-				if (MB_Utility.GetBounds(objectsInCombined[i],out b)){
-					bigB.Encapsulate(b);
-				} else {
-					Debug.LogError("Could not get bounds. Not updating skinned mesh bounds");	
-					return;					
-				}
-			}	
-			smr.localBounds = bigB;			
-		}		
+        /// <summary>
+        /// Updates the skinned mesh bounds by creating a bounding box that contains the bones (skeleton) of the source objects.
+        /// </summary>		
+        public static void UpdateSkinnedMeshApproximateBoundsFromBonesStatic(Transform[] bs, SkinnedMeshRenderer smr)
+        {
+            Vector3 max, min;
+            max = bs[0].position;
+            min = bs[0].position;
+            for (int i = 1; i < bs.Length; i++)
+            {
+                Vector3 v = bs[i].position;
+                if (v.x < min.x) min.x = v.x;
+                if (v.y < min.y) min.y = v.y;
+                if (v.z < min.z) min.z = v.z;
+                if (v.x > max.x) max.x = v.x;
+                if (v.y > max.y) max.y = v.y;
+                if (v.z > max.z) max.z = v.z;
+            }
+            Vector3 center = (max + min) / 2f;
+            Vector3 size = max - min;
+            Matrix4x4 w2l = smr.worldToLocalMatrix;
+            Bounds b = new Bounds(w2l * center, w2l * size);
+            smr.localBounds = b;
+        }
 
-		protected virtual bool _CreateTemporaryTextrueBakeResult(GameObject[] gos, List<Material> matsOnTargetRenderer){ 
+        public static void UpdateSkinnedMeshApproximateBoundsFromBoundsStatic(List<GameObject> objectsInCombined, SkinnedMeshRenderer smr)
+        {
+            Bounds b = new Bounds();
+            Bounds bigB = new Bounds();
+            if (MB_Utility.GetBounds(objectsInCombined[0], out b))
+            {
+                bigB = b;
+            }
+            else
+            {
+                Debug.LogError("Could not get bounds. Not updating skinned mesh bounds");
+                return;
+            }
+            for (int i = 1; i < objectsInCombined.Count; i++)
+            {
+                if (MB_Utility.GetBounds(objectsInCombined[i], out b))
+                {
+                    bigB.Encapsulate(b);
+                }
+                else
+                {
+                    Debug.LogError("Could not get bounds. Not updating skinned mesh bounds");
+                    return;
+                }
+            }
+            smr.localBounds = bigB;
+        }
+
+        protected virtual bool _CreateTemporaryTextrueBakeResult(GameObject[] gos, List<Material> matsOnTargetRenderer)
+        {
             if (GetNumObjectsInCombined() > 0)
             {
                 Debug.LogError("Can't add objects if there are already objects in combined mesh when 'Texture Bake Result' is not set. Perhaps enable 'Clear Buffers After Bake'");
                 return false;
             }
-			_usingTemporaryTextureBakeResult = true;
-			_textureBakeResults = MB2_TextureBakeResults.CreateForMaterialsOnRenderer(gos, matsOnTargetRenderer);
-			return true;
-		}
+            _usingTemporaryTextureBakeResult = true;
+            _textureBakeResults = MB2_TextureBakeResults.CreateForMaterialsOnRenderer(gos, matsOnTargetRenderer);
+            return true;
+        }
 
         public abstract List<Material> GetMaterialsOnTargetRenderer();
 

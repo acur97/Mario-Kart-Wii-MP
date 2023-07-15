@@ -1,11 +1,8 @@
 /**
  *	\brief Hax!  DLLs cannot interpret preprocessor directives, so this class acts as a "bridge"
  */
-using System;
-using UnityEngine;
 using UnityEditor;
-using System.Collections;
-using DigitalOpus.MB.Core;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {

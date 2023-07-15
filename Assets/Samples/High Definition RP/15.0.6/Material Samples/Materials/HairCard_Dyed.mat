@@ -41,6 +41,8 @@ Material:
     m_Floats:
     - _Root_Distance: 0.451
     - _Root_Fade: 0.441
+    - _StencilWriteMaskDepth: 9
+    - _StencilWriteMaskMV: 43
     m_Colors:
     - _Length_Color: {r: 0.0039752387, g: 0.37316385, b: 0.6320754, a: 1}
     - _Root_Color: {r: 0.21698111, g: 0.15329203, b: 0.11135634, a: 1}

@@ -1,6 +1,6 @@
+using System.Collections.Generic;
 using UnityEditor.Overlays;
 using UnityEngine.UIElements;
-using System.Collections.Generic;
 
 namespace UnityEditor.Rendering.HighDefinition
 {
@@ -33,8 +33,8 @@ namespace UnityEditor.Rendering.HighDefinition
                 return;
 
             var needDisplay = false;
-            
-            foreach( var settingMessagePair in settingMessagePairs)
+
+            foreach (var settingMessagePair in settingMessagePairs)
             {
                 var need = settingMessagePair.requiredSetting.needsToBeEnabled;
                 needDisplay |= need;
@@ -57,7 +57,7 @@ namespace UnityEditor.Rendering.HighDefinition
             label.style.whiteSpace = WhiteSpace.Normal;
             return label;
         }
-           
+
         private string headerMessage = "";
         private SettingHelperSO m_settingHelperSO;
         public SettingHelperSO settingHelperSO
@@ -68,7 +68,7 @@ namespace UnityEditor.Rendering.HighDefinition
                 if (m_settingHelperSO != value)
                 {
                     headerMessage = value.header;
-                    
+
                     if (rootElement != null)
                         rootElement.Clear();
                     if (settingMessagePairs != null)
@@ -76,14 +76,14 @@ namespace UnityEditor.Rendering.HighDefinition
                     else
                         settingMessagePairs = new List<SettingMessagePair>();
 
-                        
+
                     if (value != null)
                     {
                         if (rootElement == null)
                             CreatePanelContent();
                         rootElement.Add(GetHeaderMessage());
 
-                        foreach( var requiredSetting in value.requiredSettings)
+                        foreach (var requiredSetting in value.requiredSettings)
                         {
                             var newPair = new SettingMessagePair(requiredSetting);
 

@@ -1,9 +1,8 @@
-using UnityEngine;
-using UnityEditor;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using UnityEditor;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -20,7 +19,7 @@ namespace DigitalOpus.MB.Core
         private saveTextureFormat SAVE_FORMAT = saveTextureFormat.png;
 
         private List<Texture2D> _texturesWithReadWriteFlagSet = new List<Texture2D>();
-        
+
         private Dictionary<Texture2D, TextureFormatInfo_AbstractDefaultPlatform> _textureFormatMap_DefaultAbstract = new Dictionary<Texture2D, TextureFormatInfo_AbstractDefaultPlatform>();
         private Dictionary<Texture2D, TextureFormatInfo_PlatformOverride> _textureFormatMap_PlatformOverride = new Dictionary<Texture2D, TextureFormatInfo_PlatformOverride>();
 
@@ -212,7 +211,7 @@ namespace DigitalOpus.MB.Core
 
         private void RememberTextureFormatChange(Texture2D tx, TextureFormatInfo_AbstractDefaultPlatform tfi)
         {
-            Debug.Assert(!_textureFormatMap_DefaultAbstract.ContainsKey(tx),"We have already converted the format for this texture " + tx + " we should only do this once.");
+            Debug.Assert(!_textureFormatMap_DefaultAbstract.ContainsKey(tx), "We have already converted the format for this texture " + tx + " we should only do this once.");
             Debug.Assert(!_textureFormatMap_PlatformOverride.ContainsKey(tx), "We have added a TextureImporter platform override for this texture " + tx + " we should not also be changing the default format.");
             _textureFormatMap_DefaultAbstract.Add(tx, tfi);
         }
@@ -761,7 +760,7 @@ namespace DigitalOpus.MB.Core
             if (atlas == null)
             {
                 if (doAnySrcMatsHaveProperty)
-                { 
+                {
                     SetMaterialTextureProperty(resMat, texPropertyName, null);
                 }
             }
@@ -946,7 +945,8 @@ namespace DigitalOpus.MB.Core
                             //							Debug.LogError("SkinnedMesh " + i + " (" + objs[i] + ") in the list of objects to combine is optimized. Mesh Baker cannot combine optimized skinned meshes because the bones are not available.");
                             //						}
                             //					}
-                        } else
+                        }
+                        else
                         {
                             // This was a skinned mesh with no bindposes (bones). This is allowed if there are blendshapes
                             if (m.blendShapeCount == 0)
@@ -985,7 +985,8 @@ namespace DigitalOpus.MB.Core
             if (path != null && path != "")
             {
                 AssetDatabase.DeleteAsset(path);
-            } else
+            }
+            else
             {
                 Debug.LogError("DestroyAsset was called on an object that was not an asset: " + o);
             }
@@ -1090,10 +1091,10 @@ namespace DigitalOpus.MB.Core
             // Can't do a pixel copy with normal maps because unity has swizzled the color channels. Turn of the TextureType:Normal first.
             if (shaderProp.isNormalMap)
             {
-                if (!_textureFormatMap_DefaultAbstract.ContainsKey(sliceTex) 
+                if (!_textureFormatMap_DefaultAbstract.ContainsKey(sliceTex)
                     && !_textureFormatMap_PlatformOverride.ContainsKey(sliceTex))
                 {
-                    ConvertTextureFormat_DefaultPlatform(sliceTex, TextureFormat.RGBA32, isNormalMap:false);
+                    ConvertTextureFormat_DefaultPlatform(sliceTex, TextureFormat.RGBA32, isNormalMap: false);
                 }
             }
 
@@ -1140,7 +1141,7 @@ namespace DigitalOpus.MB.Core
 
         public static TextureImporterFormat Map_TextureFormat_2_TextureImporterFormat(TextureFormat texFormat, out bool success)
         {
-            return MBVersionEditor.Map_TextureFormat_2_TextureImporterFormat(texFormat, out success); 
+            return MBVersionEditor.Map_TextureFormat_2_TextureImporterFormat(texFormat, out success);
         }
 
         public bool TextureImporterFormatExistsForTextureFormat(TextureFormat texFormat)

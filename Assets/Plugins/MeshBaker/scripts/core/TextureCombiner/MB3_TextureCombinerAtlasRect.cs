@@ -1,8 +1,7 @@
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 using System.Text;
+using UnityEngine;
 
 namespace DigitalOpus.MB.Core
 {
@@ -333,7 +332,8 @@ namespace DigitalOpus.MB.Core
         ///   are the textures edge to edge.
         /// We try to capture those differences a clearly defined way.
         /// </summary>
-        private interface PipelineVariation{
+        private interface PipelineVariation
+        {
             void GetRectsForTextureBakeResults(out Rect allPropsUseSameTiling_encapsulatingSamplingRect,
                                                         out Rect propsUseDifferntTiling_obUVRect);
 
@@ -436,7 +436,7 @@ namespace DigitalOpus.MB.Core
                                                         out Rect propsUseDifferntTiling_obUVRect)
             {
                 Debug.Assert(texSet.allTexturesUseSameMatTiling == false);
-                allPropsUseSameTiling_encapsulatingSamplingRect = new Rect(0,0,0,0);
+                allPropsUseSameTiling_encapsulatingSamplingRect = new Rect(0, 0, 0, 0);
                 propsUseDifferntTiling_obUVRect = texSet.obUVrect.GetRect();
                 //adjust for tilingTreatment
                 if (texSet.tilingTreatment == MB_TextureTilingTreatment.edgeToEdgeX)
@@ -491,7 +491,7 @@ namespace DigitalOpus.MB.Core
             public Rect GetMaterialTilingRectForTextureBakerResults(int materialIndex)
             {
                 Debug.Assert(texSet.allTexturesUseSameMatTiling == false);
-                return new Rect(0,0,0,0);
+                return new Rect(0, 0, 0, 0);
             }
 
             public void AdjustResultMaterialNonTextureProperties(Material resultMaterial, List<ShaderTextureProperty> props)

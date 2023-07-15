@@ -31,10 +31,6 @@ namespace Cleverous.Shared
         [Range(0, 1000)]
         public int NumberBufferSize;
 
-        [Header("// System FPS (updates once/sec)")]
-        [Tooltip("Would you like to read the System Tick instead of calculating it in this script?\n\nTests show that differences are negligible, but the option remains available to you.")]
-        public bool UseSystemTick;
-
         [Header("// Color Config ")]
         [Tooltip("Optionally change the color of the TargetText based on FPS performance.")]
         public bool UseColors;
@@ -55,9 +51,6 @@ namespace Cleverous.Shared
         protected int SampleIndex;
         protected int TextUpdateIndex;
 
-        private int m_sysLastSysTick;
-        private int m_sysLastFrameRate;
-        private int m_sysFrameRate;
         private string m_localfps;
 
         private static string[] m_numbers;
@@ -77,7 +70,6 @@ namespace Cleverous.Shared
             OkayBelow = 60;
             BadBelow = 30;
 
-            UseSystemTick = false;
             NumberBufferSize = 1000;
         }
 
@@ -113,24 +105,12 @@ namespace Cleverous.Shared
 
         protected virtual void SingleFrame()
         {
-            Framerate = Mathf.Clamp(UseSystemTick
-                ? GetSystemFramerate()
-                : (int)(Smoothed
-                    ? 1 / Time.smoothDeltaTime
-                    : 1 / Time.deltaTime),
-                0,
-                m_numbers.Length - 1);
+            Framerate = Mathf.Clamp((int)(Smoothed ? 1 / Time.smoothDeltaTime : 1 / Time.deltaTime), 0, m_numbers.Length - 1);
         }
 
         protected virtual void Group()
         {
-            FpsSamples[SampleIndex] = Mathf.Clamp(UseSystemTick
-                ? GetSystemFramerate()
-                : (int)(Smoothed
-                    ? 1 / Time.smoothDeltaTime
-                    : 1 / Time.deltaTime),
-                0,
-                m_numbers.Length - 1);
+            FpsSamples[SampleIndex] = Mathf.Clamp((int)(Smoothed ? 1 / Time.smoothDeltaTime : 1 / Time.deltaTime), 0, m_numbers.Length - 1);
 
             Framerate = 0;
             bool loop = true;
@@ -142,18 +122,6 @@ namespace Cleverous.Shared
                 i++;
             }
             Framerate /= FpsSamples.Length;
-        }
-
-        protected virtual int GetSystemFramerate()
-        {
-            if (System.Environment.TickCount - m_sysLastSysTick >= 1000)
-            {
-                m_sysLastFrameRate = m_sysFrameRate;
-                m_sysFrameRate = 0;
-                m_sysLastSysTick = System.Environment.TickCount;
-            }
-            m_sysFrameRate++;
-            return m_sysLastFrameRate;
         }
     }
 }
