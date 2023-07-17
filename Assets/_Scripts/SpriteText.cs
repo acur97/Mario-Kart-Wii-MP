@@ -60,7 +60,7 @@ public class SpriteText : MonoBehaviour
 
     public void SetText(string text)
     {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new();
         for (int i = 0; i < text.Length; i++)
         {
             if (text[i] == _3)

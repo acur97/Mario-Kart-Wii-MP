@@ -31,14 +31,14 @@ MonoBehaviour:
     supportVolumetricClouds: 1
     supportLightLayers: 0
     renderingLayerMaskBuffer: 0
-    supportWater: 0
+    supportWater: 1
     waterSimulationResolution: 128
     supportWaterExclusion: 0
     supportWaterDeformation: 0
     deformationAtlasSize: 512
     maximumDeformerCount: 64
-    supportWaterFoam: 0
-    foamAtlasSize: 512
+    supportWaterFoam: 1
+    foamAtlasSize: 64
     waterCPUSimulation: 0
     supportComputeThickness: 0
     computeThicknessResolution: 1
